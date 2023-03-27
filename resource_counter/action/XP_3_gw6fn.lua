@@ -1,0 +1,1 @@
+print(ocr_result_xp3)

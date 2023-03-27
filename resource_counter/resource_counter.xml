@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<ROOT>
+    <MAIN>
+        <ScriptName>resource_counter</ScriptName>
+        <ScriptPath>resource_counter</ScriptPath>
+        <XmlVersion>1.112</XmlVersion>
+        <Cmy>323</Cmy>
+        <AuthorID>test</AuthorID>
+        <Hotkey0>F7</Hotkey0>
+        <Modifiers0>0</Modifiers0>
+        <Vk0>118</Vk0>
+        <Hotkey1>F8</Hotkey1>
+        <Modifiers1>0</Modifiers1>
+        <Vk1>119</Vk1>
+        <Hotkey2>F9</Hotkey2>
+        <Modifiers2>0</Modifiers2>
+        <Vk2>120</Vk2>
+        <Mdpi>96</Mdpi>
+        <Tdpi>96</Tdpi>
+        <IniDelimiter>1664985196830011</IniDelimiter>
+    </MAIN>
+    <TW>
+        <CheckTWInc>0</CheckTWInc>
+        <CheckTWHide>0</CheckTWHide>
+        <TWAName>LDPlayer</TWAName>
+        <TWAClass>LDPlayerMainFrame</TWAClass>
+        <TWBName>LDPlayer</TWBName>
+        <TWBClass>LDPlayerMainFrame</TWBClass>
+        <TWCName>TheRender</TWCName>
+        <TWCClass>RenderWindow</TWCClass>
+        <PickPos>46466209</PickPos>
+        <TWHandle>0x530B04</TWHandle>
+        <TargetWnd.left>175</TargetWnd.left>
+        <TargetWnd.top>191</TargetWnd.top>
+        <TargetWnd.right>2095</TargetWnd.right>
+        <TargetWnd.bottom>1271</TargetWnd.bottom>
+        <TarfrmWnd.left>174</TarfrmWnd.left>
+        <TarfrmWnd.top>157</TarfrmWnd.top>
+        <TarfrmWnd.right>2136</TarfrmWnd.right>
+        <TarfrmWnd.bottom>1272</TarfrmWnd.bottom>
+        <Hotkey0>F7</Hotkey0>
+        <Modifiers0>0</Modifiers0>
+        <Vk0>118</Vk0>
+        <Hotkey1>F8</Hotkey1>
+        <Modifiers1>0</Modifiers1>
+        <Vk1>119</Vk1>
+        <Hotkey2>F9</Hotkey2>
+        <Modifiers2>0</Modifiers2>
+        <Vk2>120</Vk2>
+        <TWInc/>
+    </TW>
+    <GENERAL>
+        <CaptureMode>1</CaptureMode>
+        <ReactSpeed>1</ReactSpeed>
+        <InputType>1</InputType>
+        <ImageCount>20</ImageCount>
+        <Image_1>
+            <Name>controller</Name>
+            <Rect>(0, 0, 0, 0)</Rect>
+            <ROI>(0, 0, 0, 0)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>0</Param1>
+            <Param2>0</Param2>
+            <Param3>0</Param3>
+            <Param4>0</Param4>
+            <Enable>1</Enable>
+            <Group>0</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>1</ActCount>
+            <Act_1>
+                <Name>스크립트 입력</Name>
+                <Enable>1</Enable>
+                <Param>Script( controller_5h5jc.py import sys\n import importlib.util\n \n # TODO: fix dirty import\n file_path = '../resource_counter/util.py'\n module_name = 'util'\n \n spec = importlib.util.spec_from_file_location(module_name, fil )</Param>
+                <Attr LuaFile="controller_5h5jc.py" Text="import sys\n import importlib.util\n \n # TODO: fix dirty import\n file_path = &apos;../resource_counter/util.py&apos;\n module_name = &apos;util&apos;\n \n spec = importlib.util.spec_from_file_location(module_name, fil"/>
+            </Act_1>
+        </Image_1>
+        <Image_2>
+            <Name>script_finished</Name>
+            <Rect>(0, 0, 0, 0)</Rect>
+            <ROI>(0, 0, 0, 0)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>0</Param1>
+            <Param2>0</Param2>
+            <Param3>0</Param3>
+            <Param4>0</Param4>
+            <Enable>1</Enable>
+            <Group>0</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>1</ActCount>
+            <Act_1>
+                <Name>딜레이(지연)</Name>
+                <Enable>1</Enable>
+                <Param>Delay( 0 30.000000 0 0 0.000000 )</Param>
+                <Attr DelayMin="0" DelaySec="30" CheckDelayRand="0" DelayRandMin="0" DelayRandSec="0"/>
+            </Act_1>
+        </Image_2>
+        <Image_3>
+            <Name>main.grp</Name>
+            <Rect>(0, 0, 0, 0)</Rect>
+            <ROI>(0, 0, 0, 0)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>0</Param1>
+            <Param2>0</Param2>
+            <Param3>0</Param3>
+            <Param4>0</Param4>
+            <Enable>1</Enable>
+            <Group>1</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>0</ActCount>
+        </Image_3>
+        <Image_4>
+            <Name>options</Name>
+            <Rect>(1794, 27, 80, 66)</Rect>
+            <ROI>(1794, 27, 80, 66)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>14155777</Param1>
+            <Param2>1129454</Param2>
+            <Param3>0</Param3>
+            <Param4>1679820101</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>4</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+            <Act_3>
+                <Name>스크립트 입력</Name>
+                <Enable>0</Enable>
+                <Param>Script( options_g4uhs.py import imax\n # import resource_counter as rc\n import sys\n import importlib.util\n \n file_path = '../resource_counter/action/scripting_test.py'\n module_name = 'scripting_test'\n \n spec = importl )</Param>
+                <Attr LuaFile="options_g4uhs.py" Text="import imax\n # import resource_counter as rc\n import sys\n import importlib.util\n \n file_path = &apos;../resource_counter/action/scripting_test.py&apos;\n module_name = &apos;scripting_test&apos;\n \n spec = importl"/>
+            </Act_3>
+            <Act_4>
+                <Name>딜레이(지연)</Name>
+                <Enable>0</Enable>
+                <Param>Delay( 0 2.000000 0 0 0.000000 )</Param>
+                <Attr DelayMin="0" DelaySec="2" CheckDelayRand="0" DelayRandMin="0" DelayRandSec="0"/>
+            </Act_4>
+        </Image_4>
+        <Image_5>
+            <Name>items</Name>
+            <Rect>(963, 516, 127, 116)</Rect>
+            <ROI>(963, 516, 127, 116)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>14483457</Param1>
+            <Param2>2309037</Param2>
+            <Param3>0</Param3>
+            <Param4>1679820127</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>3</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+            <Act_3>
+                <Name>딜레이(지연)</Name>
+                <Enable>0</Enable>
+                <Param>Delay( 0 5.000000 0 0 0.000000 )</Param>
+                <Attr DelayMin="0" DelaySec="5" CheckDelayRand="0" DelayRandMin="0" DelayRandSec="0"/>
+            </Act_3>
+        </Image_5>
+        <Image_6>
+            <Name>equipments</Name>
+            <Rect>(622, 518, 119, 112)</Rect>
+            <ROI>(622, 518, 119, 112)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>14221313</Param1>
+            <Param2>3816360</Param2>
+            <Param3>0</Param3>
+            <Param4>1679820142</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_6>
+        <Image_7>
+            <Name>back_button</Name>
+            <Rect>(16, 4, 130, 109)</Rect>
+            <ROI>(16, 4, 130, 109)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>11206656</Param1>
+            <Param2>2177997</Param2>
+            <Param3>0</Param3>
+            <Param4>1679840679</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_7>
+        <Image_8>
+            <Name>item_collection.grp</Name>
+            <Rect>(0, 0, 0, 0)</Rect>
+            <ROI>(0, 0, 0, 0)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>0</Param1>
+            <Param2>0</Param2>
+            <Param3>0</Param3>
+            <Param4>0</Param4>
+            <Enable>1</Enable>
+            <Group>1</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="70" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>0</ActCount>
+        </Image_8>
+        <Image_9>
+            <Name>i_table_top</Name>
+            <Rect>(1024, 192, 848, 37)</Rect>
+            <ROI>(1024, 192, 848, 37)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13828097</Param1>
+            <Param2>867258</Param2>
+            <Param3>0</Param3>
+            <Param4>1679845485</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_9>
+        <Image_10>
+            <Name>i_table_bottom</Name>
+            <Rect>(1024, 908, 847, 21)</Rect>
+            <ROI>(1024, 908, 847, 21)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>14155777</Param1>
+            <Param2>80596</Param2>
+            <Param3>0</Param3>
+            <Param4>1679845514</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_10>
+        <Image_11>
+            <Name>OCR</Name>
+            <Rect>(725, 766, 136, 59)</Rect>
+            <ROI>(725, 766, 136, 59)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>4784128</Param1>
+            <Param2>867268</Param2>
+            <Param3>0</Param3>
+            <Param4>1679927538</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckOCR="1" OcrCheckFore1="1" OcrFore1="16768375" OcrForeRange1="32" OcrCheckFore2="1" OcrFore2="15189867" OcrForeRange2="32" OcrCheckFore3="0" OcrFore3="0" OcrForeRange3="32" OcrCheckBack1="0" OcrBack1="0" OcrBackRange1="32" OcrKor="0" OcrEng="1" OcrNum="1" OcrClipboard="0" OcrCheckToler="0" OcrTolerance="50" OcrSamples="10" OcrLuaVar="ocr_result" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>3</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>0</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+            <Act_3>
+                <Name>멀티 이미지 인식</Name>
+                <Enable>0</Enable>
+                <Param>Multi( 2  0  10 OCR 12 XP_2 13 XP_3 14 XP_4 -1 null -1 null -1 null -1 null -1 null -1 null )</Param>
+                <Attr Op="2" ImageNotBits="0" S0="10" N0="OCR" S1="12" N1="XP_2" S2="13" N2="XP_3" S3="14" N3="XP_4"/>
+            </Act_3>
+        </Image_11>
+        <Image_12>
+            <Name>XP_1</Name>
+            <Rect>(1545, 541, 136, 149)</Rect>
+            <ROI>(1005, 220, 879, 707)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13762561</Param1>
+            <Param2>2571199</Param2>
+            <Param3>0</Param3>
+            <Param4>1679854144</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="70" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckOCR="0" OcrCheckFore1="1" OcrFore1="6506029" OcrForeRange1="32" OcrCheckFore2="1" OcrFore2="8547160" OcrForeRange2="32" OcrCheckFore3="0" OcrFore3="0" OcrForeRange3="32" OcrCheckBack1="0" OcrBack1="0" OcrBackRange1="32" OcrKor="0" OcrEng="1" OcrNum="1" OcrClipboard="0" OcrCheckToler="0" OcrTolerance="50" OcrSamples="10" OcrLuaVar="ocr_result_xp1" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>4</ActCount>
+            <Act_1>
+                <Name>스크립트 입력</Name>
+                <Enable>1</Enable>
+                <Param>Script( XP_1_8foi9.py import imax\n \n a = (137, 132)\n imax.lua("ret, acc, ix, iy = ImageSearch('OCR')")\n imax.lua("print(string.format('ret: %d, acc: %f, ix: %d, iy: %d', ret, acc, ix, iy))")\n ix = imax.lua_get_value( )</Param>
+                <Attr LuaFile="XP_1_8foi9.py" Text="import imax\n \n a = (137, 132)\n imax.lua(&quot;ret, acc, ix, iy = ImageSearch(&apos;OCR&apos;)&quot;)\n imax.lua(&quot;print(string.format(&apos;ret: %d, acc: %f, ix: %d, iy: %d&apos;, ret, acc, ix, iy))&quot;)\n ix = imax.lua_get_value("/>
+            </Act_1>
+            <Act_2>
+                <Name>이미지 표시</Name>
+                <Enable>0</Enable>
+                <Param/>
+                <Attr/>
+            </Act_2>
+            <Act_3>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_3>
+            <Act_4>
+                <Name>멀티 이미지 인식</Name>
+                <Enable>0</Enable>
+                <Param>Multi( 2  0  10 OCR 12 XP_2 13 XP_3 14 XP_4 -1 null -1 null -1 null -1 null -1 null -1 null )</Param>
+                <Attr Op="2" ImageNotBits="0" S0="10" N0="OCR" S1="12" N1="XP_2" S2="13" N2="XP_3" S3="14" N3="XP_4"/>
+            </Act_4>
+        </Image_12>
+        <Image_13>
+            <Name>XP_2</Name>
+            <Rect>(1708, 541, 138, 148)</Rect>
+            <ROI>(1708, 541, 138, 148)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13959169</Param1>
+            <Param2>2833326</Param2>
+            <Param3>0</Param3>
+            <Param4>1679854162</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckOCR="0" OcrCheckFore1="1" OcrFore1="6506029" OcrForeRange1="32" OcrCheckFore2="1" OcrFore2="8020816" OcrForeRange2="32" OcrCheckFore3="1" OcrFore3="8416348" OcrForeRange3="32" OcrCheckBack1="0" OcrBack1="0" OcrBackRange1="32" OcrKor="0" OcrEng="1" OcrNum="1" OcrClipboard="0" OcrCheckToler="0" OcrTolerance="50" OcrSamples="10" OcrLuaVar="ocr_result_xp2" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>3</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>0</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+            <Act_3>
+                <Name>스크립트 입력</Name>
+                <Enable>0</Enable>
+                <Param>Script( XP_2_02suy.lua print(ocr_result_xp2) )</Param>
+                <Attr LuaFile="XP_2_02suy.lua" Text="print(ocr_result_xp2)"/>
+            </Act_3>
+        </Image_13>
+        <Image_14>
+            <Name>XP_3</Name>
+            <Rect>(1051, 692, 136, 150)</Rect>
+            <ROI>(1002, 216, 887, 706)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13828097</Param1>
+            <Param2>2505665</Param2>
+            <Param3>0</Param3>
+            <Param4>1679854175</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckOCR="0" OcrCheckFore1="1" OcrFore1="6506029" OcrForeRange1="32" OcrCheckFore2="1" OcrFore2="7032889" OcrForeRange2="32" OcrCheckFore3="1" OcrFore3="9141105" OcrForeRange3="32" OcrCheckBack1="0" OcrBack1="0" OcrBackRange1="32" OcrKor="0" OcrEng="1" OcrNum="1" OcrClipboard="0" OcrCheckToler="0" OcrTolerance="50" OcrSamples="10" OcrLuaVar="ocr_result_xp3" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>3</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>0</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+            <Act_3>
+                <Name>스크립트 입력</Name>
+                <Enable>0</Enable>
+                <Param>Script( XP_3_gw6fn.lua print(ocr_result_xp3) )</Param>
+                <Attr LuaFile="XP_3_gw6fn.lua" Text="print(ocr_result_xp3)"/>
+            </Act_3>
+        </Image_14>
+        <Image_15>
+            <Name>XP_4</Name>
+            <Rect>(1216, 693, 135, 149)</Rect>
+            <ROI>(1001, 213, 891, 714)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13828097</Param1>
+            <Param2>2833399</Param2>
+            <Param3>0</Param3>
+            <Param4>1679854200</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckOCR="0" OcrCheckFore1="1" OcrFore1="6506029" OcrForeRange1="32" OcrCheckFore2="1" OcrFore2="6901819" OcrForeRange2="32" OcrCheckFore3="1" OcrFore3="7362369" OcrForeRange3="32" OcrCheckBack1="0" OcrBack1="0" OcrBackRange1="32" OcrKor="0" OcrEng="1" OcrNum="1" OcrClipboard="0" OcrCheckToler="0" OcrTolerance="50" OcrSamples="10" OcrLuaVar="ocr_result_xp4" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>3</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>0</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+            <Act_3>
+                <Name>스크립트 입력</Name>
+                <Enable>0</Enable>
+                <Param>Script( XP_4_3yyyp.lua print(ocr_result_xp4) )</Param>
+                <Attr LuaFile="XP_4_3yyyp.lua" Text="print(ocr_result_xp4)"/>
+            </Act_3>
+        </Image_15>
+        <Image_16>
+            <Name>equipment_collection.grp</Name>
+            <Rect>(0, 0, 0, 0)</Rect>
+            <ROI>(0, 0, 0, 0)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>0</Param1>
+            <Param2>0</Param2>
+            <Param3>0</Param3>
+            <Param4>0</Param4>
+            <Enable>1</Enable>
+            <Group>1</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>0</ActCount>
+        </Image_16>
+        <Image_17>
+            <Name>OCR_equip</Name>
+            <Rect>(793, 892, 135, 58)</Rect>
+            <ROI>(793, 892, 135, 58)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>4653056</Param1>
+            <Param2>736198</Param2>
+            <Param3>0</Param3>
+            <Param4>1679929570</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckOCR="1" OcrCheckFore1="1" OcrFore1="16768375" OcrForeRange1="32" OcrCheckFore2="1" OcrFore2="15650415" OcrForeRange2="32" OcrCheckFore3="0" OcrFore3="0" OcrForeRange3="32" OcrCheckBack1="0" OcrBack1="0" OcrBackRange1="32" OcrKor="0" OcrEng="1" OcrNum="1" OcrClipboard="0" OcrCheckToler="0" OcrTolerance="50" OcrSamples="10" OcrLuaVar="ocr_e_result" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>0</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_17>
+        <Image_18>
+            <Name>e_table_top</Name>
+            <Rect>(1017, 192, 858, 36)</Rect>
+            <ROI>(1017, 192, 858, 36)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13500417</Param1>
+            <Param2>867235</Param2>
+            <Param3>0</Param3>
+            <Param4>1679845250</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_18>
+        <Image_19>
+            <Name>e_table_bottom</Name>
+            <Rect>(1024, 1032, 850, 17)</Rect>
+            <ROI>(1024, 1032, 850, 17)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>14155777</Param1>
+            <Param2>801441</Param2>
+            <Param3>0</Param3>
+            <Param4>1679845324</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_19>
+        <Image_20>
+            <Name>GXP_1</Name>
+            <Rect>(1039, 236, 150, 147)</Rect>
+            <ROI>(1039, 236, 150, 147)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13369345</Param1>
+            <Param2>2898919</Param2>
+            <Param3>0</Param3>
+            <Param4>1679842689</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_20>
+    </GENERAL>
+</ROOT>
