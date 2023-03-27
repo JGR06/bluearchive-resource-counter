@@ -1,5 +1,6 @@
 import sys
 import time
+import json
 import importlib.util
 # TODO: fix dirty import
 file_path = '../resource_counter/util.py'
@@ -25,17 +26,22 @@ class ResourceCounter:
         self.current_state = data.MenuState.Main
         self.items = data.items_to_asset.copy()
         self.equipments = data.equipments_to_asset.copy()
-        self.result_items = {}
-        self.result_equipments = {}
+        self.result = {}
         self.roi_table = []
         imax.print("ResourceCounter initialized")
 
     def is_finished(self):
         return len(self.items.keys()) == 0 and len(self.equipments.keys()) == 0
 
+    def save(self):
+        with open(f'{util.root_path}/output.json', 'w') as f:
+            json.dump(self.result, f)
+        f.close()
+
     def run(self):
         while not self.is_finished():
             self.update_state()
+        self.save()
 
     # state switch
     def update_state(self):
@@ -50,20 +56,23 @@ class ResourceCounter:
                 time.sleep(1)
                 self.current_state = data.MenuState.Items
                 self.find_table_roi()
-            else:
+            elif len(self.equipments.keys()) > 0:
                 lua_helper.find_and_click(data.get_assetname_by_state(data.MenuState.Equipments))
                 time.sleep(1)
                 self.current_state = data.MenuState.Equipments
                 self.find_table_roi()
+            else:
+                imax.print('something went wrong')
 
         elif self.current_state == data.MenuState.Items:  # count items
             if len(self.items.keys()) == 0:
                 lua_helper.find_and_click('back_button')
-                time.sleep(3.5)  # returning to lobby occurs network request -- then can't send any input til request ends
+                # returning to lobby occurs network request -- then can't send any input til request ends
+                time.sleep(3.5)
                 # TODO: check 'NOW LOADING' image disappear
                 self.current_state = data.MenuState.Option
             for k, v in self.items.items():
-                self.result_items[k] = self.count_resource(v, 'OCR', 'ocr_result')
+                self.result[k] = self.count_resource(v, 'OCR', 'ocr_result')
                 time.sleep(0.5)
             # temporary handler: remove after scrolling
             self.items.clear()
@@ -74,7 +83,7 @@ class ResourceCounter:
                 time.sleep(1)
                 self.current_state = data.MenuState.Option
             for k, v in self.equipments.items():
-                self.result_equipments[k] = self.count_resource(v, 'OCR_equip', 'ocr_e_result')
+                self.result[k] = self.count_resource(v, 'OCR_equip', 'ocr_e_result')
                 time.sleep(0.5)
             # temporary handler: remove after scrolling
             self.equipments.clear()
