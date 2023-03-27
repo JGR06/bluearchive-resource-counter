@@ -1,3 +1,4 @@
+import time
 import imax
 
 
@@ -79,4 +80,11 @@ def find_and_click(asset_name):
     imax.lua(f"find_and_click_result = ImageClick('{asset_name}')")
     return int(imax.lua_get_value('find_and_click_result')) == 1
 
+
+# scroll_amount: negative is wheel-up, positive is wheel-down
+def scroll_and_wait(scroll_amount=-380, sleep_time=1.0):
+    base_y = 755
+    # Mouse(LBUTTON, WHEELDOWN, ...) method is not working, so use DRAG instead.
+    imax.lua(f'Mouse(LBUTTON, DRAG, 1275, {base_y}, 1275, {base_y + scroll_amount})')
+    time.sleep(sleep_time)
 
