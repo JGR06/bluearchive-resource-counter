@@ -21,8 +21,6 @@ import imax
 
 class ResourceCounter:
     def __init__(self):
-        self.table_column_size = 5
-        self.finding_row_size = 4
         self.current_state = data.MenuState.Main
         self.items = data.items_to_asset.copy()
         self.equipments = data.equipments_to_asset.copy()
