@@ -53,7 +53,7 @@
         <CaptureMode>1</CaptureMode>
         <ReactSpeed>1</ReactSpeed>
         <InputType>1</InputType>
-        <ImageCount>112</ImageCount>
+        <ImageCount>116</ImageCount>
         <Image_1>
             <Name>controller</Name>
             <Rect>(0, 0, 0, 0)</Rect>
@@ -239,7 +239,7 @@
             <Param2>0</Param2>
             <Param3>0</Param3>
             <Param4>0</Param4>
-            <Enable>1</Enable>
+            <Enable>0</Enable>
             <Group>1</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="70" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>0</ActCount>
@@ -298,13 +298,13 @@
         </Image_10>
         <Image_11>
             <Name>OCR</Name>
-            <Rect>(725, 766, 136, 59)</Rect>
-            <ROI>(725, 766, 136, 59)</ROI>
+            <Rect>(735, 767, 118, 51)</Rect>
+            <ROI>(735, 767, 118, 51)</ROI>
             <FullROI>0</FullROI>
-            <Param1>4784128</Param1>
-            <Param2>867268</Param2>
+            <Param1>4194304</Param1>
+            <Param2>801738</Param2>
             <Param3>0</Param3>
-            <Param4>1679927538</Param4>
+            <Param4>1680018069</Param4>
             <Enable>1</Enable>
             <Group>2</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckOCR="1" OcrCheckFore1="1" OcrFore1="16768375" OcrForeRange1="32" OcrCheckFore2="1" OcrFore2="15189867" OcrForeRange2="32" OcrCheckFore3="0" OcrFore3="0" OcrForeRange3="32" OcrCheckBack1="0" OcrBack1="0" OcrBackRange1="32" OcrKor="0" OcrEng="1" OcrNum="1" OcrClipboard="0" OcrCheckToler="0" OcrTolerance="50" OcrSamples="10" OcrLuaVar="ocr_result" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
@@ -323,6 +323,84 @@
             </Act_2>
         </Image_11>
         <Image_12>
+            <Name>OCR(2)</Name>
+            <Rect>(734, 770, 117, 45)</Rect>
+            <ROI>(734, 770, 117, 45)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>5046272</Param1>
+            <Param2>605131</Param2>
+            <Param3>0</Param3>
+            <Param4>1680017577</Param4>
+            <Enable>0</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckOCR="1" OcrCheckFore1="1" OcrFore1="16768375" OcrForeRange1="32" OcrCheckFore2="1" OcrFore2="15189867" OcrForeRange2="32" OcrCheckFore3="0" OcrFore3="0" OcrForeRange3="32" OcrCheckBack1="0" OcrBack1="0" OcrBackRange1="32" OcrKor="0" OcrEng="1" OcrNum="1" OcrClipboard="0" OcrCheckToler="0" OcrTolerance="50" OcrSamples="10" OcrLuaVar="ocr_result" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>0</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_12>
+        <Image_13>
+            <Name>OCR_item_name_0</Name>
+            <Rect>(91, 727, 476, 45)</Rect>
+            <ROI>(91, 727, 476, 45)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>7864320</Param1>
+            <Param2>277370</Param2>
+            <Param3>0</Param3>
+            <Param4>1680027616</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckOCR="1" OcrCheckFore1="1" OcrFore1="16777215" OcrForeRange1="32" OcrCheckFore2="1" OcrFore2="16315891" OcrForeRange2="32" OcrCheckFore3="0" OcrFore3="0" OcrForeRange3="32" OcrCheckBack1="0" OcrBack1="0" OcrBackRange1="32" OcrKor="1" OcrEng="1" OcrNum="0" OcrClipboard="0" OcrCheckToler="0" OcrTolerance="50" OcrSamples="10" OcrLuaVar="ocr_i_name_0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_13>
+        <Image_14>
+            <Name>OCR_item_name_1</Name>
+            <Rect>(92, 772, 387, 50)</Rect>
+            <ROI>(92, 772, 387, 50)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>6815744</Param1>
+            <Param2>343036</Param2>
+            <Param3>0</Param3>
+            <Param4>1680027276</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckOCR="1" OcrCheckFore1="1" OcrFore1="16777215" OcrForeRange1="32" OcrCheckFore2="1" OcrFore2="15723239" OcrForeRange2="32" OcrCheckFore3="0" OcrFore3="0" OcrForeRange3="32" OcrCheckBack1="0" OcrBack1="0" OcrBackRange1="32" OcrKor="1" OcrEng="1" OcrNum="0" OcrClipboard="0" OcrCheckToler="0" OcrTolerance="50" OcrSamples="10" OcrLuaVar="ocr_i_name_1" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>0</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>0</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_14>
+        <Image_15>
             <Name>XP_1</Name>
             <Rect>(1072, 338, 102, 101)</Rect>
             <ROI>(1005, 220, 879, 707)</ROI>
@@ -356,11 +434,11 @@
             <Act_4>
                 <Name>멀티 이미지 인식</Name>
                 <Enable>0</Enable>
-                <Param>Multi( 2  0  10 OCR 12 XP_2 13 XP_3 14 XP_4 -1 null -1 null -1 null -1 null -1 null -1 null )</Param>
-                <Attr Op="2" ImageNotBits="0" S0="10" N0="OCR" S1="12" N1="XP_2" S2="13" N2="XP_3" S3="14" N3="XP_4"/>
+                <Param>Multi( 2  0  10 OCR 15 XP_2 16 XP_3 17 XP_4 -1 null -1 null -1 null -1 null -1 null -1 null )</Param>
+                <Attr Op="2" ImageNotBits="0" S0="10" N0="OCR" S1="15" N1="XP_2" S2="16" N2="XP_3" S3="17" N3="XP_4"/>
             </Act_4>
-        </Image_12>
-        <Image_13>
+        </Image_15>
+        <Image_16>
             <Name>XP_2</Name>
             <Rect>(1212, 337, 121, 102)</Rect>
             <ROI>(1009, 221, 876, 696)</ROI>
@@ -391,8 +469,8 @@
                 <Param>Script( XP_2_02suy.lua print(ocr_result_xp2) )</Param>
                 <Attr LuaFile="XP_2_02suy.lua" Text="print(ocr_result_xp2)"/>
             </Act_3>
-        </Image_13>
-        <Image_14>
+        </Image_16>
+        <Image_17>
             <Name>XP_3</Name>
             <Rect>(1404, 335, 98, 105)</Rect>
             <ROI>(1002, 216, 887, 706)</ROI>
@@ -423,8 +501,8 @@
                 <Param>Script( XP_3_gw6fn.lua print(ocr_result_xp3) )</Param>
                 <Attr LuaFile="XP_3_gw6fn.lua" Text="print(ocr_result_xp3)"/>
             </Act_3>
-        </Image_14>
-        <Image_15>
+        </Image_17>
+        <Image_18>
             <Name>XP_4</Name>
             <Rect>(1564, 338, 120, 102)</Rect>
             <ROI>(1001, 213, 891, 714)</ROI>
@@ -455,8 +533,8 @@
                 <Param>Script( XP_4_3yyyp.lua print(ocr_result_xp4) )</Param>
                 <Attr LuaFile="XP_4_3yyyp.lua" Text="print(ocr_result_xp4)"/>
             </Act_3>
-        </Image_15>
-        <Image_16>
+        </Image_18>
+        <Image_19>
             <Name>nebra0</Name>
             <Rect>(1063, 430, 120, 80)</Rect>
             <ROI>(1010, 223, 872, 694)</ROI>
@@ -481,8 +559,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_16>
-        <Image_17>
+        </Image_19>
+        <Image_20>
             <Name>nebra1</Name>
             <Rect>(1227, 424, 115, 86)</Rect>
             <ROI>(1012, 223, 870, 692)</ROI>
@@ -507,8 +585,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_17>
-        <Image_18>
+        </Image_20>
+        <Image_21>
             <Name>nebra2</Name>
             <Rect>(1395, 422, 110, 87)</Rect>
             <ROI>(1012, 224, 870, 691)</ROI>
@@ -533,8 +611,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_18>
-        <Image_19>
+        </Image_21>
+        <Image_22>
             <Name>nebra3</Name>
             <Rect>(1551, 422, 128, 88)</Rect>
             <ROI>(1012, 223, 871, 692)</ROI>
@@ -559,8 +637,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_19>
-        <Image_20>
+        </Image_22>
+        <Image_23>
             <Name>phaistos0</Name>
             <Rect>(1723, 268, 112, 79)</Rect>
             <ROI>(1011, 224, 868, 691)</ROI>
@@ -585,8 +663,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_20>
-        <Image_21>
+        </Image_23>
+        <Image_24>
             <Name>phaistos1</Name>
             <Rect>(1067, 419, 117, 81)</Rect>
             <ROI>(1010, 223, 873, 692)</ROI>
@@ -611,8 +689,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_21>
-        <Image_22>
+        </Image_24>
+        <Image_25>
             <Name>phaistos2</Name>
             <Rect>(1228, 418, 117, 81)</Rect>
             <ROI>(1011, 223, 871, 693)</ROI>
@@ -637,8 +715,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_22>
-        <Image_23>
+        </Image_25>
+        <Image_26>
             <Name>phaistos3</Name>
             <Rect>(1388, 413, 134, 87)</Rect>
             <ROI>(1012, 225, 869, 691)</ROI>
@@ -663,8 +741,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_23>
-        <Image_24>
+        </Image_26>
+        <Image_27>
             <Name>wolfsegg0</Name>
             <Rect>(1583, 406, 78, 94)</Rect>
             <ROI>(1012, 224, 869, 691)</ROI>
@@ -689,8 +767,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_24>
-        <Image_25>
+        </Image_27>
+        <Image_28>
             <Name>wolfsegg1</Name>
             <Rect>(1737, 393, 71, 107)</Rect>
             <ROI>(1012, 223, 869, 693)</ROI>
@@ -715,8 +793,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_25>
-        <Image_26>
+        </Image_28>
+        <Image_29>
             <Name>wolfsegg2</Name>
             <Rect>(1084, 558, 79, 93)</Rect>
             <ROI>(1011, 223, 871, 692)</ROI>
@@ -741,8 +819,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_26>
-        <Image_27>
+        </Image_29>
+        <Image_30>
             <Name>wolfsegg3</Name>
             <Rect>(1238, 558, 117, 93)</Rect>
             <ROI>(1013, 225, 867, 690)</ROI>
@@ -767,8 +845,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_27>
-        <Image_28>
+        </Image_30>
+        <Image_31>
             <Name>nimrud0</Name>
             <Rect>(1392, 393, 114, 75)</Rect>
             <ROI>(1011, 224, 870, 691)</ROI>
@@ -793,8 +871,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_28>
-        <Image_29>
+        </Image_31>
+        <Image_32>
             <Name>nimrud1</Name>
             <Rect>(1560, 558, 103, 93)</Rect>
             <ROI>(1011, 225, 871, 690)</ROI>
@@ -819,8 +897,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_29>
-        <Image_30>
+        </Image_32>
+        <Image_33>
             <Name>nimrud2</Name>
             <Rect>(1722, 550, 116, 101)</Rect>
             <ROI>(1011, 224, 872, 693)</ROI>
@@ -845,8 +923,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_30>
-        <Image_31>
+        </Image_33>
+        <Image_34>
             <Name>nimrud3</Name>
             <Rect>(1062, 712, 132, 91)</Rect>
             <ROI>(1012, 224, 868, 691)</ROI>
@@ -871,8 +949,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_31>
-        <Image_32>
+        </Image_34>
+        <Image_35>
             <Name>mandragora0</Name>
             <Rect>(1238, 556, 95, 74)</Rect>
             <ROI>(1012, 225, 869, 690)</ROI>
@@ -897,8 +975,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_32>
-        <Image_33>
+        </Image_35>
+        <Image_36>
             <Name>mandragora1</Name>
             <Rect>(1390, 546, 112, 84)</Rect>
             <ROI>(1012, 224, 870, 691)</ROI>
@@ -923,8 +1001,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_33>
-        <Image_34>
+        </Image_36>
+        <Image_37>
             <Name>mandragora2</Name>
             <Rect>(1573, 529, 108, 101)</Rect>
             <ROI>(1012, 224, 867, 690)</ROI>
@@ -949,8 +1027,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_34>
-        <Image_35>
+        </Image_37>
+        <Image_38>
             <Name>mandragora3</Name>
             <Rect>(1737, 537, 116, 94)</Rect>
             <ROI>(1012, 224, 870, 691)</ROI>
@@ -975,8 +1053,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_35>
-        <Image_36>
+        </Image_38>
+        <Image_39>
             <Name>rohonc0</Name>
             <Rect>(1069, 643, 109, 90)</Rect>
             <ROI>(1013, 224, 868, 691)</ROI>
@@ -1001,8 +1079,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_36>
-        <Image_37>
+        </Image_39>
+        <Image_40>
             <Name>rohonc1</Name>
             <Rect>(1229, 636, 112, 96)</Rect>
             <ROI>(1012, 225, 870, 690)</ROI>
@@ -1027,8 +1105,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_37>
-        <Image_38>
+        </Image_40>
+        <Image_41>
             <Name>rohonc2</Name>
             <Rect>(1396, 648, 108, 84)</Rect>
             <ROI>(1011, 225, 871, 691)</ROI>
@@ -1053,8 +1131,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_38>
-        <Image_39>
+        </Image_41>
+        <Image_42>
             <Name>rohonc3</Name>
             <Rect>(1562, 636, 102, 95)</Rect>
             <ROI>(1012, 224, 869, 692)</ROI>
@@ -1079,8 +1157,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_39>
-        <Image_40>
+        </Image_42>
+        <Image_43>
             <Name>aether0</Name>
             <Rect>(1717, 307, 114, 76)</Rect>
             <ROI>(1012, 223, 871, 694)</ROI>
@@ -1105,8 +1183,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_40>
-        <Image_41>
+        </Image_43>
+        <Image_44>
             <Name>aether1</Name>
             <Rect>(1094, 466, 105, 99)</Rect>
             <ROI>(1011, 224, 870, 691)</ROI>
@@ -1131,8 +1209,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_41>
-        <Image_42>
+        </Image_44>
+        <Image_45>
             <Name>aether2</Name>
             <Rect>(1251, 428, 72, 107)</Rect>
             <ROI>(1011, 224, 871, 692)</ROI>
@@ -1157,8 +1235,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_42>
-        <Image_43>
+        </Image_45>
+        <Image_46>
             <Name>aether3</Name>
             <Rect>(1407, 440, 95, 95)</Rect>
             <ROI>(1010, 223, 872, 692)</ROI>
@@ -1183,8 +1261,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_43>
-        <Image_44>
+        </Image_46>
+        <Image_47>
             <Name>antikythera0</Name>
             <Rect>(1559, 449, 110, 107)</Rect>
             <ROI>(1011, 224, 872, 691)</ROI>
@@ -1209,8 +1287,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_44>
-        <Image_45>
+        </Image_47>
+        <Image_48>
             <Name>antikythera1</Name>
             <Rect>(1719, 303, 113, 85)</Rect>
             <ROI>(1011, 223, 872, 691)</ROI>
@@ -1235,8 +1313,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_45>
-        <Image_46>
+        </Image_48>
+        <Image_49>
             <Name>antikythera2</Name>
             <Rect>(1064, 457, 131, 83)</Rect>
             <ROI>(1012, 223, 870, 692)</ROI>
@@ -1261,8 +1339,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_46>
-        <Image_47>
+        </Image_49>
+        <Image_50>
             <Name>antikythera3</Name>
             <Rect>(1223, 448, 123, 93)</Rect>
             <ROI>(1010, 224, 872, 692)</ROI>
@@ -1287,8 +1365,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_47>
-        <Image_48>
+        </Image_50>
+        <Image_51>
             <Name>voynich0</Name>
             <Rect>(1380, 395, 129, 97)</Rect>
             <ROI>(1009, 222, 874, 696)</ROI>
@@ -1313,8 +1391,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_48>
-        <Image_49>
+        </Image_51>
+        <Image_52>
             <Name>voynich1</Name>
             <Rect>(1553, 402, 132, 90)</Rect>
             <ROI>(1011, 223, 872, 694)</ROI>
@@ -1339,8 +1417,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_49>
-        <Image_50>
+        </Image_52>
+        <Image_53>
             <Name>voynich2</Name>
             <Rect>(1747, 405, 96, 89)</Rect>
             <ROI>(1010, 222, 872, 695)</ROI>
@@ -1365,8 +1443,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_50>
-        <Image_51>
+        </Image_53>
+        <Image_54>
             <Name>voynich3</Name>
             <Rect>(1057, 559, 133, 84)</Rect>
             <ROI>(1007, 223, 877, 696)</ROI>
@@ -1391,8 +1469,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_51>
-        <Image_52>
+        </Image_54>
+        <Image_55>
             <Name>haniwa0</Name>
             <Rect>(1238, 411, 93, 92)</Rect>
             <ROI>(1010, 223, 872, 694)</ROI>
@@ -1417,8 +1495,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_52>
-        <Image_53>
+        </Image_55>
+        <Image_56>
             <Name>haniwa1</Name>
             <Rect>(1389, 406, 112, 96)</Rect>
             <ROI>(1012, 223, 870, 692)</ROI>
@@ -1443,8 +1521,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_53>
-        <Image_54>
+        </Image_56>
+        <Image_57>
             <Name>haniwa2</Name>
             <Rect>(1566, 395, 103, 108)</Rect>
             <ROI>(1011, 224, 870, 691)</ROI>
@@ -1469,8 +1547,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_54>
-        <Image_55>
+        </Image_57>
+        <Image_58>
             <Name>haniwa3</Name>
             <Rect>(1723, 405, 131, 98)</Rect>
             <ROI>(1013, 224, 869, 692)</ROI>
@@ -1495,8 +1573,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_55>
-        <Image_56>
+        </Image_58>
+        <Image_59>
             <Name>totem0</Name>
             <Rect>(1078, 551, 96, 103)</Rect>
             <ROI>(1012, 225, 870, 691)</ROI>
@@ -1521,8 +1599,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_56>
-        <Image_57>
+        </Image_59>
+        <Image_60>
             <Name>totem1</Name>
             <Rect>(1245, 556, 91, 98)</Rect>
             <ROI>(1011, 224, 870, 693)</ROI>
@@ -1547,8 +1625,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_57>
-        <Image_58>
+        </Image_60>
+        <Image_61>
             <Name>totem2</Name>
             <Rect>(1404, 551, 93, 103)</Rect>
             <ROI>(1011, 223, 871, 693)</ROI>
@@ -1573,8 +1651,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_58>
-        <Image_59>
+        </Image_61>
+        <Image_62>
             <Name>totem3</Name>
             <Rect>(1562, 552, 111, 103)</Rect>
             <ROI>(1012, 225, 871, 690)</ROI>
@@ -1599,8 +1677,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_59>
-        <Image_60>
+        </Image_62>
+        <Image_63>
             <Name>baghdad0</Name>
             <Rect>(1720, 307, 112, 89)</Rect>
             <ROI>(1010, 223, 872, 694)</ROI>
@@ -1625,8 +1703,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_60>
-        <Image_61>
+        </Image_63>
+        <Image_64>
             <Name>baghdad1</Name>
             <Rect>(1052, 455, 119, 93)</Rect>
             <ROI>(1012, 224, 871, 692)</ROI>
@@ -1651,8 +1729,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_61>
-        <Image_62>
+        </Image_64>
+        <Image_65>
             <Name>baghdad2</Name>
             <Rect>(1242, 445, 119, 102)</Rect>
             <ROI>(1012, 223, 870, 693)</ROI>
@@ -1677,8 +1755,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_62>
-        <Image_63>
+        </Image_65>
+        <Image_66>
             <Name>baghdad3</Name>
             <Rect>(1402, 440, 101, 109)</Rect>
             <ROI>(1012, 224, 869, 691)</ROI>
@@ -1703,8 +1781,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_63>
-        <Image_64>
+        </Image_66>
+        <Image_67>
             <Name>colgante0</Name>
             <Rect>(1558, 468, 92, 81)</Rect>
             <ROI>(1012, 223, 870, 694)</ROI>
@@ -1729,8 +1807,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_64>
-        <Image_65>
+        </Image_67>
+        <Image_68>
             <Name>colgante1</Name>
             <Rect>(1723, 462, 118, 87)</Rect>
             <ROI>(1012, 224, 871, 692)</ROI>
@@ -1755,8 +1833,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_65>
-        <Image_66>
+        </Image_68>
+        <Image_69>
             <Name>colgante2</Name>
             <Rect>(1070, 599, 114, 101)</Rect>
             <ROI>(1012, 224, 871, 692)</ROI>
@@ -1781,8 +1859,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_66>
-        <Image_67>
+        </Image_69>
+        <Image_70>
             <Name>colgante3</Name>
             <Rect>(1214, 602, 129, 99)</Rect>
             <ROI>(1012, 224, 870, 692)</ROI>
@@ -1807,8 +1885,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_67>
-        <Image_68>
+        </Image_70>
+        <Image_71>
             <Name>mystery0</Name>
             <Rect>(1232, 577, 107, 82)</Rect>
             <ROI>(1011, 223, 872, 694)</ROI>
@@ -1833,8 +1911,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_68>
-        <Image_69>
+        </Image_71>
+        <Image_72>
             <Name>mystery1</Name>
             <Rect>(1399, 574, 106, 80)</Rect>
             <ROI>(1010, 221, 873, 697)</ROI>
@@ -1859,8 +1937,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_69>
-        <Image_70>
+        </Image_72>
+        <Image_73>
             <Name>mystery2</Name>
             <Rect>(1726, 552, 120, 103)</Rect>
             <ROI>(1009, 224, 872, 694)</ROI>
@@ -1885,8 +1963,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_70>
-        <Image_71>
+        </Image_73>
+        <Image_74>
             <Name>mystery3</Name>
             <Rect>(1100, 672, 60, 73)</Rect>
             <ROI>(1009, 222, 876, 697)</ROI>
@@ -1911,8 +1989,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_71>
-        <Image_72>
+        </Image_74>
+        <Image_75>
             <Name>equipment_collection.grp</Name>
             <Rect>(0, 0, 0, 0)</Rect>
             <ROI>(0, 0, 0, 0)</ROI>
@@ -1921,12 +1999,12 @@
             <Param2>0</Param2>
             <Param3>0</Param3>
             <Param4>0</Param4>
-            <Enable>1</Enable>
+            <Enable>0</Enable>
             <Group>1</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>0</ActCount>
-        </Image_72>
-        <Image_73>
+        </Image_75>
+        <Image_76>
             <Name>OCR_equip</Name>
             <Rect>(793, 892, 135, 58)</Rect>
             <ROI>(793, 892, 135, 58)</ROI>
@@ -1951,8 +2029,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_73>
-        <Image_74>
+        </Image_76>
+        <Image_77>
             <Name>e_table_top</Name>
             <Rect>(1017, 192, 858, 36)</Rect>
             <ROI>(1017, 192, 858, 36)</ROI>
@@ -1977,8 +2055,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_74>
-        <Image_75>
+        </Image_77>
+        <Image_78>
             <Name>e_table_bottom</Name>
             <Rect>(1024, 1032, 850, 17)</Rect>
             <ROI>(1024, 1032, 850, 17)</ROI>
@@ -2003,8 +2081,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_75>
-        <Image_76>
+        </Image_78>
+        <Image_79>
             <Name>GXP_1</Name>
             <Rect>(1039, 236, 150, 147)</Rect>
             <ROI>(1039, 236, 150, 147)</ROI>
@@ -2029,8 +2107,22 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_76>
-        <Image_77>
+        </Image_79>
+        <Image_80>
+            <Name>BD.grp</Name>
+            <Rect>(0, 0, 0, 0)</Rect>
+            <ROI>(0, 0, 0, 0)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>0</Param1>
+            <Param2>0</Param2>
+            <Param3>0</Param3>
+            <Param4>0</Param4>
+            <Enable>1</Enable>
+            <Group>1</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>0</ActCount>
+        </Image_80>
+        <Image_81>
             <Name>HK_BD_0</Name>
             <Rect>(1063, 364, 125, 93)</Rect>
             <ROI>(1003, 217, 881, 700)</ROI>
@@ -2040,112 +2132,8 @@
             <Param3>0</Param3>
             <Param4>1679951767</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
-            <ActCount>2</ActCount>
-            <Act_1>
-                <Name>이미지 표시</Name>
-                <Enable>1</Enable>
-                <Param/>
-                <Attr/>
-            </Act_1>
-            <Act_2>
-                <Name>마우스 입력</Name>
-                <Enable>1</Enable>
-                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
-                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
-            </Act_2>
-        </Image_77>
-        <Image_78>
-            <Name>HK_BD_1</Name>
-            <Rect>(1223, 369, 126, 91)</Rect>
-            <ROI>(1011, 223, 869, 692)</ROI>
-            <FullROI>0</FullROI>
-            <Param1>13041664</Param1>
-            <Param2>4930476</Param2>
-            <Param3>0</Param3>
-            <Param4>1679951777</Param4>
-            <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
-            <ActCount>2</ActCount>
-            <Act_1>
-                <Name>이미지 표시</Name>
-                <Enable>1</Enable>
-                <Param/>
-                <Attr/>
-            </Act_1>
-            <Act_2>
-                <Name>마우스 입력</Name>
-                <Enable>1</Enable>
-                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
-                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
-            </Act_2>
-        </Image_78>
-        <Image_79>
-            <Name>HK_BD_2</Name>
-            <Rect>(1385, 254, 128, 98)</Rect>
-            <ROI>(1010, 223, 873, 693)</ROI>
-            <FullROI>0</FullROI>
-            <Param1>13041664</Param1>
-            <Param2>5585824</Param2>
-            <Param3>0</Param3>
-            <Param4>1679951402</Param4>
-            <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
-            <ActCount>2</ActCount>
-            <Act_1>
-                <Name>이미지 표시</Name>
-                <Enable>1</Enable>
-                <Param/>
-                <Attr/>
-            </Act_1>
-            <Act_2>
-                <Name>마우스 입력</Name>
-                <Enable>1</Enable>
-                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
-                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
-            </Act_2>
-        </Image_79>
-        <Image_80>
-            <Name>HK_BD_3</Name>
-            <Rect>(1551, 260, 124, 94)</Rect>
-            <ROI>(1010, 223, 872, 694)</ROI>
-            <FullROI>0</FullROI>
-            <Param1>13041664</Param1>
-            <Param2>5192608</Param2>
-            <Param3>0</Param3>
-            <Param4>1679951411</Param4>
-            <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
-            <ActCount>2</ActCount>
-            <Act_1>
-                <Name>이미지 표시</Name>
-                <Enable>1</Enable>
-                <Param/>
-                <Attr/>
-            </Act_1>
-            <Act_2>
-                <Name>마우스 입력</Name>
-                <Enable>1</Enable>
-                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
-                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
-            </Act_2>
-        </Image_80>
-        <Image_81>
-            <Name>Rw_BD_0</Name>
-            <Rect>(1715, 367, 126, 91)</Rect>
-            <ROI>(1011, 223, 872, 693)</ROI>
-            <FullROI>0</FullROI>
-            <Param1>13041664</Param1>
-            <Param2>5127112</Param2>
-            <Param3>0</Param3>
-            <Param4>1679951433</Param4>
-            <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2161,17 +2149,17 @@
             </Act_2>
         </Image_81>
         <Image_82>
-            <Name>Rw_BD_1</Name>
-            <Rect>(1052, 410, 137, 86)</Rect>
-            <ROI>(1011, 222, 872, 695)</ROI>
+            <Name>HK_BD_1</Name>
+            <Rect>(1223, 369, 126, 91)</Rect>
+            <ROI>(1011, 223, 869, 692)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13172737</Param1>
-            <Param2>2964418</Param2>
+            <Param1>13041664</Param1>
+            <Param2>4930476</Param2>
             <Param3>0</Param3>
-            <Param4>1679952910</Param4>
+            <Param4>1679951777</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2187,17 +2175,17 @@
             </Act_2>
         </Image_82>
         <Image_83>
-            <Name>Rw_BD_2</Name>
-            <Rect>(1220, 517, 131, 93)</Rect>
-            <ROI>(1011, 223, 873, 694)</ROI>
+            <Name>HK_BD_2</Name>
+            <Rect>(1385, 254, 128, 98)</Rect>
+            <ROI>(1010, 223, 873, 693)</ROI>
             <FullROI>0</FullROI>
             <Param1>13041664</Param1>
-            <Param2>5258168</Param2>
+            <Param2>5585824</Param2>
             <Param3>0</Param3>
-            <Param4>1679951452</Param4>
+            <Param4>1679951402</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2213,17 +2201,17 @@
             </Act_2>
         </Image_83>
         <Image_84>
-            <Name>Rw_BD_3</Name>
-            <Rect>(54, 138, 43, 38)</Rect>
-            <ROI>(1012, 222, 871, 694)</ROI>
+            <Name>HK_BD_3</Name>
+            <Rect>(1551, 260, 124, 94)</Rect>
+            <ROI>(1010, 223, 872, 694)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13238273</Param1>
-            <Param2>474086</Param2>
+            <Param1>13041664</Param1>
+            <Param2>5192608</Param2>
             <Param3>0</Param3>
-            <Param4>1679951919</Param4>
+            <Param4>1679951411</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2239,17 +2227,17 @@
             </Act_2>
         </Image_84>
         <Image_85>
-            <Name>Tr_BD_0</Name>
-            <Rect>(1386, 519, 128, 92)</Rect>
-            <ROI>(1007, 218, 876, 700)</ROI>
+            <Name>Rw_BD_0</Name>
+            <Rect>(1077, 437, 107, 74)</Rect>
+            <ROI>(1011, 223, 872, 693)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13107201</Param1>
-            <Param2>3357657</Param2>
+            <Param1>13238273</Param1>
+            <Param2>2964459</Param2>
             <Param3>0</Param3>
-            <Param4>1679951752</Param4>
+            <Param4>1680024953</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="85" CheckInherit2="0" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2265,17 +2253,17 @@
             </Act_2>
         </Image_85>
         <Image_86>
-            <Name>Tr_BD_1</Name>
-            <Rect>(1551, 519, 125, 92)</Rect>
-            <ROI>(1011, 223, 872, 692)</ROI>
+            <Name>Rw_BD_1</Name>
+            <Rect>(1240, 437, 109, 83)</Rect>
+            <ROI>(1011, 222, 872, 695)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13041664</Param1>
-            <Param2>4995988</Param2>
+            <Param1>13238273</Param1>
+            <Param2>2964459</Param2>
             <Param3>0</Param3>
-            <Param4>1679951480</Param4>
+            <Param4>1680024963</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="85" CheckInherit2="0" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2291,17 +2279,17 @@
             </Act_2>
         </Image_86>
         <Image_87>
-            <Name>Tr_BD_2</Name>
-            <Rect>(1711, 520, 131, 90)</Rect>
-            <ROI>(1010, 223, 873, 695)</ROI>
+            <Name>Rw_BD_2</Name>
+            <Rect>(1404, 438, 108, 72)</Rect>
+            <ROI>(1011, 223, 873, 694)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13041664</Param1>
-            <Param2>5061561</Param2>
+            <Param1>13238273</Param1>
+            <Param2>2767844</Param2>
             <Param3>0</Param3>
-            <Param4>1679951494</Param4>
+            <Param4>1680024987</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="85" CheckInherit2="0" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2317,16 +2305,16 @@
             </Act_2>
         </Image_87>
         <Image_88>
-            <Name>Tr_BD_3</Name>
-            <Rect>(1059, 671, 128, 93)</Rect>
-            <ROI>(1008, 220, 876, 697)</ROI>
+            <Name>Rw_BD_3</Name>
+            <Rect>(54, 138, 43, 38)</Rect>
+            <ROI>(1012, 222, 871, 694)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13107201</Param1>
-            <Param2>1784818</Param2>
+            <Param1>13238273</Param1>
+            <Param2>474086</Param2>
             <Param3>0</Param3>
-            <Param4>1679951505</Param4>
+            <Param4>1679951919</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
+            <Group>2</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
@@ -2343,17 +2331,17 @@
             </Act_2>
         </Image_88>
         <Image_89>
-            <Name>Ge_BD_0</Name>
-            <Rect>(1225, 597, 126, 93)</Rect>
-            <ROI>(1010, 222, 873, 696)</ROI>
+            <Name>Tr_BD_0</Name>
+            <Rect>(1569, 439, 104, 75)</Rect>
+            <ROI>(1007, 218, 876, 700)</ROI>
             <FullROI>0</FullROI>
             <Param1>13303809</Param1>
-            <Param2>3292123</Param2>
+            <Param2>2833380</Param2>
             <Param3>0</Param3>
-            <Param4>1679951979</Param4>
+            <Param4>1680025039</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="0" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2369,17 +2357,17 @@
             </Act_2>
         </Image_89>
         <Image_90>
-            <Name>Ge_BD_1</Name>
-            <Rect>(1386, 598, 129, 91)</Rect>
-            <ROI>(1010, 223, 872, 694)</ROI>
+            <Name>Tr_BD_1</Name>
+            <Rect>(1730, 437, 110, 77)</Rect>
+            <ROI>(1011, 223, 872, 692)</ROI>
             <FullROI>0</FullROI>
             <Param1>13238273</Param1>
-            <Param2>3161050</Param2>
+            <Param2>2964458</Param2>
             <Param3>0</Param3>
-            <Param4>1679951989</Param4>
+            <Param4>1680025067</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="0" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2395,17 +2383,17 @@
             </Act_2>
         </Image_90>
         <Image_91>
-            <Name>Ge_BD_2</Name>
-            <Rect>(1551, 600, 128, 88)</Rect>
-            <ROI>(1011, 223, 873, 695)</ROI>
+            <Name>Tr_BD_2</Name>
+            <Rect>(1077, 589, 109, 75)</Rect>
+            <ROI>(1010, 223, 873, 695)</ROI>
             <FullROI>0</FullROI>
             <Param1>13238273</Param1>
-            <Param2>867284</Param2>
+            <Param2>2833380</Param2>
             <Param3>0</Param3>
-            <Param4>1679952000</Param4>
+            <Param4>1680025110</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="0" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2421,17 +2409,17 @@
             </Act_2>
         </Image_91>
         <Image_92>
-            <Name>Ge_BD_3</Name>
-            <Rect>(57, 140, 39, 38)</Rect>
-            <ROI>(1011, 223, 872, 695)</ROI>
+            <Name>Tr_BD_3</Name>
+            <Rect>(1240, 589, 110, 74)</Rect>
+            <ROI>(1008, 220, 876, 697)</ROI>
             <FullROI>0</FullROI>
             <Param1>13238273</Param1>
-            <Param2>343009</Param2>
+            <Param2>2833386</Param2>
             <Param3>0</Param3>
-            <Param4>1679952015</Param4>
+            <Param4>1680025160</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="0" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2447,17 +2435,17 @@
             </Act_2>
         </Image_92>
         <Image_93>
-            <Name>Ab_BD_0</Name>
-            <Rect>(1715, 549, 127, 100)</Rect>
-            <ROI>(1012, 223, 870, 694)</ROI>
+            <Name>Ge_BD_0</Name>
+            <Rect>(1225, 597, 126, 93)</Rect>
+            <ROI>(1010, 222, 873, 696)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13172737</Param1>
-            <Param2>3816411</Param2>
+            <Param1>13303809</Param1>
+            <Param2>3292123</Param2>
             <Param3>0</Param3>
-            <Param4>1679952997</Param4>
+            <Param4>1679951979</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="91" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2473,17 +2461,17 @@
             </Act_2>
         </Image_93>
         <Image_94>
-            <Name>Ab_BD_1</Name>
-            <Rect>(1056, 711, 139, 89)</Rect>
-            <ROI>(1010, 223, 873, 693)</ROI>
+            <Name>Ge_BD_1</Name>
+            <Rect>(1386, 598, 129, 91)</Rect>
+            <ROI>(1010, 223, 872, 694)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13172737</Param1>
-            <Param2>2964447</Param2>
+            <Param1>13238273</Param1>
+            <Param2>3161050</Param2>
             <Param3>0</Param3>
-            <Param4>1679953010</Param4>
+            <Param4>1679951989</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="91" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2499,17 +2487,17 @@
             </Act_2>
         </Image_94>
         <Image_95>
-            <Name>Ab_BD_2</Name>
-            <Rect>(1213, 713, 132, 87)</Rect>
-            <ROI>(1011, 222, 872, 694)</ROI>
+            <Name>Ge_BD_2</Name>
+            <Rect>(1551, 600, 128, 88)</Rect>
+            <ROI>(1011, 223, 873, 695)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13172737</Param1>
-            <Param2>2898881</Param2>
+            <Param1>13238273</Param1>
+            <Param2>867284</Param2>
             <Param3>0</Param3>
-            <Param4>1679953026</Param4>
+            <Param4>1679952000</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="91" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2525,17 +2513,17 @@
             </Act_2>
         </Image_95>
         <Image_96>
-            <Name>Ab_BD_3</Name>
-            <Rect>(1386, 711, 128, 90)</Rect>
-            <ROI>(1011, 221, 873, 695)</ROI>
+            <Name>Ge_BD_3</Name>
+            <Rect>(57, 140, 39, 38)</Rect>
+            <ROI>(1011, 223, 872, 695)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13172737</Param1>
-            <Param2>1588210</Param2>
+            <Param1>13238273</Param1>
+            <Param2>343009</Param2>
             <Param3>0</Param3>
-            <Param4>1679953042</Param4>
+            <Param4>1679952015</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2551,17 +2539,17 @@
             </Act_2>
         </Image_96>
         <Image_97>
-            <Name>Mi_BD_0</Name>
-            <Rect>(1554, 358, 124, 87)</Rect>
-            <ROI>(1011, 223, 872, 694)</ROI>
+            <Name>Ab_BD_0</Name>
+            <Rect>(1044, 426, 138, 89)</Rect>
+            <ROI>(1012, 223, 870, 694)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13172737</Param1>
-            <Param2>3226582</Param2>
+            <Param1>13238273</Param1>
+            <Param2>3095498</Param2>
             <Param3>0</Param3>
-            <Param4>1679952227</Param4>
+            <Param4>1680018510</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2577,17 +2565,17 @@
             </Act_2>
         </Image_97>
         <Image_98>
-            <Name>Mi_BD_1</Name>
-            <Rect>(1721, 358, 120, 90)</Rect>
+            <Name>Ab_BD_1</Name>
+            <Rect>(1229, 422, 132, 93)</Rect>
             <ROI>(1010, 223, 873, 693)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13172737</Param1>
-            <Param2>3226578</Param2>
+            <Param1>13238273</Param1>
+            <Param2>3357648</Param2>
             <Param3>0</Param3>
-            <Param4>1679952236</Param4>
+            <Param4>1680018558</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2603,17 +2591,17 @@
             </Act_2>
         </Image_98>
         <Image_99>
-            <Name>Mi_BD_2</Name>
-            <Rect>(1060, 510, 126, 90)</Rect>
-            <ROI>(1010, 223, 872, 694)</ROI>
+            <Name>Ab_BD_2</Name>
+            <Rect>(1386, 416, 141, 96)</Rect>
+            <ROI>(1011, 222, 872, 694)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13172737</Param1>
-            <Param2>80818</Param2>
+            <Param1>13238273</Param1>
+            <Param2>605106</Param2>
             <Param3>0</Param3>
-            <Param4>1679952249</Param4>
+            <Param4>1680018572</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2629,17 +2617,17 @@
             </Act_2>
         </Image_99>
         <Image_100>
-            <Name>Mi_BD_3</Name>
-            <Rect>(1223, 509, 129, 90)</Rect>
-            <ROI>(1010, 223, 873, 695)</ROI>
+            <Name>Ab_BD_3</Name>
+            <Rect>(1540, 420, 146, 94)</Rect>
+            <ROI>(1011, 221, 873, 695)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13172737</Param1>
-            <Param2>1719282</Param2>
+            <Param1>13238273</Param1>
+            <Param2>1784820</Param2>
             <Param3>0</Param3>
-            <Param4>1679952262</Param4>
+            <Param4>1680018583</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2655,17 +2643,17 @@
             </Act_2>
         </Image_100>
         <Image_101>
-            <Name>Ar_BD_0</Name>
-            <Rect>(1385, 320, 141, 88)</Rect>
-            <ROI>(1012, 224, 870, 693)</ROI>
+            <Name>Mi_BD_0</Name>
+            <Rect>(1715, 302, 136, 96)</Rect>
+            <ROI>(1011, 223, 872, 694)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13303809</Param1>
-            <Param2>3161048</Param2>
+            <Param1>13238273</Param1>
+            <Param2>4013019</Param2>
             <Param3>0</Param3>
-            <Param4>1679953540</Param4>
+            <Param4>1680026493</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="90" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2681,17 +2669,17 @@
             </Act_2>
         </Image_101>
         <Image_102>
-            <Name>Ar_BD_1</Name>
-            <Rect>(1540, 321, 129, 85)</Rect>
-            <ROI>(1012, 224, 870, 691)</ROI>
+            <Name>Mi_BD_1</Name>
+            <Rect>(1048, 461, 141, 95)</Rect>
+            <ROI>(1010, 223, 873, 693)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13303809</Param1>
-            <Param2>3095488</Param2>
+            <Param1>13238273</Param1>
+            <Param2>3423175</Param2>
             <Param3>0</Param3>
-            <Param4>1679953551</Param4>
+            <Param4>1680026520</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="90" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2707,17 +2695,17 @@
             </Act_2>
         </Image_102>
         <Image_103>
-            <Name>Ar_BD_2</Name>
-            <Rect>(1717, 302, 124, 107)</Rect>
-            <ROI>(1013, 223, 870, 695)</ROI>
+            <Name>Mi_BD_2</Name>
+            <Rect>(1221, 456, 135, 91)</Rect>
+            <ROI>(1010, 223, 872, 694)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13303809</Param1>
-            <Param2>1194957</Param2>
+            <Param1>13238273</Param1>
+            <Param2>801719</Param2>
             <Param3>0</Param3>
-            <Param4>1679953565</Param4>
+            <Param4>1680026616</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="90" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2733,17 +2721,17 @@
             </Act_2>
         </Image_103>
         <Image_104>
-            <Name>Ar_BD_3</Name>
-            <Rect>(1059, 472, 129, 89)</Rect>
-            <ROI>(1011, 223, 871, 693)</ROI>
+            <Name>Mi_BD_3</Name>
+            <Rect>(1383, 458, 141, 94)</Rect>
+            <ROI>(1010, 223, 873, 695)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13303809</Param1>
-            <Param2>1522674</Param2>
+            <Param1>13238273</Param1>
+            <Param2>2046962</Param2>
             <Param3>0</Param3>
-            <Param4>1679953580</Param4>
+            <Param4>1680026647</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="90" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2759,17 +2747,17 @@
             </Act_2>
         </Image_104>
         <Image_105>
-            <Name>Sh_BD_0</Name>
-            <Rect>(1210, 473, 136, 86)</Rect>
-            <ROI>(1013, 224, 868, 689)</ROI>
+            <Name>Ar_BD_0</Name>
+            <Rect>(1385, 320, 141, 88)</Rect>
+            <ROI>(1012, 224, 870, 693)</ROI>
             <FullROI>0</FullROI>
             <Param1>13303809</Param1>
-            <Param2>3029956</Param2>
+            <Param2>3161048</Param2>
             <Param3>0</Param3>
-            <Param4>1679953633</Param4>
+            <Param4>1679953540</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="91" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2785,17 +2773,17 @@
             </Act_2>
         </Image_105>
         <Image_106>
-            <Name>Sh_BD_1</Name>
-            <Rect>(1384, 468, 135, 92)</Rect>
-            <ROI>(1013, 224, 868, 691)</ROI>
+            <Name>Ar_BD_1</Name>
+            <Rect>(1540, 321, 129, 85)</Rect>
+            <ROI>(1012, 224, 870, 691)</ROI>
             <FullROI>0</FullROI>
             <Param1>13303809</Param1>
-            <Param2>3357663</Param2>
+            <Param2>3095488</Param2>
             <Param3>0</Param3>
-            <Param4>1679953622</Param4>
+            <Param4>1679953551</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="93" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2811,17 +2799,17 @@
             </Act_2>
         </Image_106>
         <Image_107>
-            <Name>Sh_BD_2</Name>
-            <Rect>(1549, 460, 128, 100)</Rect>
-            <ROI>(1011, 223, 871, 693)</ROI>
+            <Name>Ar_BD_2</Name>
+            <Rect>(1717, 302, 124, 107)</Rect>
+            <ROI>(1013, 223, 870, 695)</ROI>
             <FullROI>0</FullROI>
             <Param1>13303809</Param1>
-            <Param2>736176</Param2>
+            <Param2>1194957</Param2>
             <Param3>0</Param3>
-            <Param4>1679953652</Param4>
+            <Param4>1679953565</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="93" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2837,17 +2825,17 @@
             </Act_2>
         </Image_107>
         <Image_108>
-            <Name>Sh_BD_3</Name>
-            <Rect>(1709, 473, 133, 86)</Rect>
-            <ROI>(1013, 224, 867, 692)</ROI>
+            <Name>Ar_BD_3</Name>
+            <Rect>(1212, 603, 151, 98)</Rect>
+            <ROI>(1011, 223, 871, 693)</ROI>
             <FullROI>0</FullROI>
             <Param1>13303809</Param1>
-            <Param2>1326066</Param2>
+            <Param2>1915899</Param2>
             <Param3>0</Param3>
-            <Param4>1679953661</Param4>
+            <Param4>1680024663</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="92" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2863,16 +2851,16 @@
             </Act_2>
         </Image_108>
         <Image_109>
-            <Name>Va_BD_0</Name>
-            <Rect>(1044, 619, 145, 92)</Rect>
-            <ROI>(1011, 223, 871, 693)</ROI>
+            <Name>Sh_BD_0</Name>
+            <Rect>(1210, 473, 136, 86)</Rect>
+            <ROI>(1013, 224, 868, 689)</ROI>
             <FullROI>0</FullROI>
             <Param1>13303809</Param1>
-            <Param2>3423178</Param2>
+            <Param2>3029956</Param2>
             <Param3>0</Param3>
-            <Param4>1679953691</Param4>
+            <Param4>1679953633</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
+            <Group>2</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
@@ -2889,16 +2877,16 @@
             </Act_2>
         </Image_109>
         <Image_110>
-            <Name>Va_BD_1</Name>
-            <Rect>(1223, 614, 129, 97)</Rect>
-            <ROI>(1012, 224, 869, 692)</ROI>
+            <Name>Sh_BD_1</Name>
+            <Rect>(1384, 468, 135, 92)</Rect>
+            <ROI>(1013, 224, 868, 691)</ROI>
             <FullROI>0</FullROI>
             <Param1>13303809</Param1>
-            <Param2>3750874</Param2>
+            <Param2>3357663</Param2>
             <Param3>0</Param3>
-            <Param4>1679953700</Param4>
+            <Param4>1679953622</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
+            <Group>2</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
@@ -2915,16 +2903,16 @@
             </Act_2>
         </Image_110>
         <Image_111>
-            <Name>Va_BD_2</Name>
-            <Rect>(1386, 625, 136, 87)</Rect>
-            <ROI>(1010, 223, 872, 693)</ROI>
+            <Name>Sh_BD_2</Name>
+            <Rect>(1549, 460, 128, 100)</Rect>
+            <ROI>(1011, 223, 871, 693)</ROI>
             <FullROI>0</FullROI>
             <Param1>13303809</Param1>
-            <Param2>2898906</Param2>
+            <Param2>736176</Param2>
             <Param3>0</Param3>
-            <Param4>1679953711</Param4>
+            <Param4>1679953652</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
+            <Group>2</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
@@ -2941,16 +2929,16 @@
             </Act_2>
         </Image_111>
         <Image_112>
-            <Name>Va_BD_3</Name>
-            <Rect>(1547, 620, 133, 91)</Rect>
-            <ROI>(1007, 221, 877, 696)</ROI>
+            <Name>Sh_BD_3</Name>
+            <Rect>(1709, 473, 133, 86)</Rect>
+            <ROI>(1013, 224, 867, 692)</ROI>
             <FullROI>0</FullROI>
             <Param1>13303809</Param1>
-            <Param2>1653746</Param2>
+            <Param2>1326066</Param2>
             <Param3>0</Param3>
-            <Param4>1679953720</Param4>
+            <Param4>1679953661</Param4>
             <Enable>1</Enable>
-            <Group>0</Group>
+            <Group>2</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
@@ -2966,5 +2954,109 @@
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
         </Image_112>
+        <Image_113>
+            <Name>Va_BD_0</Name>
+            <Rect>(1044, 619, 145, 92)</Rect>
+            <ROI>(1011, 223, 871, 693)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13303809</Param1>
+            <Param2>3423178</Param2>
+            <Param3>0</Param3>
+            <Param4>1679953691</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_113>
+        <Image_114>
+            <Name>Va_BD_1</Name>
+            <Rect>(1223, 614, 129, 97)</Rect>
+            <ROI>(1012, 224, 869, 692)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13303809</Param1>
+            <Param2>3750874</Param2>
+            <Param3>0</Param3>
+            <Param4>1679953700</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_114>
+        <Image_115>
+            <Name>Va_BD_2</Name>
+            <Rect>(1386, 625, 136, 87)</Rect>
+            <ROI>(1010, 223, 872, 693)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13303809</Param1>
+            <Param2>2898906</Param2>
+            <Param3>0</Param3>
+            <Param4>1679953711</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_115>
+        <Image_116>
+            <Name>Va_BD_3</Name>
+            <Rect>(1547, 620, 133, 91)</Rect>
+            <ROI>(1007, 221, 877, 696)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13303809</Param1>
+            <Param2>1653746</Param2>
+            <Param3>0</Param3>
+            <Param4>1679953720</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_116>
     </GENERAL>
 </ROOT>
