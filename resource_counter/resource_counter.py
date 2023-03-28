@@ -23,8 +23,8 @@ class ResourceCounter:
     def __init__(self):
         self.scroll_count_while_not_found = 0
         self.current_state = data.MenuState.Main
-        self.items = data.items_to_asset.copy()
-        self.equipments = data.equipments_to_asset.copy()
+        self.items = data.resource_data.copy_collectable_items()
+        self.equipments = data.resource_data.copy_equipments()
         self.result = {}
         self.roi_table = []
         imax.print("ResourceCounter initialized")

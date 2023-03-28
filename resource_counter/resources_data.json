@@ -1,0 +1,1028 @@
+{
+  "XP_1": {
+    "type": "item",
+    "asset_name": "XP_1",
+    "similar_items": null,
+    "note": "보고서#0|50xp"
+  },
+  "XP_2": {
+    "type": "item",
+    "asset_name": "XP_2",
+    "similar_items": null,
+    "note": "보고서#1|500xp"
+  },
+  "XP_3": {
+    "type": "item",
+    "asset_name": "XP_3",
+    "similar_items": null,
+    "note": "보고서#2|2000xp"
+  },
+  "XP_4": {
+    "type": "item",
+    "asset_name": "XP_4",
+    "similar_items": null,
+    "note": "보고서#3|10000xp"
+  },
+  "100": {
+    "type": "item",
+    "asset_name": "nebra0",
+    "similar_items": null,
+    "note": "네브라 디스크#0"
+  },
+  "101": {
+    "type": "item",
+    "asset_name": "nebra1",
+    "similar_items": null,
+    "note": "네브라 디스크#1"
+  },
+  "102": {
+    "type": "item",
+    "asset_name": "nebra2",
+    "similar_items": null,
+    "note": "네브라 디스크#2"
+  },
+  "103": {
+    "type": "item",
+    "asset_name": "nebra3",
+    "similar_items": null,
+    "note": "네브라 디스크#3"
+  },
+  "110": {
+    "type": "item",
+    "asset_name": "phaistos0",
+    "similar_items": null,
+    "note": "파에스토스 원반#0"
+  },
+  "111": {
+    "type": "item",
+    "asset_name": "phaistos1",
+    "similar_items": null,
+    "note": "파에스토스 원반#1"
+  },
+  "112": {
+    "type": "item",
+    "asset_name": "phaistos2",
+    "similar_items": null,
+    "note": "파에스토스 원반#2"
+  },
+  "113": {
+    "type": "item",
+    "asset_name": "phaistos3",
+    "similar_items": null,
+    "note": "파에스토스 원반#3"
+  },
+  "120": {
+    "type": "item",
+    "asset_name": "wolfsegg0",
+    "similar_items": null,
+    "note": "볼프셰크 철광석#0"
+  },
+  "121": {
+    "type": "item",
+    "asset_name": "wolfsegg1",
+    "similar_items": null,
+    "note": "볼프셰크 철광석#1"
+  },
+  "122": {
+    "type": "item",
+    "asset_name": "wolfsegg2",
+    "similar_items": null,
+    "note": "볼프셰크 철광석#2"
+  },
+  "123": {
+    "type": "item",
+    "asset_name": "wolfsegg3",
+    "similar_items": null,
+    "note": "볼프셰크 철광석#3"
+  },
+  "130": {
+    "type": "item",
+    "asset_name": "nimrud0",
+    "similar_items": null,
+    "note": "님루드 렌즈#0"
+  },
+  "131": {
+    "type": "item",
+    "asset_name": "nimrud1",
+    "similar_items": null,
+    "note": "님루드 렌즈#1"
+  },
+  "132": {
+    "type": "item",
+    "asset_name": "nimrud2",
+    "similar_items": null,
+    "note": "님루드 렌즈#2"
+  },
+  "133": {
+    "type": "item",
+    "asset_name": "nimrud3",
+    "similar_items": null,
+    "note": "님루드 렌즈#3"
+  },
+  "140": {
+    "type": "item",
+    "asset_name": "mandragora0",
+    "similar_items": null,
+    "note": "만드라고라#0"
+  },
+  "141": {
+    "type": "item",
+    "asset_name": "mandragora1",
+    "similar_items": null,
+    "note": "만드라고라#1"
+  },
+  "142": {
+    "type": "item",
+    "asset_name": "mandragora2",
+    "similar_items": null,
+    "note": "만드라고라#2"
+  },
+  "143": {
+    "type": "item",
+    "asset_name": "mandragora3",
+    "similar_items": null,
+    "note": "만드라고라#3"
+  },
+  "150": {
+    "type": "item",
+    "asset_name": "rohonc0",
+    "similar_items": null,
+    "note": "로혼치 사본#0"
+  },
+  "151": {
+    "type": "item",
+    "asset_name": "rohonc1",
+    "similar_items": null,
+    "note": "로혼치 사본#1"
+  },
+  "152": {
+    "type": "item",
+    "asset_name": "rohonc2",
+    "similar_items": null,
+    "note": "로혼치 사본#2"
+  },
+  "153": {
+    "type": "item",
+    "asset_name": "rohonc3",
+    "similar_items": null,
+    "note": "로혼치 사본#3"
+  },
+  "160": {
+    "type": "item",
+    "asset_name": "aether0",
+    "similar_items": null,
+    "note": "에테르#0"
+  },
+  "161": {
+    "type": "item",
+    "asset_name": "aether1",
+    "similar_items": null,
+    "note": "에테르#1"
+  },
+  "162": {
+    "type": "item",
+    "asset_name": "aether2",
+    "similar_items": null,
+    "note": "에테르#2"
+  },
+  "163": {
+    "type": "item",
+    "asset_name": "aether3",
+    "similar_items": null,
+    "note": "에테르#3"
+  },
+  "170": {
+    "type": "item",
+    "asset_name": "antikythera0",
+    "similar_items": null,
+    "note": "안티키테라#0"
+  },
+  "171": {
+    "type": "item",
+    "asset_name": "antikythera1",
+    "similar_items": null,
+    "note": "안티키테라#1"
+  },
+  "172": {
+    "type": "item",
+    "asset_name": "antikythera2",
+    "similar_items": null,
+    "note": "안티키테라#2"
+  },
+  "173": {
+    "type": "item",
+    "asset_name": "antikythera3",
+    "similar_items": null,
+    "note": "안티키테라#3"
+  },
+  "180": {
+    "type": "item",
+    "asset_name": "voynich0",
+    "similar_items": null,
+    "note": "보이니치 사본#0"
+  },
+  "181": {
+    "type": "item",
+    "asset_name": "voynich1",
+    "similar_items": null,
+    "note": "보이니치 사본#1"
+  },
+  "182": {
+    "type": "item",
+    "asset_name": "voynich2",
+    "similar_items": null,
+    "note": "보이니치 사본#2"
+  },
+  "183": {
+    "type": "item",
+    "asset_name": "voynich3",
+    "similar_items": null,
+    "note": "보이니치 사본#3"
+  },
+  "190": {
+    "type": "item",
+    "asset_name": "haniwa0",
+    "similar_items": null,
+    "note": "하니와#0"
+  },
+  "191": {
+    "type": "item",
+    "asset_name": "haniwa1",
+    "similar_items": null,
+    "note": "하니와#1"
+  },
+  "192": {
+    "type": "item",
+    "asset_name": "haniwa2",
+    "similar_items": null,
+    "note": "하니와#2"
+  },
+  "193": {
+    "type": "item",
+    "asset_name": "haniwa3",
+    "similar_items": null,
+    "note": "하니와#3"
+  },
+  "200": {
+    "type": "item",
+    "asset_name": "totem0",
+    "similar_items": null,
+    "note": "토템폴#0"
+  },
+  "201": {
+    "type": "item",
+    "asset_name": "totem1",
+    "similar_items": null,
+    "note": "토템폴#1"
+  },
+  "202": {
+    "type": "item",
+    "asset_name": "totem2",
+    "similar_items": null,
+    "note": "토템폴#2"
+  },
+  "203": {
+    "type": "item",
+    "asset_name": "totem3",
+    "similar_items": null,
+    "note": "토템폴#3"
+  },
+  "210": {
+    "type": "item",
+    "asset_name": "baghdad0",
+    "similar_items": null,
+    "note": "고대 전지#0"
+  },
+  "211": {
+    "type": "item",
+    "asset_name": "baghdad1",
+    "similar_items": null,
+    "note": "고대 전지#1"
+  },
+  "212": {
+    "type": "item",
+    "asset_name": "baghdad2",
+    "similar_items": null,
+    "note": "고대 전지#2"
+  },
+  "213": {
+    "type": "item",
+    "asset_name": "baghdad3",
+    "similar_items": null,
+    "note": "고대 전지#3"
+  },
+  "240": {
+    "type": "item",
+    "asset_name": "colgante0",
+    "similar_items": null,
+    "note": "디스코 콜간테#0"
+  },
+  "241": {
+    "type": "item",
+    "asset_name": "colgante1",
+    "similar_items": null,
+    "note": "디스코 콜간테#1"
+  },
+  "242": {
+    "type": "item",
+    "asset_name": "colgante2",
+    "similar_items": null,
+    "note": "디스코 콜간테#2"
+  },
+  "243": {
+    "type": "item",
+    "asset_name": "colgante3",
+    "similar_items": null,
+    "note": "디스코 콜간테#3"
+  },
+  "290": {
+    "type": "item",
+    "asset_name": "mystery0",
+    "similar_items": null,
+    "note": "위니페소키 스톤#0"
+  },
+  "291": {
+    "type": "item",
+    "asset_name": "mystery1",
+    "similar_items": null,
+    "note": "위니페소키 스톤#1"
+  },
+  "292": {
+    "type": "item",
+    "asset_name": "mystery2",
+    "similar_items": null,
+    "note": "위니페소키 스톤#2"
+  },
+  "293": {
+    "type": "item",
+    "asset_name": "mystery3",
+    "similar_items": null,
+    "note": "위니페소키 스톤#3"
+  },
+  "3000": {
+    "type": "item",
+    "asset_name": "HK_BD_0",
+    "similar_items": null,
+    "note": "백귀야행BD#0"
+  },
+  "3001": {
+    "type": "item",
+    "asset_name": "HK_BD_1",
+    "similar_items": null,
+    "note": "백귀야행BD#1"
+  },
+  "3002": {
+    "type": "item",
+    "asset_name": "HK_BD_2",
+    "similar_items": null,
+    "note": "백귀야행BD#2"
+  },
+  "3003": {
+    "type": "item",
+    "asset_name": "HK_BD_3",
+    "similar_items": null,
+    "note": "백귀야행BD#3"
+  },
+  "3010": {
+    "type": "item",
+    "asset_name": "Rw_BD_0",
+    "similar_items": null,
+    "note": "붉은겨울BD#0"
+  },
+  "3011": {
+    "type": "item",
+    "asset_name": "Rw_BD_1",
+    "similar_items": null,
+    "note": "붉은겨울BD#1"
+  },
+  "3012": {
+    "type": "item",
+    "asset_name": "Rw_BD_2",
+    "similar_items": null,
+    "note": "붉은겨울BD#2"
+  },
+  "3013": {
+    "type": "item",
+    "asset_name": "Rw_BD_3",
+    "similar_items": null,
+    "note": "붉은겨울BD#3"
+  },
+  "3020": {
+    "type": "item",
+    "asset_name": "Tr_BD_0",
+    "similar_items": null,
+    "note": "트리니티BD#0"
+  },
+  "3021": {
+    "type": "item",
+    "asset_name": "Tr_BD_1",
+    "similar_items": null,
+    "note": "트리니티BD#1"
+  },
+  "3022": {
+    "type": "item",
+    "asset_name": "Tr_BD_2",
+    "similar_items": null,
+    "note": "트리니티BD#2"
+  },
+  "3023": {
+    "type": "item",
+    "asset_name": "Tr_BD_3",
+    "similar_items": null,
+    "note": "트리니티BD#3"
+  },
+  "3030": {
+    "type": "item",
+    "asset_name": "Ge_BD_0",
+    "similar_items": null,
+    "note": "게헨나BD#0"
+  },
+  "3031": {
+    "type": "item",
+    "asset_name": "Ge_BD_1",
+    "similar_items": null,
+    "note": "게헨나BD#1"
+  },
+  "3032": {
+    "type": "item",
+    "asset_name": "Ge_BD_2",
+    "similar_items": null,
+    "note": "게헨나BD#2"
+  },
+  "3033": {
+    "type": "item",
+    "asset_name": "Ge_BD_3",
+    "similar_items": null,
+    "note": "게헨나BD#3"
+  },
+  "3040": {
+    "type": "item",
+    "asset_name": "Ab_BD_0",
+    "similar_items": null,
+    "note": "아비도스BD#0"
+  },
+  "3041": {
+    "type": "item",
+    "asset_name": "Ab_BD_1",
+    "similar_items": null,
+    "note": "아비도스BD#1"
+  },
+  "3042": {
+    "type": "item",
+    "asset_name": "Ab_BD_2",
+    "similar_items": null,
+    "note": "아비도스BD#2"
+  },
+  "3043": {
+    "type": "item",
+    "asset_name": "Ab_BD_3",
+    "similar_items": null,
+    "note": "아비도스BD#3"
+  },
+  "3050": {
+    "type": "item",
+    "asset_name": "Mi_BD_0",
+    "similar_items": null,
+    "note": "밀레니엄BD#0"
+  },
+  "3051": {
+    "type": "item",
+    "asset_name": "Mi_BD_1",
+    "similar_items": null,
+    "note": "밀레니엄BD#1"
+  },
+  "3052": {
+    "type": "item",
+    "asset_name": "Mi_BD_2",
+    "similar_items": null,
+    "note": "밀레니엄BD#2"
+  },
+  "3053": {
+    "type": "item",
+    "asset_name": "Mi_BD_3",
+    "similar_items": null,
+    "note": "밀레니엄BD#3"
+  },
+  "3060": {
+    "type": "item",
+    "asset_name": "Ar_BD_0",
+    "similar_items": null,
+    "note": "아리우스BD#0"
+  },
+  "3061": {
+    "type": "item",
+    "asset_name": "Ar_BD_1",
+    "similar_items": null,
+    "note": "아리우스BD#1"
+  },
+  "3062": {
+    "type": "item",
+    "asset_name": "Ar_BD_2",
+    "similar_items": null,
+    "note": "아리우스BD#2"
+  },
+  "3063": {
+    "type": "item",
+    "asset_name": "Ar_BD_3",
+    "similar_items": null,
+    "note": "아리우스BD#3"
+  },
+  "3070": {
+    "type": "item",
+    "asset_name": "Sh_BD_0",
+    "similar_items": null,
+    "note": "산해경BD#0"
+  },
+  "3071": {
+    "type": "item",
+    "asset_name": "Sh_BD_1",
+    "similar_items": null,
+    "note": "산해경BD#1"
+  },
+  "3072": {
+    "type": "item",
+    "asset_name": "Sh_BD_2",
+    "similar_items": null,
+    "note": "산해경BD#2"
+  },
+  "3073": {
+    "type": "item",
+    "asset_name": "Sh_BD_3",
+    "similar_items": null,
+    "note": "산해경BD#3"
+  },
+  "3080": {
+    "type": "item",
+    "asset_name": "Va_BD_0",
+    "similar_items": null,
+    "note": "발키리BD#0"
+  },
+  "3081": {
+    "type": "item",
+    "asset_name": "Va_BD_1",
+    "similar_items": null,
+    "note": "발키리BD#1"
+  },
+  "3082": {
+    "type": "item",
+    "asset_name": "Va_BD_2",
+    "similar_items": null,
+    "note": "발키리BD#2"
+  },
+  "3083": {
+    "type": "item",
+    "asset_name": "Va_BD_3",
+    "similar_items": null,
+    "note": "발키리BD#3"
+  },
+  "9999": {
+    "type": "item",
+    "asset_name": "Skillbook_Ult",
+    "similar_items": null,
+    "note": "비의서"
+  },
+  "GXP_1": {
+    "type": "equip",
+    "asset_name": "GXP_1",
+    "similar_items": null,
+    "note": "장비강화석#0|90xp"
+  },
+  "GXP_2": {
+    "type": "equip",
+    "asset_name": "GXP_2",
+    "similar_items": null,
+    "note": "장비강화석#1|360xp"
+  },
+  "GXP_3": {
+    "type": "equip",
+    "asset_name": "GXP_3",
+    "similar_items": null,
+    "note": "장비강화석#2|1440xp"
+  },
+  "GXP_4": {
+    "type": "equip",
+    "asset_name": "GXP_4",
+    "similar_items": null,
+    "note": "장비강화석#3|5760xp"
+  },
+  "T1_Spring": {
+    "type": "equip",
+    "asset_name": "T1_Spring",
+    "similar_items": null,
+    "note": "전용무기 스프링#0"
+  },
+  "T2_Spring": {
+    "type": "equip",
+    "asset_name": "T2_Spring",
+    "similar_items": null,
+    "note": "전용무기 스프링#1"
+  },
+  "T3_Spring": {
+    "type": "equip",
+    "asset_name": "T3_Spring",
+    "similar_items": null,
+    "note": "전용무기 스프링#2"
+  },
+  "T4_Spring": {
+    "type": "equip",
+    "asset_name": "T4_Spring",
+    "similar_items": null,
+    "note": "전용무기 스프링#3"
+  },
+  "T1_Hammer": {
+    "type": "equip",
+    "asset_name": "T1_Hammer",
+    "similar_items": null,
+    "note": "전용무기 해머#0"
+  },
+  "T2_Hammer": {
+    "type": "equip",
+    "asset_name": "T2_Hammer",
+    "similar_items": null,
+    "note": "전용무기 해머#1"
+  },
+  "T3_Hammer": {
+    "type": "equip",
+    "asset_name": "T3_Hammer",
+    "similar_items": null,
+    "note": "전용무기 해머#2"
+  },
+  "T4_Hammer": {
+    "type": "equip",
+    "asset_name": "T4_Hammer",
+    "similar_items": null,
+    "note": "전용무기 해머#3"
+  },
+  "T1_Barrel": {
+    "type": "equip",
+    "asset_name": "T1_Barrel",
+    "similar_items": null,
+    "note": "전용무기 총열#0"
+  },
+  "T2_Barrel": {
+    "type": "equip",
+    "asset_name": "T2_Barrel",
+    "similar_items": null,
+    "note": "전용무기 총열#1"
+  },
+  "T3_Barrel": {
+    "type": "equip",
+    "asset_name": "T3_Barrel",
+    "similar_items": null,
+    "note": "전용무기 총열#2"
+  },
+  "T4_Barrel": {
+    "type": "equip",
+    "asset_name": "T4_Barrel",
+    "similar_items": null,
+    "note": "전용무기 총열#3"
+  },
+  "T1_Needle": {
+    "type": "equip",
+    "asset_name": "T1_Needle",
+    "similar_items": null,
+    "note": "전용무기 공이#0"
+  },
+  "T2_Needle": {
+    "type": "equip",
+    "asset_name": "T2_Needle",
+    "similar_items": null,
+    "note": "전용무기 공이#1"
+  },
+  "T3_Needle": {
+    "type": "equip",
+    "asset_name": "T3_Needle",
+    "similar_items": null,
+    "note": "전용무기 공이#2"
+  },
+  "T4_Needle": {
+    "type": "equip",
+    "asset_name": "T4_Needle",
+    "similar_items": null,
+    "note": "전용무기 공이#3"
+  },
+  "T2_Hat": {
+    "type": "equip",
+    "asset_name": "T2_Hat",
+    "similar_items": null,
+    "note": "모자설계도#0"
+  },
+  "T3_Hat": {
+    "type": "equip",
+    "asset_name": "T3_Hat",
+    "similar_items": null,
+    "note": "모자설계도#1"
+  },
+  "T4_Hat": {
+    "type": "equip",
+    "asset_name": "T4_Hat",
+    "similar_items": null,
+    "note": "모자설계도#2"
+  },
+  "T5_Hat": {
+    "type": "equip",
+    "asset_name": "T5_Hat",
+    "similar_items": null,
+    "note": "모자설계도#3"
+  },
+  "T6_Hat": {
+    "type": "equip",
+    "asset_name": "T6_Hat",
+    "similar_items": null,
+    "note": "모자설계도#4"
+  },
+  "T7_Hat": {
+    "type": "equip",
+    "asset_name": "T7_Hat",
+    "similar_items": null,
+    "note": "모자설계도#5"
+  },
+  "T2_Gloves": {
+    "type": "equip",
+    "asset_name": "T2_Gloves",
+    "similar_items": null,
+    "note": "장갑설계도#0"
+  },
+  "T3_Gloves": {
+    "type": "equip",
+    "asset_name": "T3_Gloves",
+    "similar_items": null,
+    "note": "장갑설계도#1"
+  },
+  "T4_Gloves": {
+    "type": "equip",
+    "asset_name": "T4_Gloves",
+    "similar_items": null,
+    "note": "장갑설계도#2"
+  },
+  "T5_Gloves": {
+    "type": "equip",
+    "asset_name": "T5_Gloves",
+    "similar_items": null,
+    "note": "장갑설계도#3"
+  },
+  "T6_Gloves": {
+    "type": "equip",
+    "asset_name": "T6_Gloves",
+    "similar_items": null,
+    "note": "장갑설계도#4"
+  },
+  "T7_Gloves": {
+    "type": "equip",
+    "asset_name": "T7_Gloves",
+    "similar_items": null,
+    "note": "장갑설계도#5"
+  },
+  "T2_Shoes": {
+    "type": "equip",
+    "asset_name": "T2_Shoes",
+    "similar_items": null,
+    "note": "신발설계도#0"
+  },
+  "T3_Shoes": {
+    "type": "equip",
+    "asset_name": "T3_Shoes",
+    "similar_items": null,
+    "note": "신발설계도#1"
+  },
+  "T4_Shoes": {
+    "type": "equip",
+    "asset_name": "T4_Shoes",
+    "similar_items": null,
+    "note": "신발설계도#2"
+  },
+  "T5_Shoes": {
+    "type": "equip",
+    "asset_name": "T5_Shoes",
+    "similar_items": null,
+    "note": "신발설계도#3"
+  },
+  "T6_Shoes": {
+    "type": "equip",
+    "asset_name": "T6_Shoes",
+    "similar_items": null,
+    "note": "신발설계도#4"
+  },
+  "T7_Shoes": {
+    "type": "equip",
+    "asset_name": "T7_Shoes",
+    "similar_items": null,
+    "note": "신발설계도#5"
+  },
+  "T2_Bag": {
+    "type": "equip",
+    "asset_name": "T2_Bag",
+    "similar_items": null,
+    "note": "가방설계도#0"
+  },
+  "T3_Bag": {
+    "type": "equip",
+    "asset_name": "T3_Bag",
+    "similar_items": null,
+    "note": "가방설계도#1"
+  },
+  "T4_Bag": {
+    "type": "equip",
+    "asset_name": "T4_Bag",
+    "similar_items": null,
+    "note": "가방설계도#2"
+  },
+  "T5_Bag": {
+    "type": "equip",
+    "asset_name": "T5_Bag",
+    "similar_items": null,
+    "note": "가방설계도#3"
+  },
+  "T6_Bag": {
+    "type": "equip",
+    "asset_name": "T6_Bag",
+    "similar_items": null,
+    "note": "가방설계도#4"
+  },
+  "T7_Bag": {
+    "type": "equip",
+    "asset_name": "T7_Bag",
+    "similar_items": null,
+    "note": "가방설계도#5"
+  },
+  "T2_Badge": {
+    "type": "equip",
+    "asset_name": "T2_Badge",
+    "similar_items": null,
+    "note": "뱃지설계도#0"
+  },
+  "T3_Badge": {
+    "type": "equip",
+    "asset_name": "T3_Badge",
+    "similar_items": null,
+    "note": "뱃지설계도#1"
+  },
+  "T4_Badge": {
+    "type": "equip",
+    "asset_name": "T4_Badge",
+    "similar_items": null,
+    "note": "뱃지설계도#2"
+  },
+  "T5_Badge": {
+    "type": "equip",
+    "asset_name": "T5_Badge",
+    "similar_items": null,
+    "note": "뱃지설계도#3"
+  },
+  "T6_Badge": {
+    "type": "equip",
+    "asset_name": "T6_Badge",
+    "similar_items": null,
+    "note": "뱃지설계도#4"
+  },
+  "T7_Badge": {
+    "type": "equip",
+    "asset_name": "T7_Badge",
+    "similar_items": null,
+    "note": "뱃지설계도#5"
+  },
+  "T2_Hairpin": {
+    "type": "equip",
+    "asset_name": "T2_Hairpin",
+    "similar_items": null,
+    "note": "헤어핀설계도#0"
+  },
+  "T3_Hairpin": {
+    "type": "equip",
+    "asset_name": "T3_Hairpin",
+    "similar_items": null,
+    "note": "헤어핀설계도#1"
+  },
+  "T4_Hairpin": {
+    "type": "equip",
+    "asset_name": "T4_Hairpin",
+    "similar_items": null,
+    "note": "헤어핀설계도#2"
+  },
+  "T5_Hairpin": {
+    "type": "equip",
+    "asset_name": "T5_Hairpin",
+    "similar_items": null,
+    "note": "헤어핀설계도#3"
+  },
+  "T6_Hairpin": {
+    "type": "equip",
+    "asset_name": "T6_Hairpin",
+    "similar_items": null,
+    "note": "헤어핀설계도#4"
+  },
+  "T7_Hairpin": {
+    "type": "equip",
+    "asset_name": "T7_Hairpin",
+    "similar_items": null,
+    "note": "헤어핀설계도#5"
+  },
+  "T2_Charm": {
+    "type": "equip",
+    "asset_name": "T2_Charm",
+    "similar_items": null,
+    "note": "부적설계도#0"
+  },
+  "T3_Charm": {
+    "type": "equip",
+    "asset_name": "T3_Charm",
+    "similar_items": null,
+    "note": "부적설계도#1"
+  },
+  "T4_Charm": {
+    "type": "equip",
+    "asset_name": "T4_Charm",
+    "similar_items": null,
+    "note": "부적설계도#2"
+  },
+  "T5_Charm": {
+    "type": "equip",
+    "asset_name": "T5_Charm",
+    "similar_items": null,
+    "note": "부적설계도#3"
+  },
+  "T6_Charm": {
+    "type": "equip",
+    "asset_name": "T6_Charm",
+    "similar_items": null,
+    "note": "부적설계도#4"
+  },
+  "T7_Charm": {
+    "type": "equip",
+    "asset_name": "T7_Charm",
+    "similar_items": null,
+    "note": "부적설계도#5"
+  },
+  "T2_Watch": {
+    "type": "equip",
+    "asset_name": "T2_Watch",
+    "similar_items": null,
+    "note": "시계설계도#0"
+  },
+  "T3_Watch": {
+    "type": "equip",
+    "asset_name": "T3_Watch",
+    "similar_items": null,
+    "note": "시계설계도#1"
+  },
+  "T4_Watch": {
+    "type": "equip",
+    "asset_name": "T4_Watch",
+    "similar_items": null,
+    "note": "시계설계도#2"
+  },
+  "T5_Watch": {
+    "type": "equip",
+    "asset_name": "T5_Watch",
+    "similar_items": null,
+    "note": "시계설계도#3"
+  },
+  "T6_Watch": {
+    "type": "equip",
+    "asset_name": "T6_Watch",
+    "similar_items": null,
+    "note": "시계설계도#4"
+  },
+  "T7_Watch": {
+    "type": "equip",
+    "asset_name": "T7_Watch",
+    "similar_items": null,
+    "note": "시계설계도#5"
+  },
+  "T2_Necklace": {
+    "type": "equip",
+    "asset_name": "T2_Necklace",
+    "similar_items": null,
+    "note": "목걸이설계도#0"
+  },
+  "T3_Necklace": {
+    "type": "equip",
+    "asset_name": "T3_Necklace",
+    "similar_items": null,
+    "note": "목걸이설계도#1"
+  },
+  "T4_Necklace": {
+    "type": "equip",
+    "asset_name": "T4_Necklace",
+    "similar_items": null,
+    "note": "목걸이설계도#2"
+  },
+  "T5_Necklace": {
+    "type": "equip",
+    "asset_name": "T5_Necklace",
+    "similar_items": null,
+    "note": "목걸이설계도#3"
+  },
+  "T6_Necklace": {
+    "type": "equip",
+    "asset_name": "T6_Necklace",
+    "similar_items": null,
+    "note": "목걸이설계도#4"
+  },
+  "T7_Necklace": {
+    "type": "equip",
+    "asset_name": "T7_Necklace",
+    "similar_items": null,
+    "note": "목걸이설계도#5"
+  }
+}

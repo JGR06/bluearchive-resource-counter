@@ -1,3 +1,5 @@
+import json
+import copy
 from enum import Enum
 
 
@@ -27,69 +29,38 @@ def get_assetname_by_state(state):
         return 'Undefined'
 
 
-items_to_asset = {
-    'XP_1': 'XP_1',  # character xp
-    'XP_2': 'XP_2',
-    'XP_3': 'XP_3',
-    'XP_4': 'XP_4',
-    '100': 'nebra0',
-    '101': 'nebra1',
-    '102': 'nebra2',
-    '103': 'nebra3',
-    '110': 'phaistos0',
-    '111': 'phaistos1',
-    '112': 'phaistos2',
-    '113': 'phaistos3',
-    '120': 'wolfsegg0',
-    '121': 'wolfsegg1',
-    '122': 'wolfsegg2',
-    '123': 'wolfsegg3',
-    '130': 'nimrud0',
-    '131': 'nimrud1',
-    '132': 'nimrud2',
-    '133': 'nimrud3',
-    '140': 'mandragora0',
-    '141': 'mandragora1',
-    '142': 'mandragora2',
-    '143': 'mandragora3',
-    '150': 'rohonc0',
-    '151': 'rohonc1',
-    '152': 'rohonc2',
-    '153': 'rohonc3',
-    '160': 'aether0',
-    '161': 'aether1',
-    '162': 'aether2',
-    '163': 'aether3',
-    '170': 'antikythera0',
-    '171': 'antikythera1',
-    '172': 'antikythera2',
-    '173': 'antikythera3',
-    '180': 'voynich0',
-    '181': 'voynich1',
-    '182': 'voynich2',
-    '183': 'voynich3',
-    '190': 'haniwa0',
-    '191': 'haniwa1',
-    '192': 'haniwa2',
-    '193': 'haniwa3',
-    '200': 'totem0',
-    '201': 'totem1',
-    '202': 'totem2',
-    '203': 'totem3',
-    '210': 'baghdad0',
-    '211': 'baghdad1',
-    '212': 'baghdad2',
-    '213': 'baghdad3',
-    '240': 'colgante0',
-    '241': 'colgante1',
-    '242': 'colgante2',
-    '243': 'colgante3',
-    '290': 'mystery0',
-    '291': 'mystery1',
-    '292': 'mystery2',
-    '293': 'mystery3',
-}
+class DataSet:
+    def __init__(self):
+        self.collectables = {}
+        self.equipments = {}
+        self.load()
 
-equipments_to_asset = {
-    'GXP1': 'GXP_1',  # gear xp
-}
+    def load(self):
+        with open('../resource_counter/resources_data.json') as f:
+            raw = json.load(f)
+        for k, entity in raw.items():  # k is id for sheet, v is dict for it
+            if '|' in entity['note']:  # dirty parsing
+                xp = (entity['note'].split('|'))[-1]
+                xp = int(''.join(filter(str.isdigit, xp)))
+            else:
+                xp = 0
+            if entity['type'] == 'item':
+                self.collectables[k] = entity.copy()
+                self.collectables[k]['xp'] = xp
+            # skip equipments for rapid testing
+            # elif entity['type'] == 'equip':
+            #     self.equipments[k] = entity.copy()
+            #     self.equipments[k]['xp'] = xp
+            else:
+                continue
+        # temporary equipments data
+        self.equipments['GXP_1'] = {"type": "equip", "asset_name": "GXP_1", "similar_items": None, "note": "장비강화석#0|90xp", 'xp': 90}
+
+    def copy_collectable_items(self):
+        return copy.deepcopy(self.collectables)
+
+    def copy_equipments(self):
+        return copy.deepcopy(self.equipments.copy())
+
+
+resource_data = DataSet()
