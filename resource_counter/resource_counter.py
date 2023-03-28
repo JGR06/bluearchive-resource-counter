@@ -21,6 +21,7 @@ import imax
 
 class ResourceCounter:
     def __init__(self):
+        self.scroll_count_while_not_found = 0
         self.current_state = data.MenuState.Main
         self.items = data.items_to_asset.copy()
         self.equipments = data.equipments_to_asset.copy()
@@ -50,11 +51,13 @@ class ResourceCounter:
 
         elif self.current_state == data.MenuState.Option:  # enter to items or equipments
             if len(self.items.keys()) > 0:
+                self.scroll_count_while_not_found = 0
                 lua_helper.find_and_click(data.get_assetname_by_state(data.MenuState.Items))
                 time.sleep(1)
                 self.current_state = data.MenuState.Items
                 self.find_table_roi()
             elif len(self.equipments.keys()) > 0:
+                self.scroll_count_while_not_found = 0
                 lua_helper.find_and_click(data.get_assetname_by_state(data.MenuState.Equipments))
                 time.sleep(1)
                 self.current_state = data.MenuState.Equipments
@@ -69,11 +72,30 @@ class ResourceCounter:
                 time.sleep(3.5)
                 # TODO: check 'NOW LOADING' image disappear
                 self.current_state = data.MenuState.Option
+                return
+
             for k, v in self.items.items():
                 self.result[k] = self.count_resource(v, 'OCR', 'ocr_result')
-                time.sleep(0.5)
-            # temporary handler: remove after scrolling
-            self.items.clear()
+                if self.result[k] > 0:
+                    imax.print(f'[[{v} found({self.result[k]} entities)]]')
+            found_items_count = 0
+            for k, v in self.result.items():
+                if k in self.items and self.result[k] > 0:
+                    self.items.pop(k)
+                    found_items_count += self.result[k]
+            imax.print(f'[{self.scroll_count_while_not_found}/{data.SCROLL_COUNT_LIMIT_UNTIL_FOUND}]{found_items_count}')
+            if found_items_count == 0:
+                lua_helper.scroll_and_wait()
+                self.scroll_count_while_not_found += 1
+            else:
+                self.scroll_count_while_not_found = 0
+
+            # there's no items which we're looking for, escape
+            if self.scroll_count_while_not_found >= data.SCROLL_COUNT_LIMIT_UNTIL_FOUND:
+                for k, v in self.items.items():
+                    self.result[k] = 0
+                self.items.clear()
+            time.sleep(0.5)
 
         elif self.current_state == data.MenuState.Equipments:  # count equipments
             if len(self.equipments.keys()) == 0:
@@ -82,9 +104,26 @@ class ResourceCounter:
                 self.current_state = data.MenuState.Option
             for k, v in self.equipments.items():
                 self.result[k] = self.count_resource(v, 'OCR_equip', 'ocr_e_result')
-                time.sleep(0.5)
-            # temporary handler: remove after scrolling
-            self.equipments.clear()
+                if self.result[k] > 0:
+                    imax.print(f'[[{v} found({self.result[k]} entities)]]')
+            found_items_count = 0
+            for k, v in self.result.items():
+                if k in self.equipments and self.result[k] > 0:
+                    self.equipments.pop(k)
+                    found_items_count += self.result[k]
+            imax.print(f'[{self.scroll_count_while_not_found}/{data.SCROLL_COUNT_LIMIT_UNTIL_FOUND}]{found_items_count}')
+            if found_items_count == 0:
+                lua_helper.scroll_and_wait()
+                self.scroll_count_while_not_found += 1
+            else:
+                self.scroll_count_while_not_found = 0
+
+            # there's no items which we're looking for, escape
+            if self.scroll_count_while_not_found >= data.SCROLL_COUNT_LIMIT_UNTIL_FOUND:
+                for k, v in self.equipments.items():
+                    self.result[k] = 0
+                self.equipments.clear()
+            time.sleep(0.5)
 
     # NOTE: there's pretty different UI between 'ITEMS' and 'EQUIPMENTS' so it should take OCR target parameters
     # process ocr when image found
@@ -93,8 +132,8 @@ class ResourceCounter:
             lua_helper.set_image_roi(asset_name, self.roi_table[i])
             # searched = lua_helper.search_image(asset_name)
             searched = lua_helper.find_and_click(asset_name)
-            time.sleep(0.5)  # UI refresh rate
             if searched:
+                time.sleep(0.5)  # UI refresh rate
                 return lua_helper.ocr_count(ocr_asset_name, ocr_result_var)
             # if searched["succeed"]:
             #     return lua_helper.ocr_count(self.roi_table[i])
