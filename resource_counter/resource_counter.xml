@@ -30,14 +30,14 @@
         <TWCClass>RenderWindow</TWCClass>
         <PickPos>46466209</PickPos>
         <TWHandle>0x530B04</TWHandle>
-        <TargetWnd.left>129</TargetWnd.left>
-        <TargetWnd.top>197</TargetWnd.top>
-        <TargetWnd.right>2049</TargetWnd.right>
-        <TargetWnd.bottom>1277</TargetWnd.bottom>
-        <TarfrmWnd.left>128</TarfrmWnd.left>
-        <TarfrmWnd.top>163</TarfrmWnd.top>
-        <TarfrmWnd.right>2090</TarfrmWnd.right>
-        <TarfrmWnd.bottom>1278</TarfrmWnd.bottom>
+        <TargetWnd.left>161</TargetWnd.left>
+        <TargetWnd.top>109</TargetWnd.top>
+        <TargetWnd.right>2081</TargetWnd.right>
+        <TargetWnd.bottom>1189</TargetWnd.bottom>
+        <TarfrmWnd.left>160</TarfrmWnd.left>
+        <TarfrmWnd.top>75</TarfrmWnd.top>
+        <TarfrmWnd.right>2122</TarfrmWnd.right>
+        <TarfrmWnd.bottom>1190</TarfrmWnd.bottom>
         <Hotkey0>F7</Hotkey0>
         <Modifiers0>0</Modifiers0>
         <Vk0>118</Vk0>
@@ -63,7 +63,7 @@
             <Param2>0</Param2>
             <Param3>0</Param3>
             <Param4>0</Param4>
-            <Enable>0</Enable>
+            <Enable>1</Enable>
             <Group>0</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>1</ActCount>
@@ -83,7 +83,7 @@
             <Param2>0</Param2>
             <Param3>0</Param3>
             <Param4>0</Param4>
-            <Enable>0</Enable>
+            <Enable>1</Enable>
             <Group>0</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>1</ActCount>

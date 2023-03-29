@@ -22,6 +22,39 @@ lookup_resource_types = {
 }
 
 
+# ocr asset and result variable data
+ocr_assets = {
+    MenuState.Items: {
+        'item_count': {
+            'asset_name': 'OCR',
+            'variable_name': 'ocr_result'
+        },
+        'item_name_0': {  # line 1
+            'asset_name': 'OCR_item_name_0',
+            'variable_name': 'ocr_i_name_0'
+        },
+        'item_name_1': {  # line 2
+            'asset_name': 'OCR_item_name_1',
+            'variable_name': 'ocr_i_name_1'
+        }
+    },
+    MenuState.Equipments: {
+        'item_count': {
+            'asset_name': 'OCR_equip',
+            'variable_name': 'ocr_e_result'
+        },
+        'item_name_0': {  # line 1
+            'asset_name': '',
+            'variable_name': ''
+        },
+        'item_name_1': {  # line 2
+            'asset_name': '',
+            'variable_name': ''
+        }
+    }
+}
+
+
 def get_assetname_by_state(state):
     if state in lookup_resource_types:
         return lookup_resource_types[state]
@@ -29,14 +62,22 @@ def get_assetname_by_state(state):
         return 'Undefined'
 
 
+def get_item_type_by_state(state):
+    if state == MenuState.Items:
+        return 'item'
+    elif state == MenuState.Equipments:
+        return 'equip'
+    else:
+        return None
+
+
 class DataSet:
     def __init__(self):
-        self.collectables = {}
-        self.equipments = {}
+        self.collectibles = {}
         self.load()
 
     def load(self):
-        with open('../resource_counter/resources_data.json') as f:
+        with open('../resource_counter/resources_data.json', encoding='UTF8') as f:
             raw = json.load(f)
         for k, entity in raw.items():  # k is id for sheet, v is dict for it
             if '|' in entity['note']:  # dirty parsing
@@ -44,23 +85,17 @@ class DataSet:
                 xp = int(''.join(filter(str.isdigit, xp)))
             else:
                 xp = 0
-            if entity['type'] == 'item':
-                self.collectables[k] = entity.copy()
-                self.collectables[k]['xp'] = xp
             # skip equipments for rapid testing
-            # elif entity['type'] == 'equip':
-            #     self.equipments[k] = entity.copy()
-            #     self.equipments[k]['xp'] = xp
+            if entity['type'] == 'item':
+                self.collectibles[k] = entity.copy()
+                self.collectibles[k]['xp'] = xp
             else:
                 continue
         # temporary equipments data
-        self.equipments['GXP_1'] = {"type": "equip", "asset_name": "GXP_1", "similar_items": None, "note": "장비강화석#0|90xp", 'xp': 90}
+        self.collectibles['GXP_1'] = {"type": "equip", "asset_name": "GXP_1", "similar_items": None, "note": "장비강화석#0|90xp", 'xp': 90}
 
-    def copy_collectable_items(self):
-        return copy.deepcopy(self.collectables)
-
-    def copy_equipments(self):
-        return copy.deepcopy(self.equipments.copy())
+    def copy_collectible_items(self):
+        return copy.deepcopy(self.collectibles)
 
 
 resource_data = DataSet()
