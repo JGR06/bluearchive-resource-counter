@@ -107,6 +107,10 @@ class DataSet:
             for t in entity['item_type'].split(','):
                 if t in item_name:
                     item_type_matched += 1
+            if entity['grade'] == '상급' and '최상' in item_name:
+                item_type_matched += 0  # do nothing
+            elif entity['grade'] in item_name:
+                item_type_matched += 1
             if item_type_matched > nearest_score:
                 nearest_item = k
                 nearest_score = item_type_matched

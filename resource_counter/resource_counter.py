@@ -90,9 +90,11 @@ class ResourceCounter:
         for k, v in self.collectibles.items():
             if v['type'] != item_type:
                 continue
-            self.result[k] = self.count_resource(v, state)
-            if self.result[k] > 0:
-                imax.print(f'[[{v} found({self.result[k]} entities)]]')
+            result = self.count_resource(k, v, state)
+            found_key = result['fallback_to'] if result['fallback_to'] is not None else k
+            self.result[found_key] = result['count']
+            if self.result[found_key] > 0:
+                imax.print(f'[[{v} found({self.result[found_key]} entities)]]')
         found_items_count = 0
         for k, v in self.result.items():
             if k in self.collectibles and self.result[k] > 0:
@@ -116,21 +118,25 @@ class ResourceCounter:
 
     # NOTE: there's pretty different UI between 'ITEMS' and 'EQUIPMENTS' so it should take OCR target parameters
     # process ocr when image found
-    def count_resource(self, target_data, state):
+    def count_resource(self, target_key, target_data, state):
         asset_name = target_data['asset_name']
         ocr_asset_name = data.ocr_assets[state]['item_count']['asset_name']
         ocr_result_var = data.ocr_assets[state]['item_count']['variable_name']
         need_detailed_search = target_data['similar_items'] is not None or 'school' in target_data and target_data['school'] is not None
         chain_search_list = target_data['similar_items'].split(',') if target_data['similar_items'] is not None else []
+        count = 0
+        fallback_item = None
         for i in range(len(self.roi_table)):
             lua_helper.set_image_roi(asset_name, self.roi_table[i])
             # searched = lua_helper.search_image(asset_name)
             searched = lua_helper.find_and_click(asset_name)
             if searched and need_detailed_search:
+                time.sleep(0.5)  # UI refresh rate
                 # item detailed name OCR
                 ocr_item_name_line0 = data.ocr_assets[state]['item_name_0']['asset_name']
                 ocr_item_name_line0_result = data.ocr_assets[state]['item_name_0']['variable_name']
                 item_name = lua_helper.ocr(ocr_item_name_line0, ocr_item_name_line0_result).replace(' ', '')
+                item_name = self.handle_ocr_misunderstood_words(item_name)
                 # school name OCR
                 ocr_item_name_line1 = data.ocr_assets[state]['item_name_1']['asset_name']
                 ocr_item_name_line1_result = data.ocr_assets[state]['item_name_1']['variable_name']
@@ -138,7 +144,12 @@ class ResourceCounter:
                 imax.print(f'School Name: {school_name} Item Name: {item_name}')
 
                 item_type_matched = 0
-                for t in target_data['item_type'].split(','):
+                target_types = target_data['item_type'].split(',')
+                if target_data['grade'] is not None:
+                    target_types.append(target_data['grade'])
+                for t in target_types:
+                    if t == '상급' and '최상급' in item_name:
+                        continue  # dirty exception handling
                     if t in item_name:
                         item_type_matched += 1
                 school_name_matched = False
@@ -146,12 +157,23 @@ class ResourceCounter:
                     school_name_matched = True
                 imax.print(f'detailed search: school({school_name_matched}), type_match({item_type_matched})')
 
+                if not school_name_matched or item_type_matched < len(target_types):
+                    fallback_item = data.resource_data.find(item_name, school_name)
+                if fallback_item is not None and target_key != fallback_item:
+                    imax.print(f'[WARNING]you tried to search {target_key}, but found item seems like {fallback_item}')
+
             if searched:
                 time.sleep(0.5)  # UI refresh rate
-                return lua_helper.ocr_count(ocr_asset_name, ocr_result_var)
+                count = lua_helper.ocr_count(ocr_asset_name, ocr_result_var)
+                break
             # if searched["succeed"]:
             #     return lua_helper.ocr_count(self.roi_table[i])
-        return 0
+        return {'fallback_to': fallback_item, 'count': count}
+
+    def handle_ocr_misunderstood_words(self, str):
+        if str == '기조전술교육D':
+            return '기초전술교육BD'
+        return str
 
     def find_table_roi(self):
         # magic
