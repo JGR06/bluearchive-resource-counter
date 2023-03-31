@@ -25,6 +25,7 @@ class ResourceCounter:
         self.current_state = data.MenuState.Main
         self.collectibles = data.resource_data.copy_collectible_items()
         self.result = {}
+        self.misrecognitions = {}
         self.roi_table = []
         imax.print("ResourceCounter initialized")
 
@@ -86,14 +87,10 @@ class ResourceCounter:
             return
 
         item_type = data.get_item_type_by_state(state)
-        ocr_asset_name = data.ocr_assets[state]['item_count']['asset_name']
-        ocr_var_name = data.ocr_assets[state]['item_count']['variable_name']
         for k, v in self.collectibles.items():
-            # debug_it = v['type']
-            # imax.print(f'{k}/{debug_it}')
             if v['type'] != item_type:
                 continue
-            self.result[k] = self.count_resource(v['asset_name'], ocr_asset_name, ocr_var_name)
+            self.result[k] = self.count_resource(v, state)
             if self.result[k] > 0:
                 imax.print(f'[[{v} found({self.result[k]} entities)]]')
         found_items_count = 0
@@ -119,11 +116,36 @@ class ResourceCounter:
 
     # NOTE: there's pretty different UI between 'ITEMS' and 'EQUIPMENTS' so it should take OCR target parameters
     # process ocr when image found
-    def count_resource(self, asset_name, ocr_asset_name, ocr_result_var):
+    def count_resource(self, target_data, state):
+        asset_name = target_data['asset_name']
+        ocr_asset_name = data.ocr_assets[state]['item_count']['asset_name']
+        ocr_result_var = data.ocr_assets[state]['item_count']['variable_name']
+        need_detailed_search = target_data['similar_items'] is not None or 'school' in target_data and target_data['school'] is not None
+        chain_search_list = target_data['similar_items'].split(',') if target_data['similar_items'] is not None else []
         for i in range(len(self.roi_table)):
             lua_helper.set_image_roi(asset_name, self.roi_table[i])
             # searched = lua_helper.search_image(asset_name)
             searched = lua_helper.find_and_click(asset_name)
+            if searched and need_detailed_search:
+                # item detailed name OCR
+                ocr_item_name_line0 = data.ocr_assets[state]['item_name_0']['asset_name']
+                ocr_item_name_line0_result = data.ocr_assets[state]['item_name_0']['variable_name']
+                item_name = lua_helper.ocr(ocr_item_name_line0, ocr_item_name_line0_result).replace(' ', '')
+                # school name OCR
+                ocr_item_name_line1 = data.ocr_assets[state]['item_name_1']['asset_name']
+                ocr_item_name_line1_result = data.ocr_assets[state]['item_name_1']['variable_name']
+                school_name = lua_helper.ocr(ocr_item_name_line1, ocr_item_name_line1_result).replace(' ', '')
+                imax.print(f'School Name: {school_name} Item Name: {item_name}')
+
+                item_type_matched = 0
+                for t in target_data['item_type'].split(','):
+                    if t in item_name:
+                        item_type_matched += 1
+                school_name_matched = False
+                if target_data['school'] in school_name:
+                    school_name_matched = True
+                imax.print(f'detailed search: school({school_name_matched}), type_match({item_type_matched})')
+
             if searched:
                 time.sleep(0.5)  # UI refresh rate
                 return lua_helper.ocr_count(ocr_asset_name, ocr_result_var)

@@ -30,14 +30,14 @@
         <TWCClass>RenderWindow</TWCClass>
         <PickPos>46466209</PickPos>
         <TWHandle>0x530B04</TWHandle>
-        <TargetWnd.left>161</TargetWnd.left>
-        <TargetWnd.top>109</TargetWnd.top>
-        <TargetWnd.right>2081</TargetWnd.right>
-        <TargetWnd.bottom>1189</TargetWnd.bottom>
-        <TarfrmWnd.left>160</TarfrmWnd.left>
-        <TarfrmWnd.top>75</TarfrmWnd.top>
-        <TarfrmWnd.right>2122</TarfrmWnd.right>
-        <TarfrmWnd.bottom>1190</TarfrmWnd.bottom>
+        <TargetWnd.left>147</TargetWnd.left>
+        <TargetWnd.top>136</TargetWnd.top>
+        <TargetWnd.right>2067</TargetWnd.right>
+        <TargetWnd.bottom>1216</TargetWnd.bottom>
+        <TarfrmWnd.left>146</TarfrmWnd.left>
+        <TarfrmWnd.top>102</TarfrmWnd.top>
+        <TarfrmWnd.right>2108</TarfrmWnd.right>
+        <TarfrmWnd.bottom>1217</TarfrmWnd.bottom>
         <Hotkey0>F7</Hotkey0>
         <Modifiers0>0</Modifiers0>
         <Vk0>118</Vk0>

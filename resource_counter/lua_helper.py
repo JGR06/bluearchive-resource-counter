@@ -1,4 +1,5 @@
 import time
+import base64
 import imax
 
 
@@ -72,6 +73,35 @@ def ocr_count(ocr_asset_name='OCR', ocr_variable_name='ocr_result'):
         result = int(ocr_result)
     else:
         result = 0
+
+    return result
+
+
+def ocr(ocr_asset_name, ocr_variable_name):
+    imax.lua(f"ImageSearch('{ocr_asset_name}')")
+
+    imax.lua(f'temp_target = {ocr_variable_name}')
+    imax.lua('''local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/' -- You will need this for encoding/decoding
+-- encoding
+function enc(data)
+    return ((data:gsub('.', function(x) 
+        local r,b='',x:byte()
+        for i=8,1,-1 do r=r..(b%2^i-b%2^(i-1)>0 and '1' or '0') end
+        return r;
+    end)..'0000'):gsub('%d%d%d?%d?%d?%d?', function(x)
+        if (#x < 6) then return '' end
+        local c=0
+        for i=1,6 do c=c+(x:sub(i,i)=='1' and 2^(6-i) or 0) end
+        return b:sub(c+1,c+1)
+    end)..({ '', '==', '=' })[#data%3+1])
+end
+    temp_target = enc(temp_target)
+    ''')
+
+    ocr_result = imax.lua_get_value('temp_target')
+    result_bytes = base64.b64decode(ocr_result)
+    result = result_bytes.decode('cp949')
+    result = result.strip()
 
     return result
 
