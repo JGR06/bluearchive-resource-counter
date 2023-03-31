@@ -80,8 +80,10 @@ def ocr_count(ocr_asset_name='OCR', ocr_variable_name='ocr_result'):
 def ocr(ocr_asset_name, ocr_variable_name):
     imax.lua(f"ImageSearch('{ocr_asset_name}')")
 
+    # imax lua script throws cp949 string and occurs error when string contains korean(on imax.lua_get_value() executed)
+    # so make string base64 encoded, then decode on python script
     imax.lua(f'temp_target = {ocr_variable_name}')
-    imax.lua('''local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/' -- You will need this for encoding/decoding
+    imax.lua('''local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 -- encoding
 function enc(data)
     return ((data:gsub('.', function(x) 
