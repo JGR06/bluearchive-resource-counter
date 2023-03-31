@@ -101,7 +101,7 @@ class DataSet:
         nearest_item = None
         nearest_score = 0
         for k, entity in self.collectibles.items():
-            if entity['school'] not in school_name:
+            if entity['school'] is None or entity['school'] not in school_name:
                 continue
             item_type_matched = 0
             for t in entity['item_type'].split(','):
