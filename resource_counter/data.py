@@ -100,7 +100,7 @@ class DataSet:
     def find(self, item_name, school_name):
         nearest_item = None
         nearest_score = 0
-        for k, entity in self.collectibles:
+        for k, entity in self.collectibles.items():
             if entity['school'] not in school_name:
                 continue
             item_type_matched = 0
