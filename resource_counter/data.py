@@ -97,5 +97,20 @@ class DataSet:
     def copy_collectible_items(self):
         return copy.deepcopy(self.collectibles)
 
+    def find(self, item_name, school_name):
+        nearest_item = None
+        nearest_score = 0
+        for k, entity in self.collectibles:
+            if entity['school'] not in school_name:
+                continue
+            item_type_matched = 0
+            for t in entity['item_type'].split(','):
+                if t in item_name:
+                    item_type_matched += 1
+            if item_type_matched > nearest_score:
+                nearest_item = k
+                nearest_score = item_type_matched
+        return nearest_item
+
 
 resource_data = DataSet()
