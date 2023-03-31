@@ -92,7 +92,7 @@ class DataSet:
             else:
                 continue
         # temporary equipments data
-        self.collectibles['GXP_1'] = {"type": "equip", "asset_name": "GXP_1", "similar_items": None, "note": "장비강화석#0|90xp", 'xp': 90}
+        self.collectibles['GXP_1'] = {"type": "equip", "asset_name": "GXP_1", "similar_items": None, "school": None, "item_type": "강화석", "grade": "기초", "note": "장비강화석#0|90xp", 'xp': 90}
 
     def copy_collectible_items(self):
         return copy.deepcopy(self.collectibles)
