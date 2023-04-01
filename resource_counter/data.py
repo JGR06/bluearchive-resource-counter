@@ -85,14 +85,8 @@ class DataSet:
                 xp = int(''.join(filter(str.isdigit, xp)))
             else:
                 xp = 0
-            # skip equipments for rapid testing
-            if entity['type'] == 'item':
-                self.collectibles[k] = entity.copy()
-                self.collectibles[k]['xp'] = xp
-            else:
-                continue
-        # temporary equipments data
-        self.collectibles['GXP_1'] = {"type": "equip", "asset_name": "GXP_1", "similar_items": None, "school": None, "item_type": "강화석", "grade": "기초", "note": "장비강화석#0|90xp", 'xp': 90}
+            self.collectibles[k] = entity.copy()
+            self.collectibles[k]['xp'] = xp
 
     def copy_collectible_items(self):
         return copy.deepcopy(self.collectibles)

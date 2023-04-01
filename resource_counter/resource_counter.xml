@@ -54,6 +54,52 @@
         <ReactSpeed>1</ReactSpeed>
         <InputType>1</InputType>
         <ImageCount>228</ImageCount>
+        <Image_1>
+            <Name>controller</Name>
+            <Rect>(0, 0, 0, 0)</Rect>
+            <ROI>(0, 0, 0, 0)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>0</Param1>
+            <Param2>0</Param2>
+            <Param3>0</Param3>
+            <Param4>0</Param4>
+            <Enable>1</Enable>
+            <Group>0</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>1</ActCount>
+            <Act_1>
+                <Name>스크립트 입력</Name>
+                <Enable>1</Enable>
+                <Param>Script( controller_5h5jc.py import sys\n import importlib.util\n \n # TODO: fix dirty import\n file_path = '../resource_counter/util.py'\n module_name = 'util'\n \n spec = importlib.util.spec_from_file_location(module_name, fil )</Param>
+                <Attr LuaFile="controller_5h5jc.py" Text="import sys\n import importlib.util\n \n # TODO: fix dirty import\n file_path = &apos;../resource_counter/util.py&apos;\n module_name = &apos;util&apos;\n \n spec = importlib.util.spec_from_file_location(module_name, fil"/>
+            </Act_1>
+        </Image_1>
+        <Image_2>
+            <Name>script_finished</Name>
+            <Rect>(0, 0, 0, 0)</Rect>
+            <ROI>(0, 0, 0, 0)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>0</Param1>
+            <Param2>0</Param2>
+            <Param3>0</Param3>
+            <Param4>0</Param4>
+            <Enable>1</Enable>
+            <Group>0</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>딜레이(지연)</Name>
+                <Enable>1</Enable>
+                <Param>Delay( 0 30.000000 0 0 0.000000 )</Param>
+                <Attr DelayMin="0" DelaySec="30" CheckDelayRand="0" DelayRandMin="0" DelayRandSec="0"/>
+            </Act_1>
+            <Act_2>
+                <Name>기타 액션</Name>
+                <Enable>1</Enable>
+                <Param>Etc1( 0 1  0 5.000000 alarm.wav  0 -1 0 null null  0 null 0  0 null null null 0  0 null null null 0 )</Param>
+                <Attr CheckEtcScrshot="0" CheckEtcAutoStop="1" CheckEtcAlarm="0" EtcAlarmSec="5" EtcAlarmFilePath="alarm.wav" CheckEtcKatalk="0" ComboEtcKatalk="-1" EtcKatalkTitle="null" EtcKatalkText="null" CheckEtcKatalkScrshot="0" CheckEtcMail="0" EtcMailAddress="null" CheckEtcMailScrshot="0" CheckEtcTelegram="0" EtcTelegramToken="null" EtcTelegramChatID="null" EtcTelegramText="null" CheckEtcTelegramScrshot="0" CheckEtcDiscord="0" EtcDiscordURL="null" EtcDiscordName="null" EtcDiscordText="null" CheckEtcDiscordScrshot="0"/>
+            </Act_2>
+        </Image_2>
         <Image_3>
             <Name>main.grp</Name>
             <Rect>(0, 0, 0, 0)</Rect>
@@ -4488,6 +4534,20 @@
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
         </Image_173>
+        <Image_174>
+            <Name>Blueprint.grp</Name>
+            <Rect>(0, 0, 0, 0)</Rect>
+            <ROI>(0, 0, 0, 0)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>0</Param1>
+            <Param2>0</Param2>
+            <Param3>0</Param3>
+            <Param4>0</Param4>
+            <Enable>0</Enable>
+            <Group>1</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>0</ActCount>
+        </Image_174>
         <Image_175>
             <Name>T2_Hat</Name>
             <Rect>(1227, 503, 89, 68)</Rect>
@@ -4618,6 +4678,32 @@
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
         </Image_179>
+        <Image_180>
+            <Name>T7_Hat</Name>
+            <Rect>(1226, 655, 92, 67)</Rect>
+            <ROI>(1009, 221, 876, 816)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13172737</Param1>
+            <Param2>998313</Param2>
+            <Param3>0</Param3>
+            <Param4>1680364770</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="84" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_180>
         <Image_181>
             <Name>T2_Gloves</Name>
             <Rect>(1409, 589, 48, 62)</Rect>
@@ -5736,58 +5822,6 @@
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
         </Image_223>
-        <Image_225>
-            <Name>T4_Necklace</Name>
-            <Rect>(1238, 898, 65, 69)</Rect>
-            <ROI>(1009, 221, 876, 816)</ROI>
-            <FullROI>0</FullROI>
-            <Param1>13369345</Param1>
-            <Param2>80887</Param2>
-            <Param3>0</Param3>
-            <Param4>1680364202</Param4>
-            <Enable>1</Enable>
-            <Group>2</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
-            <ActCount>2</ActCount>
-            <Act_1>
-                <Name>이미지 표시</Name>
-                <Enable>1</Enable>
-                <Param/>
-                <Attr/>
-            </Act_1>
-            <Act_2>
-                <Name>마우스 입력</Name>
-                <Enable>1</Enable>
-                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
-                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
-            </Act_2>
-        </Image_225>
-        <Image_227>
-            <Name>T6_Necklace</Name>
-            <Rect>(1559, 896, 79, 71)</Rect>
-            <ROI>(1009, 221, 876, 816)</ROI>
-            <FullROI>0</FullROI>
-            <Param1>13369345</Param1>
-            <Param2>146431</Param2>
-            <Param3>0</Param3>
-            <Param4>1680364231</Param4>
-            <Enable>1</Enable>
-            <Group>2</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
-            <ActCount>2</ActCount>
-            <Act_1>
-                <Name>이미지 표시</Name>
-                <Enable>1</Enable>
-                <Param/>
-                <Attr/>
-            </Act_1>
-            <Act_2>
-                <Name>마우스 입력</Name>
-                <Enable>1</Enable>
-                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
-                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
-            </Act_2>
-        </Image_227>
         <Image_224>
             <Name>T3_Necklace</Name>
             <Rect>(1075, 897, 71, 73)</Rect>
@@ -5814,64 +5848,18 @@
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
         </Image_224>
-        <Image_1>
-            <Name>controller</Name>
-            <Rect>(0, 0, 0, 0)</Rect>
-            <ROI>(0, 0, 0, 0)</ROI>
-            <FullROI>0</FullROI>
-            <Param1>0</Param1>
-            <Param2>0</Param2>
-            <Param3>0</Param3>
-            <Param4>0</Param4>
-            <Enable>0</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
-            <ActCount>1</ActCount>
-            <Act_1>
-                <Name>스크립트 입력</Name>
-                <Enable>1</Enable>
-                <Param>Script( controller_5h5jc.py import sys\n import importlib.util\n \n # TODO: fix dirty import\n file_path = '../resource_counter/util.py'\n module_name = 'util'\n \n spec = importlib.util.spec_from_file_location(module_name, fil )</Param>
-                <Attr LuaFile="controller_5h5jc.py" Text="import sys\n import importlib.util\n \n # TODO: fix dirty import\n file_path = &apos;../resource_counter/util.py&apos;\n module_name = &apos;util&apos;\n \n spec = importlib.util.spec_from_file_location(module_name, fil"/>
-            </Act_1>
-        </Image_1>
-        <Image_2>
-            <Name>script_finished</Name>
-            <Rect>(0, 0, 0, 0)</Rect>
-            <ROI>(0, 0, 0, 0)</ROI>
-            <FullROI>0</FullROI>
-            <Param1>0</Param1>
-            <Param2>0</Param2>
-            <Param3>0</Param3>
-            <Param4>0</Param4>
-            <Enable>0</Enable>
-            <Group>0</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
-            <ActCount>2</ActCount>
-            <Act_1>
-                <Name>딜레이(지연)</Name>
-                <Enable>1</Enable>
-                <Param>Delay( 0 30.000000 0 0 0.000000 )</Param>
-                <Attr DelayMin="0" DelaySec="30" CheckDelayRand="0" DelayRandMin="0" DelayRandSec="0"/>
-            </Act_1>
-            <Act_2>
-                <Name>기타 액션</Name>
-                <Enable>1</Enable>
-                <Param>Etc1( 0 1  0 5.000000 alarm.wav  0 -1 0 null null  0 null 0  0 null null null 0  0 null null null 0 )</Param>
-                <Attr CheckEtcScrshot="0" CheckEtcAutoStop="1" CheckEtcAlarm="0" EtcAlarmSec="5" EtcAlarmFilePath="alarm.wav" CheckEtcKatalk="0" ComboEtcKatalk="-1" EtcKatalkTitle="null" EtcKatalkText="null" CheckEtcKatalkScrshot="0" CheckEtcMail="0" EtcMailAddress="null" CheckEtcMailScrshot="0" CheckEtcTelegram="0" EtcTelegramToken="null" EtcTelegramChatID="null" EtcTelegramText="null" CheckEtcTelegramScrshot="0" CheckEtcDiscord="0" EtcDiscordURL="null" EtcDiscordName="null" EtcDiscordText="null" CheckEtcDiscordScrshot="0"/>
-            </Act_2>
-        </Image_2>
-        <Image_180>
-            <Name>T7_Hat</Name>
-            <Rect>(1226, 655, 92, 67)</Rect>
+        <Image_225>
+            <Name>T4_Necklace</Name>
+            <Rect>(1238, 898, 65, 69)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13172737</Param1>
-            <Param2>998313</Param2>
+            <Param1>13369345</Param1>
+            <Param2>80887</Param2>
             <Param3>0</Param3>
-            <Param4>1680364770</Param4>
+            <Param4>1680364202</Param4>
             <Enable>1</Enable>
             <Group>2</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="84" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -5885,7 +5873,7 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_180>
+        </Image_225>
         <Image_226>
             <Name>T5_Necklace</Name>
             <Rect>(1403, 897, 59, 71)</Rect>
@@ -5912,6 +5900,32 @@
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
         </Image_226>
+        <Image_227>
+            <Name>T6_Necklace</Name>
+            <Rect>(1559, 896, 79, 71)</Rect>
+            <ROI>(1009, 221, 876, 816)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13369345</Param1>
+            <Param2>146431</Param2>
+            <Param3>0</Param3>
+            <Param4>1680364231</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_227>
         <Image_228>
             <Name>T7_Necklace</Name>
             <Rect>(1728, 898, 63, 69)</Rect>
@@ -5938,19 +5952,5 @@
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
         </Image_228>
-        <Image_174>
-            <Name>Blueprint.grp</Name>
-            <Rect>(0, 0, 0, 0)</Rect>
-            <ROI>(0, 0, 0, 0)</ROI>
-            <FullROI>0</FullROI>
-            <Param1>0</Param1>
-            <Param2>0</Param2>
-            <Param3>0</Param3>
-            <Param4>0</Param4>
-            <Enable>0</Enable>
-            <Group>1</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
-            <ActCount>0</ActCount>
-        </Image_174>
     </GENERAL>
 </ROOT>
