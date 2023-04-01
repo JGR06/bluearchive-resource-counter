@@ -30,14 +30,14 @@
         <TWCClass>RenderWindow</TWCClass>
         <PickPos>46466209</PickPos>
         <TWHandle>0x530B04</TWHandle>
-        <TargetWnd.left>147</TargetWnd.left>
-        <TargetWnd.top>136</TargetWnd.top>
-        <TargetWnd.right>2067</TargetWnd.right>
-        <TargetWnd.bottom>1216</TargetWnd.bottom>
-        <TarfrmWnd.left>146</TarfrmWnd.left>
-        <TarfrmWnd.top>102</TarfrmWnd.top>
-        <TarfrmWnd.right>2108</TarfrmWnd.right>
-        <TarfrmWnd.bottom>1217</TarfrmWnd.bottom>
+        <TargetWnd.left>93</TargetWnd.left>
+        <TargetWnd.top>156</TargetWnd.top>
+        <TargetWnd.right>2013</TargetWnd.right>
+        <TargetWnd.bottom>1236</TargetWnd.bottom>
+        <TarfrmWnd.left>92</TarfrmWnd.left>
+        <TarfrmWnd.top>122</TarfrmWnd.top>
+        <TarfrmWnd.right>2054</TarfrmWnd.right>
+        <TarfrmWnd.bottom>1237</TarfrmWnd.bottom>
         <Hotkey0>F7</Hotkey0>
         <Modifiers0>0</Modifiers0>
         <Vk0>118</Vk0>
@@ -2286,16 +2286,16 @@
         </Image_86>
         <Image_87>
             <Name>Rw_BD_2</Name>
-            <Rect>(1404, 438, 108, 72)</Rect>
+            <Rect>(1222, 377, 137, 102)</Rect>
             <ROI>(1011, 223, 873, 694)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13238273</Param1>
-            <Param2>2767844</Param2>
+            <Param1>13172737</Param1>
+            <Param2>867249</Param2>
             <Param3>0</Param3>
-            <Param4>1680024987</Param4>
+            <Param4>1680350397</Param4>
             <Enable>1</Enable>
             <Group>2</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="85" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Trg Interval="1" CheckInherit1="1" Acc="82" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -2338,13 +2338,13 @@
         </Image_88>
         <Image_89>
             <Name>Tr_BD_0</Name>
-            <Rect>(1569, 439, 104, 75)</Rect>
+            <Rect>(1376, 390, 143, 87)</Rect>
             <ROI>(1007, 218, 876, 700)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13303809</Param1>
-            <Param2>2833380</Param2>
+            <Param1>13172737</Param1>
+            <Param2>3095495</Param2>
             <Param3>0</Param3>
-            <Param4>1680025039</Param4>
+            <Param4>1680350416</Param4>
             <Enable>1</Enable>
             <Group>2</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
@@ -2570,32 +2570,6 @@
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
         </Image_97>
-        <Image_98>
-            <Name>Ab_BD_1</Name>
-            <Rect>(1229, 422, 132, 93)</Rect>
-            <ROI>(1010, 223, 873, 693)</ROI>
-            <FullROI>0</FullROI>
-            <Param1>13238273</Param1>
-            <Param2>3357648</Param2>
-            <Param3>0</Param3>
-            <Param4>1680018558</Param4>
-            <Enable>1</Enable>
-            <Group>2</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="85" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
-            <ActCount>2</ActCount>
-            <Act_1>
-                <Name>이미지 표시</Name>
-                <Enable>1</Enable>
-                <Param/>
-                <Attr/>
-            </Act_1>
-            <Act_2>
-                <Name>마우스 입력</Name>
-                <Enable>1</Enable>
-                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
-                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
-            </Act_2>
-        </Image_98>
         <Image_99>
             <Name>Ab_BD_2</Name>
             <Rect>(1386, 416, 141, 96)</Rect>
@@ -3064,5 +3038,31 @@
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
         </Image_116>
+        <Image_98>
+            <Name>Ab_BD_1</Name>
+            <Rect>(1055, 478, 144, 96)</Rect>
+            <ROI>(1010, 223, 873, 693)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13172737</Param1>
+            <Param2>3488734</Param2>
+            <Param3>0</Param3>
+            <Param4>1680351222</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="82" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_98>
     </GENERAL>
 </ROOT>
