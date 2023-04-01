@@ -93,7 +93,7 @@ class DataSet:
         return copy.deepcopy(self.collectibles)
 
     def debug_replace_key_to_name(self, key_dict):
-        return dict(map(lambda kv: (self.collectibles.get(kv[0])['note'], kv[1]), key_dict.items()))
+        return dict(map(lambda kv: (self.collectibles.get(kv[0], {'default': 'none'}).get('note', 'Unmanaged'), kv[1]), key_dict.items()))
 
     def find(self, item_name, school_name):
         nearest_item = None
@@ -123,6 +123,7 @@ class DataSet:
             collectibles['Credit'] = credit
             planner_data['owned_materials'] = collectibles
             f.truncate(0)
+            f.seek(0)
             json.dump(planner_data, f)
             f.close()
 
