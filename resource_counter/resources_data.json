@@ -863,6 +863,330 @@
     "grade": "최상급",
     "note": "발키리BD#3"
   },
+  "4000": {
+    "type": "item",
+    "asset_name": "Hk_SB_0",
+    "similar_items": null,
+    "school": "백귀야행",
+    "item_type": "기술,노트",
+    "grade": "기초",
+    "note": "백귀야행교본#0"
+  },
+  "4001": {
+    "type": "item",
+    "asset_name": "Hk_SB_1",
+    "similar_items": null,
+    "school": "백귀야행",
+    "item_type": "기술,노트",
+    "grade": "일반",
+    "note": "백귀야행교본#1"
+  },
+  "4002": {
+    "type": "item",
+    "asset_name": "Hk_SB_2",
+    "similar_items": null,
+    "school": "백귀야행",
+    "item_type": "기술,노트",
+    "grade": "상급",
+    "note": "백귀야행교본#2"
+  },
+  "4003": {
+    "type": "item",
+    "asset_name": "Hk_SB_3",
+    "similar_items": null,
+    "school": "백귀야행",
+    "item_type": "기술,노트",
+    "grade": "최상급",
+    "note": "백귀야행교본#3"
+  },
+  "4010": {
+    "type": "item",
+    "asset_name": "Rw_SB_0",
+    "similar_items": null,
+    "school": "붉은겨울",
+    "item_type": "기술,노트",
+    "grade": "기초",
+    "note": "붉은겨울교본#0"
+  },
+  "4011": {
+    "type": "item",
+    "asset_name": "Rw_SB_1",
+    "similar_items": null,
+    "school": "붉은겨울",
+    "item_type": "기술,노트",
+    "grade": "일반",
+    "note": "붉은겨울교본#1"
+  },
+  "4012": {
+    "type": "item",
+    "asset_name": "Rw_SB_2",
+    "similar_items": null,
+    "school": "붉은겨울",
+    "item_type": "기술,노트",
+    "grade": "상급",
+    "note": "붉은겨울교본#2"
+  },
+  "4013": {
+    "type": "item",
+    "asset_name": "Rw_SB_3",
+    "similar_items": null,
+    "school": "붉은겨울",
+    "item_type": "기술,노트",
+    "grade": "최상급",
+    "note": "붉은겨울교본#3"
+  },
+  "4020": {
+    "type": "item",
+    "asset_name": "Tr_SB_0",
+    "similar_items": null,
+    "school": "트리니티",
+    "item_type": "기술,노트",
+    "grade": "기초",
+    "note": "트리니티교본#0"
+  },
+  "4021": {
+    "type": "item",
+    "asset_name": "Tr_SB_1",
+    "similar_items": null,
+    "school": "트리니티",
+    "item_type": "기술,노트",
+    "grade": "일반",
+    "note": "트리니티교본#1"
+  },
+  "4022": {
+    "type": "item",
+    "asset_name": "Tr_SB_2",
+    "similar_items": null,
+    "school": "트리니티",
+    "item_type": "기술,노트",
+    "grade": "상급",
+    "note": "트리니티교본#2"
+  },
+  "4023": {
+    "type": "item",
+    "asset_name": "Tr_SB_3",
+    "similar_items": null,
+    "school": "트리니티",
+    "item_type": "기술,노트",
+    "grade": "최상급",
+    "note": "트리니티교본#3"
+  },
+  "4030": {
+    "type": "item",
+    "asset_name": "Ge_SB_0",
+    "similar_items": null,
+    "school": "게헨나",
+    "item_type": "기술,노트",
+    "grade": "기초",
+    "note": "게헨나교본#0"
+  },
+  "4031": {
+    "type": "item",
+    "asset_name": "Ge_SB_1",
+    "similar_items": null,
+    "school": "게헨나",
+    "item_type": "기술,노트",
+    "grade": "일반",
+    "note": "게헨나교본#1"
+  },
+  "4032": {
+    "type": "item",
+    "asset_name": "Ge_SB_2",
+    "similar_items": null,
+    "school": "게헨나",
+    "item_type": "기술,노트",
+    "grade": "상급",
+    "note": "게헨나교본#2"
+  },
+  "4033": {
+    "type": "item",
+    "asset_name": "Ge_SB_3",
+    "similar_items": null,
+    "school": "게헨나",
+    "item_type": "기술,노트",
+    "grade": "최상급",
+    "note": "게헨나교본#3"
+  },
+  "4040": {
+    "type": "item",
+    "asset_name": "Ab_SB_0",
+    "similar_items": null,
+    "school": "아비도스",
+    "item_type": "기술,노트",
+    "grade": "기초",
+    "note": "아비도스교본#0"
+  },
+  "4041": {
+    "type": "item",
+    "asset_name": "Ab_SB_1",
+    "similar_items": null,
+    "school": "아비도스",
+    "item_type": "기술,노트",
+    "grade": "일반",
+    "note": "아비도스교본#1"
+  },
+  "4042": {
+    "type": "item",
+    "asset_name": "Ab_SB_2",
+    "similar_items": null,
+    "school": "아비도스",
+    "item_type": "기술,노트",
+    "grade": "상급",
+    "note": "아비도스교본#2"
+  },
+  "4043": {
+    "type": "item",
+    "asset_name": "Ab_SB_3",
+    "similar_items": null,
+    "school": "아비도스",
+    "item_type": "기술,노트",
+    "grade": "최상급",
+    "note": "아비도스교본#3"
+  },
+  "4050": {
+    "type": "item",
+    "asset_name": "Mi_SB_0",
+    "similar_items": null,
+    "school": "밀레니엄",
+    "item_type": "기술,노트",
+    "grade": "기초",
+    "note": "밀레니엄교본#0"
+  },
+  "4051": {
+    "type": "item",
+    "asset_name": "Mi_SB_1",
+    "similar_items": null,
+    "school": "밀레니엄",
+    "item_type": "기술,노트",
+    "grade": "일반",
+    "note": "밀레니엄교본#1"
+  },
+  "4052": {
+    "type": "item",
+    "asset_name": "Mi_SB_2",
+    "similar_items": null,
+    "school": "밀레니엄",
+    "item_type": "기술,노트",
+    "grade": "상급",
+    "note": "밀레니엄교본#2"
+  },
+  "4053": {
+    "type": "item",
+    "asset_name": "Mi_SB_3",
+    "similar_items": null,
+    "school": "밀레니엄",
+    "item_type": "기술,노트",
+    "grade": "최상급",
+    "note": "밀레니엄교본#3"
+  },
+  "4060": {
+    "type": "item",
+    "asset_name": "Ar_SB_0",
+    "similar_items": null,
+    "school": "아리우스",
+    "item_type": "기술,노트",
+    "grade": "기초",
+    "note": "아리우스교본#0"
+  },
+  "4061": {
+    "type": "item",
+    "asset_name": "Ar_SB_1",
+    "similar_items": null,
+    "school": "아리우스",
+    "item_type": "기술,노트",
+    "grade": "일반",
+    "note": "아리우스교본#1"
+  },
+  "4062": {
+    "type": "item",
+    "asset_name": "Ar_SB_2",
+    "similar_items": null,
+    "school": "아리우스",
+    "item_type": "기술,노트",
+    "grade": "상급",
+    "note": "아리우스교본#2"
+  },
+  "4063": {
+    "type": "item",
+    "asset_name": "Ar_SB_3",
+    "similar_items": null,
+    "school": "아리우스",
+    "item_type": "기술,노트",
+    "grade": "최상급",
+    "note": "아리우스교본#3"
+  },
+  "4070": {
+    "type": "item",
+    "asset_name": "Sh_SB_0",
+    "similar_items": null,
+    "school": "산해경",
+    "item_type": "기술,노트",
+    "grade": "기초",
+    "note": "산해경교본#0"
+  },
+  "4071": {
+    "type": "item",
+    "asset_name": "Sh_SB_1",
+    "similar_items": null,
+    "school": "산해경",
+    "item_type": "기술,노트",
+    "grade": "일반",
+    "note": "산해경교본#1"
+  },
+  "4072": {
+    "type": "item",
+    "asset_name": "Sh_SB_2",
+    "similar_items": null,
+    "school": "산해경",
+    "item_type": "기술,노트",
+    "grade": "상급",
+    "note": "산해경교본#2"
+  },
+  "4073": {
+    "type": "item",
+    "asset_name": "Sh_SB_3",
+    "similar_items": null,
+    "school": "산해경",
+    "item_type": "기술,노트",
+    "grade": "최상급",
+    "note": "산해경교본#3"
+  },
+  "4080": {
+    "type": "item",
+    "asset_name": "Va_SB_0",
+    "similar_items": null,
+    "school": "발키리",
+    "item_type": "기술,노트",
+    "grade": "기초",
+    "note": "발키리교본#0"
+  },
+  "4081": {
+    "type": "item",
+    "asset_name": "Va_SB_1",
+    "similar_items": null,
+    "school": "발키리",
+    "item_type": "기술,노트",
+    "grade": "일반",
+    "note": "발키리교본#1"
+  },
+  "4082": {
+    "type": "item",
+    "asset_name": "Va_SB_2",
+    "similar_items": null,
+    "school": "발키리",
+    "item_type": "기술,노트",
+    "grade": "상급",
+    "note": "발키리교본#2"
+  },
+  "4083": {
+    "type": "item",
+    "asset_name": "Va_SB_3",
+    "similar_items": null,
+    "school": "발키리",
+    "item_type": "기술,노트",
+    "grade": "최상급",
+    "note": "발키리교본#3"
+  },
   "9999": {
     "type": "item",
     "asset_name": "Skillbook_Ult",
@@ -878,7 +1202,7 @@
     "similar_items": null,
     "school": null,
     "item_type": "강화석",
-    "grade": "일반",
+    "grade": "하급",
     "note": "장비강화석#0|90xp"
   },
   "GXP_2": {
@@ -887,7 +1211,7 @@
     "similar_items": null,
     "school": null,
     "item_type": "강화석",
-    "grade": "기초",
+    "grade": "일반",
     "note": "장비강화석#1|360xp"
   },
   "GXP_3": {
@@ -913,8 +1237,8 @@
     "asset_name": "T1_Spring",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "스프링",
+    "grade": "녹슨",
     "note": "전용무기 스프링#0"
   },
   "T2_Spring": {
@@ -922,8 +1246,8 @@
     "asset_name": "T2_Spring",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "스프링",
+    "grade": "온전한",
     "note": "전용무기 스프링#1"
   },
   "T3_Spring": {
@@ -931,8 +1255,8 @@
     "asset_name": "T3_Spring",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "스프링",
+    "grade": "크로뮴",
     "note": "전용무기 스프링#2"
   },
   "T4_Spring": {
@@ -940,8 +1264,8 @@
     "asset_name": "T4_Spring",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "스프링",
+    "grade": "티타늄",
     "note": "전용무기 스프링#3"
   },
   "T1_Hammer": {
@@ -949,8 +1273,8 @@
     "asset_name": "T1_Hammer",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "해머",
+    "grade": "녹슨",
     "note": "전용무기 해머#0"
   },
   "T2_Hammer": {
@@ -958,8 +1282,8 @@
     "asset_name": "T2_Hammer",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "해머",
+    "grade": "온전한",
     "note": "전용무기 해머#1"
   },
   "T3_Hammer": {
@@ -967,8 +1291,8 @@
     "asset_name": "T3_Hammer",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "해머",
+    "grade": "크로뮴",
     "note": "전용무기 해머#2"
   },
   "T4_Hammer": {
@@ -976,8 +1300,8 @@
     "asset_name": "T4_Hammer",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "해머",
+    "grade": "티타늄",
     "note": "전용무기 해머#3"
   },
   "T1_Barrel": {
@@ -985,8 +1309,8 @@
     "asset_name": "T1_Barrel",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "총열",
+    "grade": "녹슨",
     "note": "전용무기 총열#0"
   },
   "T2_Barrel": {
@@ -994,8 +1318,8 @@
     "asset_name": "T2_Barrel",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "총열",
+    "grade": "온전한",
     "note": "전용무기 총열#1"
   },
   "T3_Barrel": {
@@ -1003,8 +1327,8 @@
     "asset_name": "T3_Barrel",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "총열",
+    "grade": "크로뮴",
     "note": "전용무기 총열#2"
   },
   "T4_Barrel": {
@@ -1012,8 +1336,8 @@
     "asset_name": "T4_Barrel",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "총열",
+    "grade": "티타늄",
     "note": "전용무기 총열#3"
   },
   "T1_Needle": {
@@ -1021,8 +1345,8 @@
     "asset_name": "T1_Needle",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "공이",
+    "grade": "녹슨",
     "note": "전용무기 공이#0"
   },
   "T2_Needle": {
@@ -1030,8 +1354,8 @@
     "asset_name": "T2_Needle",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "공이",
+    "grade": "온전한",
     "note": "전용무기 공이#1"
   },
   "T3_Needle": {
@@ -1039,8 +1363,8 @@
     "asset_name": "T3_Needle",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "공이",
+    "grade": "크로뮴",
     "note": "전용무기 공이#2"
   },
   "T4_Needle": {
@@ -1048,8 +1372,8 @@
     "asset_name": "T4_Needle",
     "similar_items": null,
     "school": null,
-    "item_type": null,
-    "grade": null,
+    "item_type": "공이",
+    "grade": "티타늄",
     "note": "전용무기 공이#3"
   },
   "T2_Hat": {
