@@ -37,6 +37,14 @@ class ResourceCounter:
             json.dump(self.result, f)
         f.close()
 
+        with open(f'{util.root_path}/misrecognitions.json', 'w') as f:
+            json.dump(self.misrecognitions, f)
+        f.close()
+
+        with open(f'{util.root_path}/debug_output.json', 'w', encoding='UTF-8') as f:
+            json.dump(data.resource_data.debug_replace_key_to_name(self.result), f, ensure_ascii=False)
+        f.close()
+
     def run(self):
         while not self.is_finished():
             self.update_state()
@@ -162,6 +170,8 @@ class ResourceCounter:
                     fallback_item = data.resource_data.find(item_name, school_name)
                 if fallback_item is not None and target_key != fallback_item:
                     imax.print(f'[WARNING]you tried to search {target_key}, but found item seems like {fallback_item}')
+                    misrecognition_list = self.misrecognitions.setdefault(target_key, [])
+                    misrecognition_list.append(fallback_item)
 
             if searched:
                 time.sleep(0.5)  # UI refresh rate

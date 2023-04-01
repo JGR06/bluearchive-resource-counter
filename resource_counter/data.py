@@ -97,6 +97,9 @@ class DataSet:
     def copy_collectible_items(self):
         return copy.deepcopy(self.collectibles)
 
+    def debug_replace_key_to_name(self, key_dict):
+        return dict(map(lambda kv: (self.collectibles.get(kv[0])['note'], kv[1]), key_dict.items()))
+
     def find(self, item_name, school_name):
         nearest_item = None
         nearest_score = 0
