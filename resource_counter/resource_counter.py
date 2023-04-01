@@ -130,7 +130,7 @@ class ResourceCounter:
         asset_name = target_data['asset_name']
         ocr_asset_name = data.ocr_assets[state]['item_count']['asset_name']
         ocr_result_var = data.ocr_assets[state]['item_count']['variable_name']
-        need_detailed_search = target_data['similar_items'] is not None or 'school' in target_data and target_data['school'] is not None
+        need_detailed_search = target_data['similar_items'] is not None or target_data['school'] is not None
         chain_search_list = target_data['similar_items'].split(',') if target_data['similar_items'] is not None else []
         count = 0
         fallback_item = None
@@ -192,6 +192,8 @@ class ResourceCounter:
             return '상급전술교육BD'
         if str == '최싱최상급전술교육' or str == '최싱최상급전술교육BD':
             return '최상급전술교육BD'
+        if str == '기조기술노트':
+            return '기초기술노트'
         return str
 
     def find_table_roi(self):
