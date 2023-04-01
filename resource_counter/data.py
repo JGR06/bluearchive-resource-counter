@@ -79,6 +79,7 @@ class DataSet:
     def load(self):
         with open('../resource_counter/resources_data.json', encoding='UTF8') as f:
             raw = json.load(f)
+            f.close()
         for k, entity in raw.items():  # k is id for sheet, v is dict for it
             if '|' in entity['note']:  # dirty parsing
                 xp = (entity['note'].split('|'))[-1]
@@ -112,6 +113,18 @@ class DataSet:
                 nearest_item = k
                 nearest_score = item_type_matched
         return nearest_item
+
+    # replace planner site exported userdata if you prepared.
+    def replace_planner_userdata(self, collectibles):
+        with open('../resource_counter/planner_exported.json', 'r+') as f:
+            planner_data = json.load(f)
+            # currently 'credit' item is not counting. so keep it
+            credit = planner_data['owned_materials']['Credit']
+            collectibles['Credit'] = credit
+            planner_data['owned_materials'] = collectibles
+            f.truncate(0)
+            json.dump(planner_data, f)
+            f.close()
 
 
 resource_data = DataSet()

@@ -37,6 +37,9 @@ class ResourceCounter:
             json.dump(self.result, f)
         f.close()
 
+        data.resource_data.replace_planner_userdata(self.result)
+
+        # debug outputs
         with open(f'{util.root_path}/misrecognitions.json', 'w') as f:
             json.dump(self.misrecognitions, f)
         f.close()
