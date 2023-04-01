@@ -30,14 +30,14 @@
         <TWCClass>RenderWindow</TWCClass>
         <PickPos>46466209</PickPos>
         <TWHandle>0x530B04</TWHandle>
-        <TargetWnd.left>93</TargetWnd.left>
-        <TargetWnd.top>156</TargetWnd.top>
-        <TargetWnd.right>2013</TargetWnd.right>
-        <TargetWnd.bottom>1236</TargetWnd.bottom>
-        <TarfrmWnd.left>92</TarfrmWnd.left>
-        <TarfrmWnd.top>122</TarfrmWnd.top>
-        <TarfrmWnd.right>2054</TarfrmWnd.right>
-        <TarfrmWnd.bottom>1237</TarfrmWnd.bottom>
+        <TargetWnd.left>132</TargetWnd.left>
+        <TargetWnd.top>147</TargetWnd.top>
+        <TargetWnd.right>2052</TargetWnd.right>
+        <TargetWnd.bottom>1227</TargetWnd.bottom>
+        <TarfrmWnd.left>131</TarfrmWnd.left>
+        <TarfrmWnd.top>113</TarfrmWnd.top>
+        <TarfrmWnd.right>2093</TarfrmWnd.right>
+        <TarfrmWnd.bottom>1228</TarfrmWnd.bottom>
         <Hotkey0>F7</Hotkey0>
         <Modifiers0>0</Modifiers0>
         <Vk0>118</Vk0>
@@ -53,7 +53,7 @@
         <CaptureMode>1</CaptureMode>
         <ReactSpeed>1</ReactSpeed>
         <InputType>1</InputType>
-        <ImageCount>116</ImageCount>
+        <ImageCount>154</ImageCount>
         <Image_1>
             <Name>controller</Name>
             <Rect>(0, 0, 0, 0)</Rect>
@@ -3038,15 +3038,991 @@
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
         </Image_116>
+        <Image_117>
+            <Name>SB.grp</Name>
+            <Rect>(0, 0, 0, 0)</Rect>
+            <ROI>(0, 0, 0, 0)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>0</Param1>
+            <Param2>0</Param2>
+            <Param3>0</Param3>
+            <Param4>0</Param4>
+            <Enable>1</Enable>
+            <Group>1</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>0</ActCount>
+        </Image_117>
+        <Image_118>
+            <Name>Hk_SB_0</Name>
+            <Rect>(1704, 289, 126, 98)</Rect>
+            <ROI>(1704, 289, 126, 98)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13107201</Param1>
+            <Param2>3881877</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352107</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_118>
+        <Image_119>
+            <Name>Hk_SB_1</Name>
+            <Rect>(1056, 444, 142, 94)</Rect>
+            <ROI>(1056, 444, 142, 94)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13041664</Param1>
+            <Param2>1522654</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352129</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_119>
+        <Image_120>
+            <Name>Hk_SB_2</Name>
+            <Rect>(1224, 437, 136, 102)</Rect>
+            <ROI>(1224, 437, 136, 102)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12255232</Param1>
+            <Param2>2767840</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352182</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_120>
+        <Image_121>
+            <Name>Hk_SB_3</Name>
+            <Rect>(1391, 432, 134, 106)</Rect>
+            <ROI>(1391, 432, 134, 106)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12976128</Param1>
+            <Param2>2767850</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352162</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_121>
+        <Image_122>
+            <Name>Rw_SB_0</Name>
+            <Rect>(1539, 340, 129, 97)</Rect>
+            <ROI>(1539, 340, 129, 97)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12713984</Param1>
+            <Param2>2112469</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352258</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_122>
+        <Image_123>
+            <Name>Rw_SB_1</Name>
+            <Rect>(1706, 342, 146, 94)</Rect>
+            <ROI>(1706, 342, 146, 94)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12648448</Param1>
+            <Param2>1522626</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352271</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_123>
+        <Image_124>
+            <Name>Rw_SB_2</Name>
+            <Rect>(1063, 484, 118, 103)</Rect>
+            <ROI>(1063, 484, 118, 103)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>11730944</Param1>
+            <Param2>2636779</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352285</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_124>
+        <Image_125>
+            <Name>Rw_SB_3</Name>
+            <Rect>(1212, 494, 151, 93)</Rect>
+            <ROI>(1212, 494, 151, 93)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12582912</Param1>
+            <Param2>1915866</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352303</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_125>
+        <Image_126>
+            <Name>Tr_SB_0</Name>
+            <Rect>(1377, 488, 129, 100)</Rect>
+            <ROI>(1377, 488, 129, 100)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12779520</Param1>
+            <Param2>2374614</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352327</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_126>
+        <Image_127>
+            <Name>Tr_SB_1</Name>
+            <Rect>(1550, 495, 137, 93)</Rect>
+            <ROI>(1550, 495, 137, 93)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12582912</Param1>
+            <Param2>1326040</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352341</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_127>
+        <Image_128>
+            <Name>Tr_SB_2</Name>
+            <Rect>(1720, 487, 133, 103)</Rect>
+            <ROI>(1720, 487, 133, 103)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>11927552</Param1>
+            <Param2>2767870</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352361</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_128>
+        <Image_129>
+            <Name>Tr_SB_3</Name>
+            <Rect>(1051, 644, 148, 95)</Rect>
+            <ROI>(1051, 644, 148, 95)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12582912</Param1>
+            <Param2>2046933</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352374</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_129>
+        <Image_130>
+            <Name>Ge_SB_0</Name>
+            <Rect>(1215, 563, 129, 96)</Rect>
+            <ROI>(1215, 563, 129, 96)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12845056</Param1>
+            <Param2>2178001</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352422</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_130>
+        <Image_131>
+            <Name>Ge_SB_1</Name>
+            <Rect>(1377, 562, 147, 97)</Rect>
+            <ROI>(1377, 562, 147, 97)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12845056</Param1>
+            <Param2>2112468</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352452</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_131>
+        <Image_132>
+            <Name>Ge_SB_2</Name>
+            <Rect>(1553, 553, 132, 105)</Rect>
+            <ROI>(1553, 553, 132, 105)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12058624</Param1>
+            <Param2>2833380</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352473</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_132>
+        <Image_133>
+            <Name>Ge_SB_3</Name>
+            <Rect>(1708, 562, 146, 98)</Rect>
+            <ROI>(1708, 562, 146, 98)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12648448</Param1>
+            <Param2>2112464</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352491</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_133>
+        <Image_134>
+            <Name>Ab_SB_0</Name>
+            <Rect>(1050, 358, 127, 93)</Rect>
+            <ROI>(1050, 358, 127, 93)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12779520</Param1>
+            <Param2>1915863</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352546</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_134>
+        <Image_135>
+            <Name>Ab_SB_1</Name>
+            <Rect>(1224, 354, 136, 98)</Rect>
+            <ROI>(1224, 354, 136, 98)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12845056</Param1>
+            <Param2>1653723</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352558</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_135>
+        <Image_136>
+            <Name>Ab_SB_2</Name>
+            <Rect>(1387, 346, 137, 105)</Rect>
+            <ROI>(1387, 346, 137, 105)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12189696</Param1>
+            <Param2>2702313</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352575</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_136>
+        <Image_137>
+            <Name>Ab_SB_3</Name>
+            <Rect>(1542, 352, 149, 98)</Rect>
+            <ROI>(1542, 352, 149, 98)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12779520</Param1>
+            <Param2>2243541</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352591</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_137>
+        <Image_138>
+            <Name>Mi_SB_0</Name>
+            <Rect>(1705, 356, 128, 95)</Rect>
+            <ROI>(1705, 356, 128, 95)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12648448</Param1>
+            <Param2>1981398</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352662</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_138>
+        <Image_139>
+            <Name>Mi_SB_1</Name>
+            <Rect>(1063, 507, 137, 94)</Rect>
+            <ROI>(1063, 507, 137, 94)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12648448</Param1>
+            <Param2>1522651</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352674</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_139>
+        <Image_140>
+            <Name>Mi_SB_2</Name>
+            <Rect>(1230, 497, 130, 106)</Rect>
+            <ROI>(1230, 497, 130, 106)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12058624</Param1>
+            <Param2>2767847</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352689</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_140>
+        <Image_141>
+            <Name>Mi_SB_3</Name>
+            <Rect>(1377, 507, 149, 95)</Rect>
+            <ROI>(1377, 507, 149, 95)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12582912</Param1>
+            <Param2>2046932</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352706</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_141>
+        <Image_142>
+            <Name>Ar_SB_0</Name>
+            <Rect>(1542, 352, 129, 97)</Rect>
+            <ROI>(1542, 352, 129, 97)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12517376</Param1>
+            <Param2>2440172</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352792</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_142>
+        <Image_143>
+            <Name>Ar_SB_1</Name>
+            <Rect>(1713, 354, 140, 95)</Rect>
+            <ROI>(1713, 354, 140, 95)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12451840</Param1>
+            <Param2>1915857</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352804</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_143>
+        <Image_144>
+            <Name>Ar_SB_2</Name>
+            <Rect>(1062, 497, 134, 105)</Rect>
+            <ROI>(1062, 497, 134, 105)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>11796480</Param1>
+            <Param2>2767851</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352818</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_144>
+        <Image_145>
+            <Name>Ar_SB_3</Name>
+            <Rect>(1215, 507, 147, 94)</Rect>
+            <ROI>(1215, 507, 147, 94)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12386304</Param1>
+            <Param2>1981397</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352832</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_145>
+        <Image_146>
+            <Name>Sh_SB_0</Name>
+            <Rect>(1376, 505, 128, 97)</Rect>
+            <ROI>(1376, 505, 128, 97)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13107201</Param1>
+            <Param2>3881883</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352861</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_146>
+        <Image_147>
+            <Name>Sh_SB_1</Name>
+            <Rect>(1555, 507, 133, 95)</Rect>
+            <ROI>(1555, 507, 133, 95)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12976128</Param1>
+            <Param2>1915881</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352875</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_147>
+        <Image_148>
+            <Name>Sh_SB_2</Name>
+            <Rect>(1719, 496, 131, 107)</Rect>
+            <ROI>(1719, 496, 131, 107)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12255232</Param1>
+            <Param2>2964450</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352890</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_148>
+        <Image_149>
+            <Name>Sh_SB_3</Name>
+            <Rect>(1049, 658, 151, 96)</Rect>
+            <ROI>(1049, 658, 151, 96)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12976128</Param1>
+            <Param2>2046939</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352909</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_149>
+        <Image_150>
+            <Name>Va_SB_0</Name>
+            <Rect>(1216, 659, 122, 93)</Rect>
+            <ROI>(1216, 659, 122, 93)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>13041664</Param1>
+            <Param2>2178000</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352941</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_150>
+        <Image_151>
+            <Name>Va_SB_1</Name>
+            <Rect>(1392, 659, 132, 95)</Rect>
+            <ROI>(1392, 659, 132, 95)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12910592</Param1>
+            <Param2>1522647</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352952</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_151>
+        <Image_152>
+            <Name>Va_SB_2</Name>
+            <Rect>(1557, 648, 131, 106)</Rect>
+            <ROI>(1557, 648, 131, 106)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12255232</Param1>
+            <Param2>2767847</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352969</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_152>
+        <Image_153>
+            <Name>Va_SB_3</Name>
+            <Rect>(1705, 658, 149, 96)</Rect>
+            <ROI>(1705, 658, 149, 96)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12910592</Param1>
+            <Param2>2046933</Param2>
+            <Param3>0</Param3>
+            <Param4>1680352984</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_153>
+        <Image_154>
+            <Name>Skillbook_Ult</Name>
+            <Rect>(1079, 669, 95, 90)</Rect>
+            <ROI>(1079, 669, 95, 90)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>14024705</Param1>
+            <Param2>998367</Param2>
+            <Param3>0</Param3>
+            <Param4>1680353236</Param4>
+            <Enable>1</Enable>
+            <Group>2</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="90" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_154>
         <Image_98>
             <Name>Ab_BD_1</Name>
-            <Rect>(1055, 478, 144, 96)</Rect>
+            <Rect>(1051, 578, 145, 91)</Rect>
             <ROI>(1010, 223, 873, 693)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13172737</Param1>
-            <Param2>3488734</Param2>
+            <Param1>13238273</Param1>
+            <Param2>3226562</Param2>
             <Param3>0</Param3>
-            <Param4>1680351222</Param4>
+            <Param4>1680357554</Param4>
             <Enable>1</Enable>
             <Group>2</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="82" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
