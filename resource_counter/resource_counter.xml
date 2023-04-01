@@ -30,14 +30,14 @@
         <TWCClass>RenderWindow</TWCClass>
         <PickPos>46466209</PickPos>
         <TWHandle>0x530B04</TWHandle>
-        <TargetWnd.left>132</TargetWnd.left>
-        <TargetWnd.top>147</TargetWnd.top>
-        <TargetWnd.right>2052</TargetWnd.right>
-        <TargetWnd.bottom>1227</TargetWnd.bottom>
-        <TarfrmWnd.left>131</TarfrmWnd.left>
-        <TarfrmWnd.top>113</TarfrmWnd.top>
-        <TarfrmWnd.right>2093</TarfrmWnd.right>
-        <TarfrmWnd.bottom>1228</TarfrmWnd.bottom>
+        <TargetWnd.left>150</TargetWnd.left>
+        <TargetWnd.top>125</TargetWnd.top>
+        <TargetWnd.right>2070</TargetWnd.right>
+        <TargetWnd.bottom>1205</TargetWnd.bottom>
+        <TarfrmWnd.left>149</TarfrmWnd.left>
+        <TarfrmWnd.top>91</TarfrmWnd.top>
+        <TarfrmWnd.right>2111</TarfrmWnd.right>
+        <TarfrmWnd.bottom>1206</TarfrmWnd.bottom>
         <Hotkey0>F7</Hotkey0>
         <Modifiers0>0</Modifiers0>
         <Vk0>118</Vk0>
@@ -2754,13 +2754,13 @@
         </Image_104>
         <Image_105>
             <Name>Rw_BD_1</Name>
-            <Rect>(1240, 437, 109, 83)</Rect>
+            <Rect>(1050, 529, 144, 93)</Rect>
             <ROI>(1011, 222, 872, 695)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13238273</Param1>
-            <Param2>2964459</Param2>
+            <Param1>13041664</Param1>
+            <Param2>4995958</Param2>
             <Param3>0</Param3>
-            <Param4>1680024963</Param4>
+            <Param4>1680381488</Param4>
             <Enable>1</Enable>
             <Group>2</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="85" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
