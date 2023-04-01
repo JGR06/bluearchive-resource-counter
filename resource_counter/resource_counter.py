@@ -24,7 +24,7 @@ class ResourceCounter:
         self.scroll_count_while_not_found = 0
         self.current_state = data.MenuState.Main
         self.collectibles = data.resource_data.copy_collectible_items()
-        self.result = {}
+        self.result = {'Xp': 0, 'GearXp': 0}
         self.misrecognitions = {}
         self.roi_table = []
         imax.print("ResourceCounter initialized")
@@ -109,10 +109,10 @@ class ResourceCounter:
         found_items_count = 0
         for k, v in self.result.items():
             if k in self.collectibles and self.result[k] > 0:
-                xp = self.result.setdefault('Xp', 0)
-                self.result['Xp'] = xp + (self.result[k] * self.collectibles[k]['xp'])
-                gear_xp = self.result.setdefault('GearXp', 0)
-                self.result['GearXp'] = gear_xp + (self.result[k] * self.collectibles[k]['xp'])
+                if state == data.MenuState.Items:
+                    self.result['Xp'] += (self.result[k] * self.collectibles[k]['xp'])
+                elif state == data.MenuState.Equipments:
+                    self.result['GearXp'] += (self.result[k] * self.collectibles[k]['xp'])
                 self.collectibles.pop(k)
                 found_items_count += self.result[k]
 
