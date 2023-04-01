@@ -135,12 +135,13 @@ class ResourceCounter:
                 # item detailed name OCR
                 ocr_item_name_line0 = data.ocr_assets[state]['item_name_0']['asset_name']
                 ocr_item_name_line0_result = data.ocr_assets[state]['item_name_0']['variable_name']
-                item_name = lua_helper.ocr(ocr_item_name_line0, ocr_item_name_line0_result).replace(' ', '')
+                item_name = lua_helper.ocr(ocr_item_name_line0, ocr_item_name_line0_result)
                 item_name = self.handle_ocr_misunderstood_words(item_name)
                 # school name OCR
                 ocr_item_name_line1 = data.ocr_assets[state]['item_name_1']['asset_name']
                 ocr_item_name_line1_result = data.ocr_assets[state]['item_name_1']['variable_name']
-                school_name = lua_helper.ocr(ocr_item_name_line1, ocr_item_name_line1_result).replace(' ', '')
+                school_name = lua_helper.ocr(ocr_item_name_line1, ocr_item_name_line1_result)
+                school_name = self.handle_ocr_misunderstood_words(school_name)
                 imax.print(f'School Name: {school_name} Item Name: {item_name}')
 
                 item_type_matched = 0
@@ -171,8 +172,16 @@ class ResourceCounter:
         return {'fallback_to': fallback_item, 'count': count}
 
     def handle_ocr_misunderstood_words(self, str):
+        # OCR provides unexpected linebreaks or whitespaces.
+        str = str.replace(' ', '').replace('\n', '').replace('\r', '')
         if str == '기조전술교육D':
             return '기초전술교육BD'
+        if str == '육일반전술교육':
+            return '일반전술교육BD'
+        if str == '상급전술교육':
+            return '상급전술교육BD'
+        if str == '최싱최상급전술교육' or str == '최싱최상급전술교육BD':
+            return '최상급전술교육BD'
         return str
 
     def find_table_roi(self):
