@@ -1,3 +1,4 @@
+import copy
 import sys
 import time
 import json
@@ -24,9 +25,11 @@ class ResourceCounter:
         self.scroll_count_while_not_found = 0
         self.current_state = data.MenuState.Main
         self.collectibles = data.resource_data.copy_collectible_items()
+        self.skip_until_scroll = []
         self.result = {'Xp': 0, 'GearXp': 0}
         self.misrecognitions = {}
         self.roi_table = []
+        self.current_clicked_positions = []
         imax.print("ResourceCounter initialized")
 
     def is_finished(self):
@@ -68,13 +71,13 @@ class ResourceCounter:
             if self.remaining_items_count(data.MenuState.Items) > 0:
                 self.scroll_count_while_not_found = 0
                 lua_helper.find_and_click(data.get_assetname_by_state(data.MenuState.Items))
-                time.sleep(1)
+                time.sleep(1.5)
                 self.current_state = data.MenuState.Items
                 self.find_table_roi()
             elif self.remaining_items_count(data.MenuState.Equipments) > 0:
                 self.scroll_count_while_not_found = 0
                 lua_helper.find_and_click(data.get_assetname_by_state(data.MenuState.Equipments))
-                time.sleep(1)
+                time.sleep(1.5)
                 self.current_state = data.MenuState.Equipments
                 self.find_table_roi()
             else:
@@ -98,14 +101,26 @@ class ResourceCounter:
             return
 
         item_type = data.get_item_type_by_state(state)
-        for k, v in self.collectibles.items():
-            if v['type'] != item_type:
+        skip_search = []
+        area_search_finished = self.check_area_skippable(state)
+        for item_id, v in self.collectibles.items():
+            if area_search_finished:
+                break
+            if v['type'] != item_type or item_id in skip_search or item_id in self.skip_until_scroll:
                 continue
-            result = self.count_resource(k, v, state)
-            found_key = result['fallback_to'] if result['fallback_to'] is not None else k
-            self.result[found_key] = result['count']
-            if self.result[found_key] > 0:
-                imax.print(f'[[{v} found({self.result[found_key]} entities)]]')
+            searched_results = self.count_resource(item_id, v, state)
+            for searched in searched_results:
+                found_key = searched['item_id']
+                self.result.setdefault(found_key, 0)
+                if self.result[found_key] != searched['count']:
+                    self.result[found_key] = searched['count']
+                    self.current_clicked_positions.append(searched['position'])
+                    imax.print(f'[[{v} found({self.result[found_key]} entities)]]')
+                if searched['detail_searched']:
+                    skip_search.append(found_key)
+            if len(searched_results) == 0:
+                self.skip_until_scroll.append(item_id)
+            area_search_finished = self.check_area_skippable(state)
         found_items_count = 0
         for k, v in self.result.items():
             if k in self.collectibles and self.result[k] > 0:
@@ -120,6 +135,8 @@ class ResourceCounter:
         if found_items_count == 0:
             if self.scroll_count_while_not_found < data.SCROLL_COUNT_LIMIT_UNTIL_FOUND:
                 lua_helper.scroll_and_wait()
+                self.skip_until_scroll.clear()
+                self.current_clicked_positions.clear()
             self.scroll_count_while_not_found += 1
         else:
             self.scroll_count_while_not_found = 0
@@ -132,20 +149,20 @@ class ResourceCounter:
             self.collectibles = {k: v for k, v in self.collectibles.items() if v['type'] != item_type}
 
     # NOTE: there's pretty different UI between 'ITEMS' and 'EQUIPMENTS' so it should take OCR target parameters
+    # NOTE: multi-return for ambiguous images(BD, Skillbooks)
     # process ocr when image found
     def count_resource(self, target_key, target_data, state):
         asset_name = target_data['asset_name']
         ocr_asset_name = data.ocr_assets[state]['item_count']['asset_name']
         ocr_result_var = data.ocr_assets[state]['item_count']['variable_name']
+        # TODO: remove 'similar_items' data
         need_detailed_search = target_data['similar_items'] is not None or target_data['school'] is not None
-        chain_search_list = target_data['similar_items'].split(',') if target_data['similar_items'] is not None else []
         count = 0
-        fallback_item = None
-        for i in range(len(self.roi_table)):
-            lua_helper.set_image_roi(asset_name, self.roi_table[i])
-            # searched = lua_helper.search_image(asset_name)
-            searched = lua_helper.find_and_click(asset_name)
-            if searched and need_detailed_search:
+        results = []
+        lua_helper.set_image_roi(asset_name, self.roi_table)
+        if need_detailed_search:
+            for searched in lua_helper.search_all_images_from_screen(asset_name):
+                lua_helper.click(searched['ix'], searched['iy'])
                 time.sleep(0.5)  # UI refresh rate
                 # item detailed name OCR
                 ocr_item_name_line0 = data.ocr_assets[state]['item_name_0']['asset_name']
@@ -159,6 +176,7 @@ class ResourceCounter:
                 school_name = self.handle_ocr_misunderstood_words(school_name)
                 imax.print(f'School Name: {school_name} Item Name: {item_name}')
 
+                fallback_item = None
                 item_type_matched = 0
                 target_types = target_data['item_type'].split(',')
                 if target_data['grade'] is not None:
@@ -173,20 +191,43 @@ class ResourceCounter:
                     school_name_matched = True
                 imax.print(f'detailed search: school({school_name_matched}), type_match({item_type_matched})')
 
+                count = lua_helper.ocr_count(ocr_asset_name, ocr_result_var)
                 if not school_name_matched or item_type_matched < len(target_types):
                     fallback_item = data.resource_data.find(item_name, school_name)
                 if fallback_item is not None and target_key != fallback_item:
-                    imax.print(f'[WARNING]you tried to search {target_key}, but found item seems like {fallback_item}')
+                    imax.print(f'[WARNING]you tried to search {target_key}, but found item is {fallback_item}')
                     misrecognition_list = self.misrecognitions.setdefault(target_key, [])
                     misrecognition_list.append(fallback_item)
+                    results.append({
+                        'item_id': fallback_item,
+                        'count': count,
+                        'detail_searched': True,
+                        'position': [searched['ix'], searched['iy']]
+                    })
+                else:
+                    results.append({
+                        'item_id': target_key,
+                        'count': count,
+                        'detail_searched': True,
+                        'position': [searched['ix'], searched['iy']]
+                    })
+                if (school_name_matched and item_type_matched == len(target_types)) or fallback_item == target_key:
+                    break  # found item which we're looking for
 
-            if searched:
+        else:
+            searched = lua_helper.search_image(asset_name)
+            if searched['succeed']:
+                lua_helper.click(searched['ix'], searched['iy'])
                 time.sleep(0.5)  # UI refresh rate
                 count = lua_helper.ocr_count(ocr_asset_name, ocr_result_var)
-                break
-            # if searched["succeed"]:
-            #     return lua_helper.ocr_count(self.roi_table[i])
-        return {'fallback_to': fallback_item, 'count': count}
+                results.append({
+                    'item_id': target_key,
+                    'count': count,
+                    'detail_searched': False,
+                    'position': [searched['ix'], searched['iy']]
+                })
+
+        return results
 
     def handle_ocr_misunderstood_words(self, str):
         # OCR provides unexpected linebreaks or whitespaces.
@@ -203,11 +244,58 @@ class ResourceCounter:
             return '기초기술노트'
         return str
 
+    # current_clicked_positions shouldn't contain too closed positions
+    def check_area_skippable(self, state):
+        # for now, only Items UI requires detailed search and skip algorithm
+        if state != data.MenuState.Items:
+            return False
+        # resources_data is sorted by items id
+        # so, we're able to know if we got left-top item and bottom-right item
+        # but table UI height is not fit to items(4.5row) then we should find where last line is
+        # ---- or ----
+        # just check count of unique cell count of table if you can control drag heights
+        if len(self.current_clicked_positions) < 2:
+            return False
+        # current_clicked_positions should like this: [[x, y], [x, y], ...]
+        positions = copy.deepcopy(self.current_clicked_positions)
+        origin_x = self.roi_table[0]
+        origin_y = self.roi_table[1]
+        ypos_limit = 60
+        y_sorted = sorted(positions, key=lambda x: x[1])
+        preview = list(filter(lambda x: abs(x[1] - y_sorted[0][1]) < ypos_limit, y_sorted))
+        items_by_line = []
+        while len(y_sorted) > 0:
+            items_by_line.append(sorted(list(filter(lambda x: abs(x[1] - y_sorted[0][1]) < ypos_limit, y_sorted)), key=lambda x: x[0]))
+            for item in items_by_line[-1]:
+                y_sorted.pop(0)
+
+        # if line count is under 2, we scrolled 2 lines, so it didn't checked all
+        if len(items_by_line) < 2:
+            return False
+        first_line = items_by_line[0]
+        last_line = items_by_line[-1]
+        # if line's element count is under 5, we didn't checked whole line
+        if len(last_line) < 5 or len(first_line) < 5:
+            return False
+        # is it rightmost and undermost position?
+        row_height = 150
+        column_width = 168
+        overed_height = self.roi_table[3] % row_height
+        table_right = self.roi_table[0] + self.roi_table[2]
+        table_bottom = self.roi_table[1] + self.roi_table[3]
+        last_cell_position = last_line[-1]
+        # if it was last column in current table screen
+        if last_cell_position[0] > (table_right - column_width) \
+                and last_cell_position[1] > (table_bottom - (row_height + overed_height)):
+            return True
+
+        return False
+
     def find_table_roi(self):
         # magic
-        roi = [1035, 228, 1035 + 831, 228 + 614] if self.current_state == data.MenuState.Items else [1031, 228, 1031 + 831, 228 + 765]
-        imax.print(f'box roi: {roi[0]}, {roi[1]}, {roi[2]}, {roi[3]}')
-        self.roi_table = [roi]
+        roi = [1026, 224, 842, 690] if self.current_state == data.MenuState.Items else [1031, 228, 1031 + 831, 228 + 765]
+        imax.print(f'current table roi: {roi[0]}, {roi[1]}, {roi[2]}, {roi[3]}')
+        self.roi_table = roi
         # self.roi_table = self.makeRoi(roi[0], roi[1], roi[2], roi[3], 166, 140)
 
         # TODO: search table ROI and calculate
@@ -229,38 +317,4 @@ class ResourceCounter:
         #
         # imax.print(f'box roi: {roi[0]}, {roi[1]}, {roi[2]}, {roi[3]}')
         # self.roi_table = self.makeRoi(roi[0], roi[1], roi[2], roi[3], 166, 140)
-
-    # ROI 생성 함수 : 영역 설정(sx, sy, ex, ey), 이미지 ROI 사이즈(img_w, img_y)
-    def makeRoi(self, _sx, _sy, _ex, _ey, _img_w, _img_h):
-        # 서치할 영역의 폭(x), 높이(h) 계산
-        width = _ex - _sx
-        height = _ey - _sy
-        imax.print(f'width : {width}, height : {height}')
-        # 서치할 영역 분할 갯수 (서치 영역의 폭 / 검색 거리 간격)
-        width_split = int(width / _img_w) - 1
-        height_split = int(height / _img_h) - 1
-        imax.print(f'width_split : {width_split}, height_split : {height_split}')
-        # roi 테이블 생성!
-        new_roi_table = []
-        # X, Y 좌표 초기값 설정
-        x = _sx
-        y = _sy
-        # ROI용 좌표 생성
-        for i in range(0, width_split):
-            for j in range(0, height_split):
-                x = x + (_img_w*i)
-                y = y + (_img_h*j)
-            w = _img_w
-            h = _img_h
-            # print(i, x, y, w, h)
-            new_roi_table.append([x, y, w, h])
-
-        # > 저장된 값을 확인해보기 위한 코드
-        checker_index = 0
-        for value in new_roi_table:
-            imax.print(f'#roi no: {checker_index}')
-            imax.print(f'x: {value[0]}, y: {value[1]}, w: {value[2]}, h: {value[3]}')
-            checker_index += 1
-        # imax.print('>> ROI를 생성 완료하였습니다.')
-        return new_roi_table
 

@@ -47,6 +47,39 @@ def search_image(asset_name):
     }
 
 
+# return all searched images from screen(sorted by most accurate)
+def search_all_images_from_screen(asset_name):
+    imax.lua(f"result_count, result_table = ImageSearchMultipleResults('{asset_name}', SORT_PTDIST, {{0, 0}})")
+    # copied code: remove same position images (in fact, it's not sqrt comparison)
+    # I just don't wanted to type code for this... TODO:fixthis
+    imax.lua(f"""for i=1, result_count do
+                    if i+1 <= result_count and math.abs(result_table[i].ix-result_table[i+1].ix)+math.abs(result_table[i].iy-result_table[i+1].iy)<=15 then
+                    table.remove(result_table, i)
+                    result_count = result_count-1
+                    i = i - 1
+                end
+            end""")
+    # lua's array index starts from 1, weird...
+    results = []
+    result_count = int(imax.lua_get_value('result_count'))
+    for index in range(1, 1 + result_count):
+        # imax.lua_get_value() can't retrieve like 'array[index].property'... so make it global variable
+        imax.lua(f"""mix = result_table[{index}].ix
+        miy = result_table[{index}].iy
+        msx = result_table[{index}].sx
+        msy = result_table[{index}].sy
+        macc = result_table[{index}].acc""")
+        ix = imax.lua_get_value(f'mix')
+        iy = imax.lua_get_value(f'miy')
+        sx = imax.lua_get_value(f'msx')
+        sy = imax.lua_get_value(f'msy')
+        accuracy = imax.lua_get_value(f'macc')
+        results.append({'ix': int(ix), 'iy': int(iy), 'sx': int(sx), 'sy': int(sy), 'accuracy': float(accuracy)})
+
+    results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
+    return results
+
+
 def set_image_roi(asset_name, roi):
     imax.lua(f"SetImageROI('{asset_name}', {{{roi[0]}, {roi[1]}, {roi[2]}, {roi[3]}}})")
 
@@ -111,6 +144,10 @@ end
 def find_and_click(asset_name):
     imax.lua(f"find_and_click_result = ImageClick('{asset_name}')")
     return int(imax.lua_get_value('find_and_click_result')) == 1
+
+
+def click(ix, iy):
+    imax.lua(f'Mouse(LBUTTON, CLICK, {ix}, {iy})')
 
 
 # scroll_amount: negative is wheel-up, positive is wheel-down
