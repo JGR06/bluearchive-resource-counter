@@ -30,14 +30,14 @@
         <TWCClass>RenderWindow</TWCClass>
         <PickPos>46466209</PickPos>
         <TWHandle>0x530B04</TWHandle>
-        <TargetWnd.left>150</TargetWnd.left>
-        <TargetWnd.top>125</TargetWnd.top>
-        <TargetWnd.right>2070</TargetWnd.right>
-        <TargetWnd.bottom>1205</TargetWnd.bottom>
-        <TarfrmWnd.left>149</TarfrmWnd.left>
-        <TarfrmWnd.top>91</TarfrmWnd.top>
-        <TarfrmWnd.right>2111</TarfrmWnd.right>
-        <TarfrmWnd.bottom>1206</TarfrmWnd.bottom>
+        <TargetWnd.left>97</TargetWnd.left>
+        <TargetWnd.top>154</TargetWnd.top>
+        <TargetWnd.right>2017</TargetWnd.right>
+        <TargetWnd.bottom>1234</TargetWnd.bottom>
+        <TarfrmWnd.left>96</TarfrmWnd.left>
+        <TarfrmWnd.top>120</TarfrmWnd.top>
+        <TarfrmWnd.right>2058</TarfrmWnd.right>
+        <TarfrmWnd.bottom>1235</TarfrmWnd.bottom>
         <Hotkey0>F7</Hotkey0>
         <Modifiers0>0</Modifiers0>
         <Vk0>118</Vk0>
@@ -53,7 +53,7 @@
         <CaptureMode>1</CaptureMode>
         <ReactSpeed>1</ReactSpeed>
         <InputType>1</InputType>
-        <ImageCount>228</ImageCount>
+        <ImageCount>230</ImageCount>
         <Image_1>
             <Name>controller</Name>
             <Rect>(0, 0, 0, 0)</Rect>
@@ -409,9 +409,9 @@
         <Image_15>
             <Name>XP_1</Name>
             <Rect>(1072, 338, 102, 101)</Rect>
-            <ROI>(1005, 220, 879, 707)</ROI>
+            <ROI>(1026, 224, 842, 690)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13565953</Param1>
+            <Param1>13107201</Param1>
             <Param2>2702277</Param2>
             <Param3>0</Param3>
             <Param4>1680013270</Param4>
@@ -5952,5 +5952,57 @@
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
         </Image_228>
+        <Image_229>
+            <Name>dragtest</Name>
+            <Rect>(0, 0, 0, 0)</Rect>
+            <ROI>(0, 0, 0, 0)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>0</Param1>
+            <Param2>0</Param2>
+            <Param3>0</Param3>
+            <Param4>0</Param4>
+            <Enable>0</Enable>
+            <Group>0</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 2 0 1  1 1275 755 1275 385  0 0  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="2" Button="0" Speed="1" Base="1" Coord_x1="1275" Coord_y1="755" Coord_x2="1275" Coord_y2="385" Rand_x="0" Rand_y="0" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_1>
+            <Act_2>
+                <Name>딜레이(지연)</Name>
+                <Enable>1</Enable>
+                <Param>Delay( 0 2.000000 0 0 0.000000 )</Param>
+                <Attr DelayMin="0" DelaySec="2" CheckDelayRand="0" DelayRandMin="0" DelayRandSec="0"/>
+            </Act_2>
+        </Image_229>
+        <Image_230>
+            <Name>celltest</Name>
+            <Rect>(1036, 238, 174, 153)</Rect>
+            <ROI>(1036, 238, 174, 153)</ROI>
+            <FullROI>0</FullROI>
+            <Param1>12648448</Param1>
+            <Param2>2112437</Param2>
+            <Param3>0</Param3>
+            <Param4>1680467112</Param4>
+            <Enable>0</Enable>
+            <Group>0</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>2</ActCount>
+            <Act_1>
+                <Name>이미지 표시</Name>
+                <Enable>1</Enable>
+                <Param/>
+                <Attr/>
+            </Act_1>
+            <Act_2>
+                <Name>마우스 입력</Name>
+                <Enable>1</Enable>
+                <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
+                <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
+            </Act_2>
+        </Image_230>
     </GENERAL>
 </ROOT>
