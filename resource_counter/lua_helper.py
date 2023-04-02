@@ -38,12 +38,12 @@ def search_image(asset_name):
     accuracy = imax.lua_get_value('acc')
 
     return {
-        "ix": int(ix),
-        "iy": int(iy),
-        "sx": int(sx),
-        "sy": int(sy),
-        "succeed": int(result) == 1,
-        "accuracy": float(accuracy)
+        'ix': int(ix),
+        'iy': int(iy),
+        'sx': int(sx),
+        'sy': int(sy),
+        'succeed': int(result) == 1,
+        'accuracy': float(accuracy)
     }
 
 
