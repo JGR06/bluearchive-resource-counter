@@ -1,6 +1,7 @@
 import copy
 import sys
 import time
+from datetime import date
 import json
 import importlib.util
 # TODO: fix dirty import
@@ -40,7 +41,8 @@ class ResourceCounter:
             json.dump(self.result, f)
         f.close()
 
-        data.resource_data.replace_planner_userdata(self.result)
+        today = date.today()
+        data.resource_data.save_planner_userdata(self.result, f"resources_data_{today.strftime('%y%m%d')}.json")
 
         # debug outputs
         with open(f'{util.root_path}/misrecognitions.json', 'w') as f:

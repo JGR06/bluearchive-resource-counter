@@ -112,15 +112,16 @@ class DataSet:
         return nearest_item
 
     # replace planner site exported userdata if you prepared.
-    def replace_planner_userdata(self, collectibles):
+    def save_planner_userdata(self, collectibles, save_as='planner_exported.json'):
         with open('../resource_counter/planner_exported.json', 'r+') as f:
             planner_data = json.load(f)
             # currently 'credit' item is not counting. so keep it
             credit = planner_data['owned_materials']['Credit']
             collectibles['Credit'] = credit
             planner_data['owned_materials'] = collectibles
-            f.truncate(0)
-            f.seek(0)
+            f.close()
+
+        with open(f'../resource_counter/{save_as}', 'w') as f:
             json.dump(planner_data, f)
             f.close()
 
