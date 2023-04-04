@@ -10,10 +10,6 @@ class MenuState(Enum):
     Equipments = 3
 
 
-# stop searching and scrolling if there is no result during N times of scrolling
-SCROLL_COUNT_LIMIT_UNTIL_FOUND = 5
-
-
 # lookup to resource typenames to imagemax asset name
 lookup_resource_types = {
     MenuState.Option: 'options',

@@ -16,8 +16,10 @@ sys.modules[module_name] = module
 import util
 util.import_specific_module('lua_helper.py', 'lua_helper')
 util.import_specific_module('data.py', 'data')
+util.import_specific_module('settings.py', 'settings')
 import lua_helper
 import data
+import settings
 import imax
 
 
@@ -45,13 +47,15 @@ class ResourceCounter:
         data.resource_data.save_planner_userdata(self.result, f"resources_data_{today.strftime('%y%m%d')}.json")
 
         # debug outputs
-        with open(f'{util.root_path}/misrecognitions.json', 'w') as f:
-            json.dump(self.misrecognitions, f)
-        f.close()
+        if settings.DEBUG_SAVE_MISRECOGNITIONS:
+            with open(f'{util.root_path}/misrecognitions.json', 'w') as f:
+                json.dump(self.misrecognitions, f)
+            f.close()
 
-        with open(f'{util.root_path}/debug_output.json', 'w', encoding='UTF-8') as f:
-            json.dump(data.resource_data.debug_replace_key_to_name(self.result), f, ensure_ascii=False)
-        f.close()
+        if settings.DEBUG_SAVE_NAME_REPLACED_RESULT:
+            with open(f'{util.root_path}/debug_output.json', 'w', encoding='UTF-8') as f:
+                json.dump(data.resource_data.debug_replace_key_to_name(self.result), f, ensure_ascii=False)
+            f.close()
 
     def run(self):
         while not self.is_finished():
@@ -73,13 +77,13 @@ class ResourceCounter:
             if self.remaining_items_count(data.MenuState.Items) > 0:
                 self.scroll_count_while_not_found = 0
                 lua_helper.find_and_click(data.get_assetname_by_state(data.MenuState.Items))
-                time.sleep(1.5)
+                time.sleep(settings.DELAY_BEFORE_TABLE_UI_ENTERED)
                 self.current_state = data.MenuState.Items
                 self.find_table_roi()
             elif self.remaining_items_count(data.MenuState.Equipments) > 0:
                 self.scroll_count_while_not_found = 0
                 lua_helper.find_and_click(data.get_assetname_by_state(data.MenuState.Equipments))
-                time.sleep(1.5)
+                time.sleep(settings.DELAY_BEFORE_TABLE_UI_ENTERED)
                 self.current_state = data.MenuState.Equipments
                 self.find_table_roi()
             else:
@@ -87,17 +91,17 @@ class ResourceCounter:
 
         elif self.current_state == data.MenuState.Items:  # count items
             self.counting_resources(data.MenuState.Items)
-            time.sleep(0.5)  # recognition delay
+            time.sleep(settings.DELAY_AFTER_TABLE_RECOGNITION_LOOP)
 
         elif self.current_state == data.MenuState.Equipments:  # count equipments
             self.counting_resources(data.MenuState.Equipments)
-            time.sleep(0.5)  # recognition delay
+            time.sleep(settings.DELAY_AFTER_TABLE_RECOGNITION_LOOP)
 
     def counting_resources(self, state):
         if self.remaining_items_count(state) == 0:
             lua_helper.find_and_click('back_button')
             # returning to lobby occurs network request -- then can't send any input til request ends
-            time.sleep(3.5)
+            time.sleep(settings.DELAY_AFTER_BACK_BUTTON)
             # TODO: check 'NOW LOADING' image disappear
             self.current_state = data.MenuState.Option
             return
@@ -133,10 +137,10 @@ class ResourceCounter:
                 self.collectibles.pop(k)
                 found_items_count += self.result[k]
 
-        imax.print(f'[Scrolling: {data.SCROLL_COUNT_LIMIT_UNTIL_FOUND - self.scroll_count_while_not_found} time(s) remaining]{found_items_count} item(s) found this time')
+        imax.print(f'[Scrolling: {settings.SCROLL_COUNT_LIMIT_UNTIL_FOUND - self.scroll_count_while_not_found} time(s) remaining]{found_items_count} item(s) found this time')
         if found_items_count == 0:
-            if self.scroll_count_while_not_found < data.SCROLL_COUNT_LIMIT_UNTIL_FOUND:
-                lua_helper.scroll_and_wait(-380, 1.0, data.scaled_sizes.get_scale_factor())
+            if self.scroll_count_while_not_found < settings.SCROLL_COUNT_LIMIT_UNTIL_FOUND:
+                lua_helper.scroll_and_wait(settings.TABLE_SCROLL_AMOUNT, settings.DELAY_AFTER_TABLE_SCROLL, data.scaled_sizes.get_scale_factor())
                 self.skip_until_scroll.clear()
                 self.current_clicked_positions.clear()
             self.scroll_count_while_not_found += 1
@@ -144,7 +148,7 @@ class ResourceCounter:
             self.scroll_count_while_not_found = 0
 
         # there's no items which we're looking for, escape
-        if self.scroll_count_while_not_found >= data.SCROLL_COUNT_LIMIT_UNTIL_FOUND:
+        if self.scroll_count_while_not_found >= settings.SCROLL_COUNT_LIMIT_UNTIL_FOUND:
             for k, v in self.collectibles.items():
                 self.result[k] = 0
             # remove items which not found
@@ -165,7 +169,7 @@ class ResourceCounter:
         if need_detailed_search:
             for searched in lua_helper.search_all_images_from_screen(asset_name):
                 lua_helper.click(searched['ix'], searched['iy'])
-                time.sleep(0.5)  # UI refresh rate
+                time.sleep(settings.DELAY_AFTER_ITEM_CLICK)  # UI refresh rate
                 # item detailed name OCR
                 ocr_item_name_line0 = data.ocr_assets[state]['item_name_0']['asset_name']
                 ocr_item_name_line0_result = data.ocr_assets[state]['item_name_0']['variable_name']
@@ -220,7 +224,7 @@ class ResourceCounter:
             searched = lua_helper.search_image(asset_name)
             if searched['succeed']:
                 lua_helper.click(searched['ix'], searched['iy'])
-                time.sleep(0.5)  # UI refresh rate
+                time.sleep(settings.DELAY_AFTER_ITEM_CLICK)  # UI refresh rate
                 count = lua_helper.ocr_count(ocr_asset_name, ocr_result_var)
                 results.append({
                     'item_id': target_key,
@@ -272,7 +276,7 @@ class ResourceCounter:
                 y_sorted.pop(0)
 
         # if line count is under 2, we scrolled 2 lines, so it didn't checked all
-        if len(items_by_line) < 2:
+        if len(items_by_line) < settings.LINES_TO_CHECK_PER_SCROLL:
             return False
         first_line = items_by_line[0]
         last_line = items_by_line[-1]
