@@ -68,6 +68,51 @@ def get_item_type_by_state(state):
         return None
 
 
+# NOTE: BlueArchive sets letterbox to screen when ratio is not matched.
+# therefore below is not working well except 16:9 resolutions
+# TODO: fix when ratio is not 16:9
+class ScaledSizeContainer:
+    # (w, h) or (x, y, w, h)
+    constant_sizes_by_ui = {
+        MenuState.Items: {
+            'cell': (168, 150),
+            'cell_consider_line': (0, 60),
+            'table_roi': (1026, 224, 842, 690)
+        },
+        MenuState.Equipments: {
+            'cell': (168, 150),
+            'cell_consider_line': (0, 60),
+            'table_roi': (1031, 228, 1031 + 831, 228 + 765)
+        }
+    }
+
+    def __init__(self):
+        self.design_resolution = (1920, 1080)
+        self.screen_resolution = (1920, 1080)  # TODO: get window size from imax
+        self.resizing_factor = (1.0, 1.0)
+
+    # size: window size tuple
+    def resize_resolution(self, size):
+        self.screen_resolution = size
+        self.resizing_factor = (self.screen_resolution[0] / self.design_resolution[0], self.screen_resolution[1] / self.design_resolution[1])
+
+    def get_size(self, current_ui, key):
+        ui = self.constant_sizes_by_ui.get(current_ui, None)
+        target = ui.get(key, None) if ui else None
+        if target is None:
+            return None
+        resized = []
+        for i in range(0, len(target)):
+            resized.append(target[i] * self.resizing_factor[i % 2])  # sizes are always [w, h] or [x, y, w, h]
+        return tuple(int(i) for i in resized)  # screen points should be integer
+
+    def get_scale_factor(self):
+        return self.resizing_factor
+
+
+scaled_sizes = ScaledSizeContainer()
+
+
 class DataSet:
     def __init__(self):
         self.collectibles = {}

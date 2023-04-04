@@ -136,7 +136,7 @@ class ResourceCounter:
         imax.print(f'[Scrolling: {data.SCROLL_COUNT_LIMIT_UNTIL_FOUND - self.scroll_count_while_not_found} time(s) remaining]{found_items_count} item(s) found this time')
         if found_items_count == 0:
             if self.scroll_count_while_not_found < data.SCROLL_COUNT_LIMIT_UNTIL_FOUND:
-                lua_helper.scroll_and_wait()
+                lua_helper.scroll_and_wait(-380, 1.0, data.scaled_sizes.get_scale_factor())
                 self.skip_until_scroll.clear()
                 self.current_clicked_positions.clear()
             self.scroll_count_while_not_found += 1
@@ -262,7 +262,7 @@ class ResourceCounter:
         positions = copy.deepcopy(self.current_clicked_positions)
         origin_x = self.roi_table[0]
         origin_y = self.roi_table[1]
-        ypos_limit = 60
+        ypos_limit = data.scaled_sizes.get_size(state, 'cell_consider_line')[1]
         y_sorted = sorted(positions, key=lambda x: x[1])
         preview = list(filter(lambda x: abs(x[1] - y_sorted[0][1]) < ypos_limit, y_sorted))
         items_by_line = []
@@ -280,24 +280,24 @@ class ResourceCounter:
         if len(last_line) < 5 or len(first_line) < 5:
             return False
         # is it rightmost and undermost position?
-        row_height = 150
-        column_width = 168
-        overed_height = self.roi_table[3] % row_height
+        cell_size = data.scaled_sizes.get_size(state, 'cell')
+        cell_width = cell_size[0]
+        cell_height = cell_size[1]
+        overed_height = self.roi_table[3] % cell_height
         table_right = self.roi_table[0] + self.roi_table[2]
         table_bottom = self.roi_table[1] + self.roi_table[3]
         last_cell_position = last_line[-1]
         # if it was last column in current table screen
-        if last_cell_position[0] > (table_right - column_width) \
-                and last_cell_position[1] > (table_bottom - (row_height + overed_height)):
+        if last_cell_position[0] > (table_right - cell_width) and \
+                last_cell_position[1] > (table_bottom - (cell_height + overed_height)):
             return True
 
         return False
 
     def find_table_roi(self):
-        # magic
-        roi = [1026, 224, 842, 690] if self.current_state == data.MenuState.Items else [1031, 228, 1031 + 831, 228 + 765]
+        roi = data.scaled_sizes.get_size(self.current_state, 'table_roi')
         imax.print(f'current table roi: {roi[0]}, {roi[1]}, {roi[2]}, {roi[3]}')
-        self.roi_table = roi
+        self.roi_table = list(roi)
         # self.roi_table = self.makeRoi(roi[0], roi[1], roi[2], roi[3], 166, 140)
 
         # TODO: search table ROI and calculate

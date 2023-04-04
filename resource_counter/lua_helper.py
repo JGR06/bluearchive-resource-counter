@@ -151,9 +151,10 @@ def click(ix, iy):
 
 
 # scroll_amount: negative is wheel-up, positive is wheel-down
-def scroll_and_wait(scroll_amount=-380, sleep_time=1.0):
-    base_y = 755
+def scroll_and_wait(scroll_amount=-380, sleep_time=1.0, screen_scale_factor=(1.0, 1.0)):
+    base_y = int(755 * screen_scale_factor[1])
+    scroll_amount = int(scroll_amount * screen_scale_factor[1])
     # Mouse(LBUTTON, WHEELDOWN, ...) method is not working, so use DRAG instead.
-    imax.lua(f'Mouse(LBUTTON, DRAG, 1275, {base_y}, 1275, {base_y + scroll_amount})')
+    imax.lua(f'Mouse(LBUTTON, DRAG, {int(1275 * screen_scale_factor[0])}, {base_y}, {int(1275 * screen_scale_factor[0])}, {base_y + scroll_amount})')
     time.sleep(sleep_time)
 
