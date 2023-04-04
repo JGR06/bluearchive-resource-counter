@@ -45,7 +45,7 @@ class ResourceCounter:
         f.close()
 
         today = date.today()
-        data.resource_data.save_planner_userdata(self.result, f"resources_data_{today.strftime('%y%m%d')}.json")
+        data.resource_data.save_planner_userdata(self.result, f"result_data_{today.strftime('%y%m%d')}.json")
 
         # debug outputs
         if settings.DEBUG_SAVE_MISRECOGNITIONS:
