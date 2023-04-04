@@ -30,14 +30,14 @@
         <TWCClass>RenderWindow</TWCClass>
         <PickPos>46466209</PickPos>
         <TWHandle>0x530B04</TWHandle>
-        <TargetWnd.left>97</TargetWnd.left>
-        <TargetWnd.top>154</TargetWnd.top>
-        <TargetWnd.right>2017</TargetWnd.right>
-        <TargetWnd.bottom>1234</TargetWnd.bottom>
-        <TarfrmWnd.left>96</TarfrmWnd.left>
-        <TarfrmWnd.top>120</TarfrmWnd.top>
-        <TarfrmWnd.right>2058</TarfrmWnd.right>
-        <TarfrmWnd.bottom>1235</TarfrmWnd.bottom>
+        <TargetWnd.left>142</TargetWnd.left>
+        <TargetWnd.top>122</TargetWnd.top>
+        <TargetWnd.right>2062</TargetWnd.right>
+        <TargetWnd.bottom>1202</TargetWnd.bottom>
+        <TarfrmWnd.left>141</TarfrmWnd.left>
+        <TarfrmWnd.top>88</TarfrmWnd.top>
+        <TarfrmWnd.right>2103</TarfrmWnd.right>
+        <TarfrmWnd.bottom>1203</TarfrmWnd.bottom>
         <Hotkey0>F7</Hotkey0>
         <Modifiers0>0</Modifiers0>
         <Vk0>118</Vk0>
@@ -53,8 +53,22 @@
         <CaptureMode>1</CaptureMode>
         <ReactSpeed>1</ReactSpeed>
         <InputType>1</InputType>
-        <ImageCount>230</ImageCount>
+        <ImageCount>231</ImageCount>
         <Image_1>
+            <Name>window_size</Name>
+            <Rect>(167, 17, 1, 1)</Rect>
+            <ROI>(0, 0, 1920, 1080)</ROI>
+            <FullROI>1</FullROI>
+            <Param1>12255232</Param1>
+            <Param2>15347</Param2>
+            <Param3>0</Param3>
+            <Param4>1680640256</Param4>
+            <Enable>0</Enable>
+            <Group>0</Group>
+            <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="0" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <ActCount>0</ActCount>
+        </Image_1>
+        <Image_2>
             <Name>controller</Name>
             <Rect>(0, 0, 0, 0)</Rect>
             <ROI>(0, 0, 0, 0)</ROI>
@@ -73,8 +87,8 @@
                 <Param>Script( controller_5h5jc.py import sys\n import importlib.util\n \n # TODO: fix dirty import\n file_path = '../resource_counter/util.py'\n module_name = 'util'\n \n spec = importlib.util.spec_from_file_location(module_name, fil )</Param>
                 <Attr LuaFile="controller_5h5jc.py" Text="import sys\n import importlib.util\n \n # TODO: fix dirty import\n file_path = &apos;../resource_counter/util.py&apos;\n module_name = &apos;util&apos;\n \n spec = importlib.util.spec_from_file_location(module_name, fil"/>
             </Act_1>
-        </Image_1>
-        <Image_2>
+        </Image_2>
+        <Image_3>
             <Name>script_finished</Name>
             <Rect>(0, 0, 0, 0)</Rect>
             <ROI>(0, 0, 0, 0)</ROI>
@@ -99,8 +113,8 @@
                 <Param>Etc1( 0 1  0 5.000000 alarm.wav  0 -1 0 null null  0 null 0  0 null null null 0  0 null null null 0 )</Param>
                 <Attr CheckEtcScrshot="0" CheckEtcAutoStop="1" CheckEtcAlarm="0" EtcAlarmSec="5" EtcAlarmFilePath="alarm.wav" CheckEtcKatalk="0" ComboEtcKatalk="-1" EtcKatalkTitle="null" EtcKatalkText="null" CheckEtcKatalkScrshot="0" CheckEtcMail="0" EtcMailAddress="null" CheckEtcMailScrshot="0" CheckEtcTelegram="0" EtcTelegramToken="null" EtcTelegramChatID="null" EtcTelegramText="null" CheckEtcTelegramScrshot="0" CheckEtcDiscord="0" EtcDiscordURL="null" EtcDiscordName="null" EtcDiscordText="null" CheckEtcDiscordScrshot="0"/>
             </Act_2>
-        </Image_2>
-        <Image_3>
+        </Image_3>
+        <Image_4>
             <Name>main.grp</Name>
             <Rect>(0, 0, 0, 0)</Rect>
             <ROI>(0, 0, 0, 0)</ROI>
@@ -113,8 +127,8 @@
             <Group>1</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>0</ActCount>
-        </Image_3>
-        <Image_4>
+        </Image_4>
+        <Image_5>
             <Name>options</Name>
             <Rect>(1794, 27, 80, 66)</Rect>
             <ROI>(1794, 27, 80, 66)</ROI>
@@ -151,8 +165,8 @@
                 <Param>Delay( 0 2.000000 0 0 0.000000 )</Param>
                 <Attr DelayMin="0" DelaySec="2" CheckDelayRand="0" DelayRandMin="0" DelayRandSec="0"/>
             </Act_4>
-        </Image_4>
-        <Image_5>
+        </Image_5>
+        <Image_6>
             <Name>items</Name>
             <Rect>(963, 516, 127, 116)</Rect>
             <ROI>(963, 516, 127, 116)</ROI>
@@ -183,8 +197,8 @@
                 <Param>Delay( 0 5.000000 0 0 0.000000 )</Param>
                 <Attr DelayMin="0" DelaySec="5" CheckDelayRand="0" DelayRandMin="0" DelayRandSec="0"/>
             </Act_3>
-        </Image_5>
-        <Image_6>
+        </Image_6>
+        <Image_7>
             <Name>equipments</Name>
             <Rect>(622, 518, 119, 112)</Rect>
             <ROI>(622, 518, 119, 112)</ROI>
@@ -209,8 +223,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_6>
-        <Image_7>
+        </Image_7>
+        <Image_8>
             <Name>back_button</Name>
             <Rect>(16, 4, 130, 109)</Rect>
             <ROI>(16, 4, 130, 109)</ROI>
@@ -235,8 +249,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_7>
-        <Image_8>
+        </Image_8>
+        <Image_9>
             <Name>item_collection.grp</Name>
             <Rect>(0, 0, 0, 0)</Rect>
             <ROI>(0, 0, 0, 0)</ROI>
@@ -249,8 +263,8 @@
             <Group>1</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="70" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>0</ActCount>
-        </Image_8>
-        <Image_9>
+        </Image_9>
+        <Image_10>
             <Name>i_table_top</Name>
             <Rect>(1024, 192, 848, 37)</Rect>
             <ROI>(1024, 192, 848, 37)</ROI>
@@ -275,8 +289,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_9>
-        <Image_10>
+        </Image_10>
+        <Image_11>
             <Name>i_table_bottom</Name>
             <Rect>(1024, 908, 847, 21)</Rect>
             <ROI>(1024, 908, 847, 21)</ROI>
@@ -301,8 +315,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_10>
-        <Image_11>
+        </Image_11>
+        <Image_12>
             <Name>OCR</Name>
             <Rect>(735, 767, 118, 51)</Rect>
             <ROI>(735, 767, 118, 51)</ROI>
@@ -327,8 +341,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_11>
-        <Image_12>
+        </Image_12>
+        <Image_13>
             <Name>OCR(2)</Name>
             <Rect>(734, 770, 117, 45)</Rect>
             <ROI>(734, 770, 117, 45)</ROI>
@@ -353,8 +367,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_12>
-        <Image_13>
+        </Image_13>
+        <Image_14>
             <Name>OCR_item_name_0</Name>
             <Rect>(91, 727, 476, 45)</Rect>
             <ROI>(91, 727, 476, 45)</ROI>
@@ -379,8 +393,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_13>
-        <Image_14>
+        </Image_14>
+        <Image_15>
             <Name>OCR_item_name_1</Name>
             <Rect>(92, 772, 387, 50)</Rect>
             <ROI>(92, 772, 387, 50)</ROI>
@@ -405,8 +419,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_14>
-        <Image_15>
+        </Image_15>
+        <Image_16>
             <Name>XP_1</Name>
             <Rect>(1072, 338, 102, 101)</Rect>
             <ROI>(1026, 224, 842, 690)</ROI>
@@ -440,11 +454,11 @@
             <Act_4>
                 <Name>멀티 이미지 인식</Name>
                 <Enable>0</Enable>
-                <Param>Multi( 2  0  10 OCR 15 XP_2 16 XP_3 17 XP_4 -1 null -1 null -1 null -1 null -1 null -1 null )</Param>
-                <Attr Op="2" ImageNotBits="0" S0="10" N0="OCR" S1="15" N1="XP_2" S2="16" N2="XP_3" S3="17" N3="XP_4"/>
+                <Param>Multi( 2  0  11 OCR 16 XP_2 17 XP_3 18 XP_4 -1 null -1 null -1 null -1 null -1 null -1 null )</Param>
+                <Attr Op="2" ImageNotBits="0" S0="11" N0="OCR" S1="16" N1="XP_2" S2="17" N2="XP_3" S3="18" N3="XP_4"/>
             </Act_4>
-        </Image_15>
-        <Image_16>
+        </Image_16>
+        <Image_17>
             <Name>XP_2</Name>
             <Rect>(1212, 337, 121, 102)</Rect>
             <ROI>(1009, 221, 876, 696)</ROI>
@@ -475,8 +489,8 @@
                 <Param>Script( XP_2_02suy.lua print(ocr_result_xp2) )</Param>
                 <Attr LuaFile="XP_2_02suy.lua" Text="print(ocr_result_xp2)"/>
             </Act_3>
-        </Image_16>
-        <Image_17>
+        </Image_17>
+        <Image_18>
             <Name>XP_3</Name>
             <Rect>(1404, 335, 98, 105)</Rect>
             <ROI>(1002, 216, 887, 706)</ROI>
@@ -507,8 +521,8 @@
                 <Param>Script( XP_3_gw6fn.lua print(ocr_result_xp3) )</Param>
                 <Attr LuaFile="XP_3_gw6fn.lua" Text="print(ocr_result_xp3)"/>
             </Act_3>
-        </Image_17>
-        <Image_18>
+        </Image_18>
+        <Image_19>
             <Name>XP_4</Name>
             <Rect>(1564, 338, 120, 102)</Rect>
             <ROI>(1001, 213, 891, 714)</ROI>
@@ -539,8 +553,8 @@
                 <Param>Script( XP_4_3yyyp.lua print(ocr_result_xp4) )</Param>
                 <Attr LuaFile="XP_4_3yyyp.lua" Text="print(ocr_result_xp4)"/>
             </Act_3>
-        </Image_18>
-        <Image_19>
+        </Image_19>
+        <Image_20>
             <Name>nebra0</Name>
             <Rect>(1063, 430, 120, 80)</Rect>
             <ROI>(1010, 223, 872, 694)</ROI>
@@ -565,8 +579,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_19>
-        <Image_20>
+        </Image_20>
+        <Image_21>
             <Name>nebra1</Name>
             <Rect>(1227, 424, 115, 86)</Rect>
             <ROI>(1012, 223, 870, 692)</ROI>
@@ -591,8 +605,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_20>
-        <Image_21>
+        </Image_21>
+        <Image_22>
             <Name>nebra2</Name>
             <Rect>(1395, 422, 110, 87)</Rect>
             <ROI>(1012, 224, 870, 691)</ROI>
@@ -617,8 +631,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_21>
-        <Image_22>
+        </Image_22>
+        <Image_23>
             <Name>nebra3</Name>
             <Rect>(1551, 422, 128, 88)</Rect>
             <ROI>(1012, 223, 871, 692)</ROI>
@@ -643,8 +657,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_22>
-        <Image_23>
+        </Image_23>
+        <Image_24>
             <Name>phaistos0</Name>
             <Rect>(1723, 268, 112, 79)</Rect>
             <ROI>(1011, 224, 868, 691)</ROI>
@@ -669,8 +683,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_23>
-        <Image_24>
+        </Image_24>
+        <Image_25>
             <Name>phaistos1</Name>
             <Rect>(1067, 419, 117, 81)</Rect>
             <ROI>(1010, 223, 873, 692)</ROI>
@@ -695,8 +709,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_24>
-        <Image_25>
+        </Image_25>
+        <Image_26>
             <Name>phaistos2</Name>
             <Rect>(1228, 418, 117, 81)</Rect>
             <ROI>(1011, 223, 871, 693)</ROI>
@@ -721,8 +735,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_25>
-        <Image_26>
+        </Image_26>
+        <Image_27>
             <Name>phaistos3</Name>
             <Rect>(1388, 413, 134, 87)</Rect>
             <ROI>(1012, 225, 869, 691)</ROI>
@@ -747,8 +761,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_26>
-        <Image_27>
+        </Image_27>
+        <Image_28>
             <Name>wolfsegg0</Name>
             <Rect>(1583, 406, 78, 94)</Rect>
             <ROI>(1012, 224, 869, 691)</ROI>
@@ -773,8 +787,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_27>
-        <Image_28>
+        </Image_28>
+        <Image_29>
             <Name>wolfsegg1</Name>
             <Rect>(1737, 393, 71, 107)</Rect>
             <ROI>(1012, 223, 869, 693)</ROI>
@@ -799,8 +813,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_28>
-        <Image_29>
+        </Image_29>
+        <Image_30>
             <Name>wolfsegg2</Name>
             <Rect>(1084, 558, 79, 93)</Rect>
             <ROI>(1011, 223, 871, 692)</ROI>
@@ -825,8 +839,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_29>
-        <Image_30>
+        </Image_30>
+        <Image_31>
             <Name>wolfsegg3</Name>
             <Rect>(1238, 558, 117, 93)</Rect>
             <ROI>(1013, 225, 867, 690)</ROI>
@@ -851,8 +865,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_30>
-        <Image_31>
+        </Image_31>
+        <Image_32>
             <Name>nimrud0</Name>
             <Rect>(1392, 393, 114, 75)</Rect>
             <ROI>(1011, 224, 870, 691)</ROI>
@@ -877,8 +891,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_31>
-        <Image_32>
+        </Image_32>
+        <Image_33>
             <Name>nimrud1</Name>
             <Rect>(1560, 558, 103, 93)</Rect>
             <ROI>(1011, 225, 871, 690)</ROI>
@@ -903,8 +917,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_32>
-        <Image_33>
+        </Image_33>
+        <Image_34>
             <Name>nimrud2</Name>
             <Rect>(1722, 550, 116, 101)</Rect>
             <ROI>(1011, 224, 872, 693)</ROI>
@@ -929,8 +943,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_33>
-        <Image_34>
+        </Image_34>
+        <Image_35>
             <Name>nimrud3</Name>
             <Rect>(1062, 712, 132, 91)</Rect>
             <ROI>(1012, 224, 868, 691)</ROI>
@@ -955,8 +969,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_34>
-        <Image_35>
+        </Image_35>
+        <Image_36>
             <Name>mandragora0</Name>
             <Rect>(1238, 556, 95, 74)</Rect>
             <ROI>(1012, 225, 869, 690)</ROI>
@@ -981,8 +995,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_35>
-        <Image_36>
+        </Image_36>
+        <Image_37>
             <Name>mandragora1</Name>
             <Rect>(1390, 546, 112, 84)</Rect>
             <ROI>(1012, 224, 870, 691)</ROI>
@@ -1007,8 +1021,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_36>
-        <Image_37>
+        </Image_37>
+        <Image_38>
             <Name>mandragora2</Name>
             <Rect>(1573, 529, 108, 101)</Rect>
             <ROI>(1012, 224, 867, 690)</ROI>
@@ -1033,8 +1047,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_37>
-        <Image_38>
+        </Image_38>
+        <Image_39>
             <Name>mandragora3</Name>
             <Rect>(1737, 537, 116, 94)</Rect>
             <ROI>(1012, 224, 870, 691)</ROI>
@@ -1059,8 +1073,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_38>
-        <Image_39>
+        </Image_39>
+        <Image_40>
             <Name>rohonc0</Name>
             <Rect>(1069, 643, 109, 90)</Rect>
             <ROI>(1013, 224, 868, 691)</ROI>
@@ -1085,8 +1099,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_39>
-        <Image_40>
+        </Image_40>
+        <Image_41>
             <Name>rohonc1</Name>
             <Rect>(1229, 636, 112, 96)</Rect>
             <ROI>(1012, 225, 870, 690)</ROI>
@@ -1111,8 +1125,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_40>
-        <Image_41>
+        </Image_41>
+        <Image_42>
             <Name>rohonc2</Name>
             <Rect>(1396, 648, 108, 84)</Rect>
             <ROI>(1011, 225, 871, 691)</ROI>
@@ -1137,8 +1151,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_41>
-        <Image_42>
+        </Image_42>
+        <Image_43>
             <Name>rohonc3</Name>
             <Rect>(1562, 636, 102, 95)</Rect>
             <ROI>(1012, 224, 869, 692)</ROI>
@@ -1163,8 +1177,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_42>
-        <Image_43>
+        </Image_43>
+        <Image_44>
             <Name>aether0</Name>
             <Rect>(1717, 307, 114, 76)</Rect>
             <ROI>(1012, 223, 871, 694)</ROI>
@@ -1189,8 +1203,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_43>
-        <Image_44>
+        </Image_44>
+        <Image_45>
             <Name>aether1</Name>
             <Rect>(1094, 466, 105, 99)</Rect>
             <ROI>(1011, 224, 870, 691)</ROI>
@@ -1215,8 +1229,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_44>
-        <Image_45>
+        </Image_45>
+        <Image_46>
             <Name>aether2</Name>
             <Rect>(1251, 428, 72, 107)</Rect>
             <ROI>(1011, 224, 871, 692)</ROI>
@@ -1241,8 +1255,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_45>
-        <Image_46>
+        </Image_46>
+        <Image_47>
             <Name>aether3</Name>
             <Rect>(1407, 440, 95, 95)</Rect>
             <ROI>(1010, 223, 872, 692)</ROI>
@@ -1267,8 +1281,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_46>
-        <Image_47>
+        </Image_47>
+        <Image_48>
             <Name>antikythera0</Name>
             <Rect>(1559, 449, 110, 107)</Rect>
             <ROI>(1011, 224, 872, 691)</ROI>
@@ -1293,8 +1307,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_47>
-        <Image_48>
+        </Image_48>
+        <Image_49>
             <Name>antikythera1</Name>
             <Rect>(1719, 303, 113, 85)</Rect>
             <ROI>(1011, 223, 872, 691)</ROI>
@@ -1319,8 +1333,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_48>
-        <Image_49>
+        </Image_49>
+        <Image_50>
             <Name>antikythera2</Name>
             <Rect>(1064, 457, 131, 83)</Rect>
             <ROI>(1012, 223, 870, 692)</ROI>
@@ -1345,8 +1359,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_49>
-        <Image_50>
+        </Image_50>
+        <Image_51>
             <Name>antikythera3</Name>
             <Rect>(1223, 448, 123, 93)</Rect>
             <ROI>(1010, 224, 872, 692)</ROI>
@@ -1371,8 +1385,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_50>
-        <Image_51>
+        </Image_51>
+        <Image_52>
             <Name>voynich0</Name>
             <Rect>(1380, 395, 129, 97)</Rect>
             <ROI>(1009, 222, 874, 696)</ROI>
@@ -1397,8 +1411,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_51>
-        <Image_52>
+        </Image_52>
+        <Image_53>
             <Name>voynich1</Name>
             <Rect>(1553, 402, 132, 90)</Rect>
             <ROI>(1011, 223, 872, 694)</ROI>
@@ -1423,8 +1437,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_52>
-        <Image_53>
+        </Image_53>
+        <Image_54>
             <Name>voynich2</Name>
             <Rect>(1747, 405, 96, 89)</Rect>
             <ROI>(1010, 222, 872, 695)</ROI>
@@ -1449,8 +1463,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_53>
-        <Image_54>
+        </Image_54>
+        <Image_55>
             <Name>voynich3</Name>
             <Rect>(1057, 559, 133, 84)</Rect>
             <ROI>(1007, 223, 877, 696)</ROI>
@@ -1475,8 +1489,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_54>
-        <Image_55>
+        </Image_55>
+        <Image_56>
             <Name>haniwa0</Name>
             <Rect>(1238, 411, 93, 92)</Rect>
             <ROI>(1010, 223, 872, 694)</ROI>
@@ -1501,8 +1515,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_55>
-        <Image_56>
+        </Image_56>
+        <Image_57>
             <Name>haniwa1</Name>
             <Rect>(1389, 406, 112, 96)</Rect>
             <ROI>(1012, 223, 870, 692)</ROI>
@@ -1527,8 +1541,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_56>
-        <Image_57>
+        </Image_57>
+        <Image_58>
             <Name>haniwa2</Name>
             <Rect>(1566, 395, 103, 108)</Rect>
             <ROI>(1011, 224, 870, 691)</ROI>
@@ -1553,8 +1567,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_57>
-        <Image_58>
+        </Image_58>
+        <Image_59>
             <Name>haniwa3</Name>
             <Rect>(1723, 405, 131, 98)</Rect>
             <ROI>(1013, 224, 869, 692)</ROI>
@@ -1579,8 +1593,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_58>
-        <Image_59>
+        </Image_59>
+        <Image_60>
             <Name>totem0</Name>
             <Rect>(1078, 551, 96, 103)</Rect>
             <ROI>(1012, 225, 870, 691)</ROI>
@@ -1605,8 +1619,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_59>
-        <Image_60>
+        </Image_60>
+        <Image_61>
             <Name>totem1</Name>
             <Rect>(1245, 556, 91, 98)</Rect>
             <ROI>(1011, 224, 870, 693)</ROI>
@@ -1631,8 +1645,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_60>
-        <Image_61>
+        </Image_61>
+        <Image_62>
             <Name>totem2</Name>
             <Rect>(1404, 551, 93, 103)</Rect>
             <ROI>(1011, 223, 871, 693)</ROI>
@@ -1657,8 +1671,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_61>
-        <Image_62>
+        </Image_62>
+        <Image_63>
             <Name>totem3</Name>
             <Rect>(1562, 552, 111, 103)</Rect>
             <ROI>(1012, 225, 871, 690)</ROI>
@@ -1683,8 +1697,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_62>
-        <Image_63>
+        </Image_63>
+        <Image_64>
             <Name>baghdad0</Name>
             <Rect>(1720, 307, 112, 89)</Rect>
             <ROI>(1010, 223, 872, 694)</ROI>
@@ -1709,8 +1723,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_63>
-        <Image_64>
+        </Image_64>
+        <Image_65>
             <Name>baghdad1</Name>
             <Rect>(1052, 455, 119, 93)</Rect>
             <ROI>(1012, 224, 871, 692)</ROI>
@@ -1735,8 +1749,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_64>
-        <Image_65>
+        </Image_65>
+        <Image_66>
             <Name>baghdad2</Name>
             <Rect>(1242, 445, 119, 102)</Rect>
             <ROI>(1012, 223, 870, 693)</ROI>
@@ -1761,8 +1775,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_65>
-        <Image_66>
+        </Image_66>
+        <Image_67>
             <Name>baghdad3</Name>
             <Rect>(1402, 440, 101, 109)</Rect>
             <ROI>(1012, 224, 869, 691)</ROI>
@@ -1787,8 +1801,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_66>
-        <Image_67>
+        </Image_67>
+        <Image_68>
             <Name>colgante0</Name>
             <Rect>(1558, 468, 92, 81)</Rect>
             <ROI>(1012, 223, 870, 694)</ROI>
@@ -1813,8 +1827,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_67>
-        <Image_68>
+        </Image_68>
+        <Image_69>
             <Name>colgante1</Name>
             <Rect>(1723, 462, 118, 87)</Rect>
             <ROI>(1012, 224, 871, 692)</ROI>
@@ -1839,8 +1853,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_68>
-        <Image_69>
+        </Image_69>
+        <Image_70>
             <Name>colgante2</Name>
             <Rect>(1070, 599, 114, 101)</Rect>
             <ROI>(1012, 224, 871, 692)</ROI>
@@ -1865,8 +1879,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_69>
-        <Image_70>
+        </Image_70>
+        <Image_71>
             <Name>colgante3</Name>
             <Rect>(1214, 602, 129, 99)</Rect>
             <ROI>(1012, 224, 870, 692)</ROI>
@@ -1891,8 +1905,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_70>
-        <Image_71>
+        </Image_71>
+        <Image_72>
             <Name>mystery0</Name>
             <Rect>(1232, 577, 107, 82)</Rect>
             <ROI>(1011, 223, 872, 694)</ROI>
@@ -1917,8 +1931,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_71>
-        <Image_72>
+        </Image_72>
+        <Image_73>
             <Name>mystery1</Name>
             <Rect>(1399, 574, 106, 80)</Rect>
             <ROI>(1010, 221, 873, 697)</ROI>
@@ -1943,8 +1957,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_72>
-        <Image_73>
+        </Image_73>
+        <Image_74>
             <Name>mystery2</Name>
             <Rect>(1726, 552, 120, 103)</Rect>
             <ROI>(1009, 224, 872, 694)</ROI>
@@ -1969,8 +1983,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_73>
-        <Image_74>
+        </Image_74>
+        <Image_75>
             <Name>mystery3</Name>
             <Rect>(1100, 672, 60, 73)</Rect>
             <ROI>(1009, 222, 876, 697)</ROI>
@@ -1995,8 +2009,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_74>
-        <Image_75>
+        </Image_75>
+        <Image_76>
             <Name>equipment_collection.grp</Name>
             <Rect>(0, 0, 0, 0)</Rect>
             <ROI>(0, 0, 0, 0)</ROI>
@@ -2009,8 +2023,8 @@
             <Group>1</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>0</ActCount>
-        </Image_75>
-        <Image_76>
+        </Image_76>
+        <Image_77>
             <Name>OCR_equip</Name>
             <Rect>(793, 892, 135, 58)</Rect>
             <ROI>(793, 892, 135, 58)</ROI>
@@ -2035,8 +2049,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_76>
-        <Image_77>
+        </Image_77>
+        <Image_78>
             <Name>e_table_top</Name>
             <Rect>(1017, 192, 858, 36)</Rect>
             <ROI>(1017, 192, 858, 36)</ROI>
@@ -2061,8 +2075,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_77>
-        <Image_78>
+        </Image_78>
+        <Image_79>
             <Name>e_table_bottom</Name>
             <Rect>(1024, 1032, 850, 17)</Rect>
             <ROI>(1024, 1032, 850, 17)</ROI>
@@ -2087,8 +2101,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_78>
-        <Image_79>
+        </Image_79>
+        <Image_80>
             <Name>GXP_1</Name>
             <Rect>(1068, 257, 66, 85)</Rect>
             <ROI>(1011, 223, 872, 814)</ROI>
@@ -2113,8 +2127,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_79>
-        <Image_80>
+        </Image_80>
+        <Image_81>
             <Name>GXP_2</Name>
             <Rect>(1233, 283, 71, 60)</Rect>
             <ROI>(1009, 224, 876, 811)</ROI>
@@ -2139,8 +2153,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_80>
-        <Image_81>
+        </Image_81>
+        <Image_82>
             <Name>GXP_3</Name>
             <Rect>(1417, 278, 79, 64)</Rect>
             <ROI>(1417, 278, 79, 64)</ROI>
@@ -2165,8 +2179,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_81>
-        <Image_82>
+        </Image_82>
+        <Image_83>
             <Name>GXP_4</Name>
             <Rect>(1566, 263, 91, 82)</Rect>
             <ROI>(1566, 263, 91, 82)</ROI>
@@ -2191,8 +2205,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_82>
-        <Image_83>
+        </Image_83>
+        <Image_84>
             <Name>T1_Spring</Name>
             <Rect>(1705, 250, 105, 96)</Rect>
             <ROI>(1008, 222, 876, 815)</ROI>
@@ -2217,8 +2231,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_83>
-        <Image_84>
+        </Image_84>
+        <Image_85>
             <Name>T2_Spring</Name>
             <Rect>(1087, 401, 106, 95)</Rect>
             <ROI>(1012, 224, 871, 812)</ROI>
@@ -2243,8 +2257,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_84>
-        <Image_85>
+        </Image_85>
+        <Image_86>
             <Name>T3_Spring</Name>
             <Rect>(1247, 386, 73, 112)</Rect>
             <ROI>(1012, 224, 872, 811)</ROI>
@@ -2269,8 +2283,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_85>
-        <Image_86>
+        </Image_86>
+        <Image_87>
             <Name>T4_Spring</Name>
             <Rect>(54, 141, 42, 36)</Rect>
             <ROI>(1010, 223, 874, 814)</ROI>
@@ -2295,8 +2309,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_86>
-        <Image_87>
+        </Image_87>
+        <Image_88>
             <Name>T1_Hammer</Name>
             <Rect>(1372, 400, 116, 96)</Rect>
             <ROI>(1011, 224, 873, 813)</ROI>
@@ -2321,8 +2335,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_87>
-        <Image_88>
+        </Image_88>
+        <Image_89>
             <Name>T2_Hammer</Name>
             <Rect>(1569, 402, 114, 95)</Rect>
             <ROI>(1010, 223, 874, 813)</ROI>
@@ -2347,8 +2361,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_88>
-        <Image_89>
+        </Image_89>
+        <Image_90>
             <Name>T3_Hammer</Name>
             <Rect>(1733, 388, 83, 111)</Rect>
             <ROI>(1012, 224, 871, 811)</ROI>
@@ -2373,8 +2387,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_89>
-        <Image_90>
+        </Image_90>
+        <Image_91>
             <Name>T4_Hammer</Name>
             <Rect>(58, 139, 37, 38)</Rect>
             <ROI>(1010, 223, 874, 813)</ROI>
@@ -2399,8 +2413,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_90>
-        <Image_91>
+        </Image_91>
+        <Image_92>
             <Name>T1_Barrel</Name>
             <Rect>(1041, 542, 111, 95)</Rect>
             <ROI>(1010, 223, 875, 814)</ROI>
@@ -2425,8 +2439,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_91>
-        <Image_92>
+        </Image_92>
+        <Image_93>
             <Name>T2_Barrel</Name>
             <Rect>(1237, 542, 123, 94)</Rect>
             <ROI>(1011, 223, 873, 813)</ROI>
@@ -2451,8 +2465,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_92>
-        <Image_93>
+        </Image_93>
+        <Image_94>
             <Name>T3_Barrel</Name>
             <Rect>(1406, 526, 84, 111)</Rect>
             <ROI>(1011, 223, 873, 814)</ROI>
@@ -2477,8 +2491,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_93>
-        <Image_94>
+        </Image_94>
+        <Image_95>
             <Name>T4_Barrel</Name>
             <Rect>(55, 138, 44, 39)</Rect>
             <ROI>(1011, 222, 874, 815)</ROI>
@@ -2503,8 +2517,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_94>
-        <Image_95>
+        </Image_95>
+        <Image_96>
             <Name>T1_Needle</Name>
             <Rect>(1537, 434, 105, 92)</Rect>
             <ROI>(1011, 223, 873, 813)</ROI>
@@ -2529,8 +2543,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_95>
-        <Image_96>
+        </Image_96>
+        <Image_97>
             <Name>T2_Needle</Name>
             <Rect>(1741, 437, 108, 87)</Rect>
             <ROI>(1010, 223, 875, 814)</ROI>
@@ -2555,8 +2569,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_96>
-        <Image_97>
+        </Image_97>
+        <Image_98>
             <Name>T3_Needle</Name>
             <Rect>(1086, 569, 68, 110)</Rect>
             <ROI>(1012, 223, 873, 814)</ROI>
@@ -2581,8 +2595,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_97>
-        <Image_98>
+        </Image_98>
+        <Image_99>
             <Name>T4_Needle</Name>
             <Rect>(1252, 591, 66, 93)</Rect>
             <ROI>(1010, 224, 875, 812)</ROI>
@@ -2607,8 +2621,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_98>
-        <Image_99>
+        </Image_99>
+        <Image_100>
             <Name>BD.grp</Name>
             <Rect>(0, 0, 0, 0)</Rect>
             <ROI>(0, 0, 0, 0)</ROI>
@@ -2621,8 +2635,8 @@
             <Group>1</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>0</ActCount>
-        </Image_99>
-        <Image_100>
+        </Image_100>
+        <Image_101>
             <Name>HK_BD_0</Name>
             <Rect>(1063, 364, 125, 93)</Rect>
             <ROI>(1003, 217, 881, 700)</ROI>
@@ -2647,8 +2661,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_100>
-        <Image_101>
+        </Image_101>
+        <Image_102>
             <Name>HK_BD_1</Name>
             <Rect>(1223, 369, 126, 91)</Rect>
             <ROI>(1011, 223, 869, 692)</ROI>
@@ -2673,8 +2687,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_101>
-        <Image_102>
+        </Image_102>
+        <Image_103>
             <Name>HK_BD_2</Name>
             <Rect>(1385, 254, 128, 98)</Rect>
             <ROI>(1010, 223, 873, 693)</ROI>
@@ -2699,8 +2713,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_102>
-        <Image_103>
+        </Image_103>
+        <Image_104>
             <Name>HK_BD_3</Name>
             <Rect>(1551, 260, 124, 94)</Rect>
             <ROI>(1010, 223, 872, 694)</ROI>
@@ -2725,8 +2739,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_103>
-        <Image_104>
+        </Image_104>
+        <Image_105>
             <Name>Rw_BD_0</Name>
             <Rect>(1077, 437, 107, 74)</Rect>
             <ROI>(1011, 223, 872, 693)</ROI>
@@ -2751,8 +2765,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_104>
-        <Image_105>
+        </Image_105>
+        <Image_106>
             <Name>Rw_BD_1</Name>
             <Rect>(1050, 529, 144, 93)</Rect>
             <ROI>(1011, 222, 872, 695)</ROI>
@@ -2777,8 +2791,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_105>
-        <Image_106>
+        </Image_106>
+        <Image_107>
             <Name>Rw_BD_2</Name>
             <Rect>(1222, 377, 137, 102)</Rect>
             <ROI>(1011, 223, 873, 694)</ROI>
@@ -2803,8 +2817,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_106>
-        <Image_107>
+        </Image_107>
+        <Image_108>
             <Name>Rw_BD_3</Name>
             <Rect>(54, 138, 43, 38)</Rect>
             <ROI>(1012, 222, 871, 694)</ROI>
@@ -2829,8 +2843,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_107>
-        <Image_108>
+        </Image_108>
+        <Image_109>
             <Name>Tr_BD_0</Name>
             <Rect>(1376, 390, 143, 87)</Rect>
             <ROI>(1007, 218, 876, 700)</ROI>
@@ -2855,8 +2869,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_108>
-        <Image_109>
+        </Image_109>
+        <Image_110>
             <Name>Tr_BD_1</Name>
             <Rect>(1730, 437, 110, 77)</Rect>
             <ROI>(1011, 223, 872, 692)</ROI>
@@ -2881,8 +2895,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_109>
-        <Image_110>
+        </Image_110>
+        <Image_111>
             <Name>Tr_BD_2</Name>
             <Rect>(1077, 589, 109, 75)</Rect>
             <ROI>(1010, 223, 873, 695)</ROI>
@@ -2907,8 +2921,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_110>
-        <Image_111>
+        </Image_111>
+        <Image_112>
             <Name>Tr_BD_3</Name>
             <Rect>(1240, 589, 110, 74)</Rect>
             <ROI>(1008, 220, 876, 697)</ROI>
@@ -2933,8 +2947,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_111>
-        <Image_112>
+        </Image_112>
+        <Image_113>
             <Name>Ge_BD_0</Name>
             <Rect>(1225, 597, 126, 93)</Rect>
             <ROI>(1010, 222, 873, 696)</ROI>
@@ -2959,8 +2973,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_112>
-        <Image_113>
+        </Image_113>
+        <Image_114>
             <Name>Ge_BD_1</Name>
             <Rect>(1386, 598, 129, 91)</Rect>
             <ROI>(1010, 223, 872, 694)</ROI>
@@ -2985,8 +2999,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_113>
-        <Image_114>
+        </Image_114>
+        <Image_115>
             <Name>Ge_BD_2</Name>
             <Rect>(1551, 600, 128, 88)</Rect>
             <ROI>(1011, 223, 873, 695)</ROI>
@@ -3011,8 +3025,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_114>
-        <Image_115>
+        </Image_115>
+        <Image_116>
             <Name>Ge_BD_3</Name>
             <Rect>(57, 140, 39, 38)</Rect>
             <ROI>(1011, 223, 872, 695)</ROI>
@@ -3037,8 +3051,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_115>
-        <Image_116>
+        </Image_116>
+        <Image_117>
             <Name>Ab_BD_0</Name>
             <Rect>(1044, 426, 138, 89)</Rect>
             <ROI>(1012, 223, 870, 694)</ROI>
@@ -3063,8 +3077,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_116>
-        <Image_117>
+        </Image_117>
+        <Image_118>
             <Name>Ab_BD_1</Name>
             <Rect>(1051, 578, 145, 91)</Rect>
             <ROI>(1010, 223, 873, 693)</ROI>
@@ -3089,8 +3103,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_117>
-        <Image_118>
+        </Image_118>
+        <Image_119>
             <Name>Ab_BD_2</Name>
             <Rect>(1386, 416, 141, 96)</Rect>
             <ROI>(1011, 222, 872, 694)</ROI>
@@ -3115,8 +3129,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_118>
-        <Image_119>
+        </Image_119>
+        <Image_120>
             <Name>Ab_BD_3</Name>
             <Rect>(1540, 420, 146, 94)</Rect>
             <ROI>(1011, 221, 873, 695)</ROI>
@@ -3141,8 +3155,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_119>
-        <Image_120>
+        </Image_120>
+        <Image_121>
             <Name>Mi_BD_0</Name>
             <Rect>(1715, 302, 136, 96)</Rect>
             <ROI>(1011, 223, 872, 694)</ROI>
@@ -3167,8 +3181,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_120>
-        <Image_121>
+        </Image_121>
+        <Image_122>
             <Name>Mi_BD_1</Name>
             <Rect>(1048, 461, 141, 95)</Rect>
             <ROI>(1010, 223, 873, 693)</ROI>
@@ -3193,8 +3207,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_121>
-        <Image_122>
+        </Image_122>
+        <Image_123>
             <Name>Mi_BD_2</Name>
             <Rect>(1221, 456, 135, 91)</Rect>
             <ROI>(1010, 223, 872, 694)</ROI>
@@ -3219,8 +3233,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_122>
-        <Image_123>
+        </Image_123>
+        <Image_124>
             <Name>Mi_BD_3</Name>
             <Rect>(1383, 458, 141, 94)</Rect>
             <ROI>(1010, 223, 873, 695)</ROI>
@@ -3245,8 +3259,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_123>
-        <Image_124>
+        </Image_124>
+        <Image_125>
             <Name>Ar_BD_0</Name>
             <Rect>(1385, 320, 141, 88)</Rect>
             <ROI>(1012, 224, 870, 693)</ROI>
@@ -3271,8 +3285,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_124>
-        <Image_125>
+        </Image_125>
+        <Image_126>
             <Name>Ar_BD_1</Name>
             <Rect>(1540, 321, 129, 85)</Rect>
             <ROI>(1012, 224, 870, 691)</ROI>
@@ -3297,8 +3311,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_125>
-        <Image_126>
+        </Image_126>
+        <Image_127>
             <Name>Ar_BD_2</Name>
             <Rect>(1717, 302, 124, 107)</Rect>
             <ROI>(1013, 223, 870, 695)</ROI>
@@ -3323,8 +3337,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_126>
-        <Image_127>
+        </Image_127>
+        <Image_128>
             <Name>Ar_BD_3</Name>
             <Rect>(1212, 603, 151, 98)</Rect>
             <ROI>(1011, 223, 871, 693)</ROI>
@@ -3349,8 +3363,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_127>
-        <Image_128>
+        </Image_128>
+        <Image_129>
             <Name>Sh_BD_0</Name>
             <Rect>(1210, 473, 136, 86)</Rect>
             <ROI>(1013, 224, 868, 689)</ROI>
@@ -3375,8 +3389,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_128>
-        <Image_129>
+        </Image_129>
+        <Image_130>
             <Name>Sh_BD_1</Name>
             <Rect>(1384, 468, 135, 92)</Rect>
             <ROI>(1013, 224, 868, 691)</ROI>
@@ -3401,8 +3415,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_129>
-        <Image_130>
+        </Image_130>
+        <Image_131>
             <Name>Sh_BD_2</Name>
             <Rect>(1549, 460, 128, 100)</Rect>
             <ROI>(1011, 223, 871, 693)</ROI>
@@ -3427,8 +3441,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_130>
-        <Image_131>
+        </Image_131>
+        <Image_132>
             <Name>Sh_BD_3</Name>
             <Rect>(1709, 473, 133, 86)</Rect>
             <ROI>(1013, 224, 867, 692)</ROI>
@@ -3453,8 +3467,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_131>
-        <Image_132>
+        </Image_132>
+        <Image_133>
             <Name>Va_BD_0</Name>
             <Rect>(1044, 619, 145, 92)</Rect>
             <ROI>(1011, 223, 871, 693)</ROI>
@@ -3479,8 +3493,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_132>
-        <Image_133>
+        </Image_133>
+        <Image_134>
             <Name>Va_BD_1</Name>
             <Rect>(1223, 614, 129, 97)</Rect>
             <ROI>(1012, 224, 869, 692)</ROI>
@@ -3505,8 +3519,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_133>
-        <Image_134>
+        </Image_134>
+        <Image_135>
             <Name>Va_BD_2</Name>
             <Rect>(1386, 625, 136, 87)</Rect>
             <ROI>(1010, 223, 872, 693)</ROI>
@@ -3531,8 +3545,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_134>
-        <Image_135>
+        </Image_135>
+        <Image_136>
             <Name>Va_BD_3</Name>
             <Rect>(1547, 620, 133, 91)</Rect>
             <ROI>(1007, 221, 877, 696)</ROI>
@@ -3557,8 +3571,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_135>
-        <Image_136>
+        </Image_136>
+        <Image_137>
             <Name>SB.grp</Name>
             <Rect>(0, 0, 0, 0)</Rect>
             <ROI>(0, 0, 0, 0)</ROI>
@@ -3571,8 +3585,8 @@
             <Group>1</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>0</ActCount>
-        </Image_136>
-        <Image_137>
+        </Image_137>
+        <Image_138>
             <Name>Hk_SB_0</Name>
             <Rect>(1704, 289, 126, 98)</Rect>
             <ROI>(1704, 289, 126, 98)</ROI>
@@ -3597,8 +3611,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_137>
-        <Image_138>
+        </Image_138>
+        <Image_139>
             <Name>Hk_SB_1</Name>
             <Rect>(1056, 444, 142, 94)</Rect>
             <ROI>(1056, 444, 142, 94)</ROI>
@@ -3623,8 +3637,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_138>
-        <Image_139>
+        </Image_139>
+        <Image_140>
             <Name>Hk_SB_2</Name>
             <Rect>(1224, 437, 136, 102)</Rect>
             <ROI>(1224, 437, 136, 102)</ROI>
@@ -3649,8 +3663,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_139>
-        <Image_140>
+        </Image_140>
+        <Image_141>
             <Name>Hk_SB_3</Name>
             <Rect>(1391, 432, 134, 106)</Rect>
             <ROI>(1391, 432, 134, 106)</ROI>
@@ -3675,8 +3689,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_140>
-        <Image_141>
+        </Image_141>
+        <Image_142>
             <Name>Rw_SB_0</Name>
             <Rect>(1539, 340, 129, 97)</Rect>
             <ROI>(1539, 340, 129, 97)</ROI>
@@ -3701,8 +3715,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_141>
-        <Image_142>
+        </Image_142>
+        <Image_143>
             <Name>Rw_SB_1</Name>
             <Rect>(1706, 342, 146, 94)</Rect>
             <ROI>(1706, 342, 146, 94)</ROI>
@@ -3727,8 +3741,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_142>
-        <Image_143>
+        </Image_143>
+        <Image_144>
             <Name>Rw_SB_2</Name>
             <Rect>(1063, 484, 118, 103)</Rect>
             <ROI>(1063, 484, 118, 103)</ROI>
@@ -3753,8 +3767,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_143>
-        <Image_144>
+        </Image_144>
+        <Image_145>
             <Name>Rw_SB_3</Name>
             <Rect>(1212, 494, 151, 93)</Rect>
             <ROI>(1212, 494, 151, 93)</ROI>
@@ -3779,8 +3793,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_144>
-        <Image_145>
+        </Image_145>
+        <Image_146>
             <Name>Tr_SB_0</Name>
             <Rect>(1377, 488, 129, 100)</Rect>
             <ROI>(1377, 488, 129, 100)</ROI>
@@ -3805,8 +3819,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_145>
-        <Image_146>
+        </Image_146>
+        <Image_147>
             <Name>Tr_SB_1</Name>
             <Rect>(1550, 495, 137, 93)</Rect>
             <ROI>(1550, 495, 137, 93)</ROI>
@@ -3831,8 +3845,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_146>
-        <Image_147>
+        </Image_147>
+        <Image_148>
             <Name>Tr_SB_2</Name>
             <Rect>(1720, 487, 133, 103)</Rect>
             <ROI>(1720, 487, 133, 103)</ROI>
@@ -3857,8 +3871,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_147>
-        <Image_148>
+        </Image_148>
+        <Image_149>
             <Name>Tr_SB_3</Name>
             <Rect>(1051, 644, 148, 95)</Rect>
             <ROI>(1051, 644, 148, 95)</ROI>
@@ -3883,8 +3897,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_148>
-        <Image_149>
+        </Image_149>
+        <Image_150>
             <Name>Ge_SB_0</Name>
             <Rect>(1215, 563, 129, 96)</Rect>
             <ROI>(1215, 563, 129, 96)</ROI>
@@ -3909,8 +3923,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_149>
-        <Image_150>
+        </Image_150>
+        <Image_151>
             <Name>Ge_SB_1</Name>
             <Rect>(1377, 562, 147, 97)</Rect>
             <ROI>(1377, 562, 147, 97)</ROI>
@@ -3935,8 +3949,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_150>
-        <Image_151>
+        </Image_151>
+        <Image_152>
             <Name>Ge_SB_2</Name>
             <Rect>(1553, 553, 132, 105)</Rect>
             <ROI>(1553, 553, 132, 105)</ROI>
@@ -3961,8 +3975,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_151>
-        <Image_152>
+        </Image_152>
+        <Image_153>
             <Name>Ge_SB_3</Name>
             <Rect>(1708, 562, 146, 98)</Rect>
             <ROI>(1708, 562, 146, 98)</ROI>
@@ -3987,8 +4001,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_152>
-        <Image_153>
+        </Image_153>
+        <Image_154>
             <Name>Ab_SB_0</Name>
             <Rect>(1050, 358, 127, 93)</Rect>
             <ROI>(1050, 358, 127, 93)</ROI>
@@ -4013,8 +4027,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_153>
-        <Image_154>
+        </Image_154>
+        <Image_155>
             <Name>Ab_SB_1</Name>
             <Rect>(1224, 354, 136, 98)</Rect>
             <ROI>(1224, 354, 136, 98)</ROI>
@@ -4039,8 +4053,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_154>
-        <Image_155>
+        </Image_155>
+        <Image_156>
             <Name>Ab_SB_2</Name>
             <Rect>(1387, 346, 137, 105)</Rect>
             <ROI>(1387, 346, 137, 105)</ROI>
@@ -4065,8 +4079,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_155>
-        <Image_156>
+        </Image_156>
+        <Image_157>
             <Name>Ab_SB_3</Name>
             <Rect>(1542, 352, 149, 98)</Rect>
             <ROI>(1542, 352, 149, 98)</ROI>
@@ -4091,8 +4105,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_156>
-        <Image_157>
+        </Image_157>
+        <Image_158>
             <Name>Mi_SB_0</Name>
             <Rect>(1705, 356, 128, 95)</Rect>
             <ROI>(1705, 356, 128, 95)</ROI>
@@ -4117,8 +4131,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_157>
-        <Image_158>
+        </Image_158>
+        <Image_159>
             <Name>Mi_SB_1</Name>
             <Rect>(1063, 507, 137, 94)</Rect>
             <ROI>(1063, 507, 137, 94)</ROI>
@@ -4143,8 +4157,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_158>
-        <Image_159>
+        </Image_159>
+        <Image_160>
             <Name>Mi_SB_2</Name>
             <Rect>(1230, 497, 130, 106)</Rect>
             <ROI>(1230, 497, 130, 106)</ROI>
@@ -4169,8 +4183,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_159>
-        <Image_160>
+        </Image_160>
+        <Image_161>
             <Name>Mi_SB_3</Name>
             <Rect>(1377, 507, 149, 95)</Rect>
             <ROI>(1377, 507, 149, 95)</ROI>
@@ -4195,8 +4209,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_160>
-        <Image_161>
+        </Image_161>
+        <Image_162>
             <Name>Ar_SB_0</Name>
             <Rect>(1542, 352, 129, 97)</Rect>
             <ROI>(1542, 352, 129, 97)</ROI>
@@ -4221,8 +4235,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_161>
-        <Image_162>
+        </Image_162>
+        <Image_163>
             <Name>Ar_SB_1</Name>
             <Rect>(1713, 354, 140, 95)</Rect>
             <ROI>(1713, 354, 140, 95)</ROI>
@@ -4247,8 +4261,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_162>
-        <Image_163>
+        </Image_163>
+        <Image_164>
             <Name>Ar_SB_2</Name>
             <Rect>(1062, 497, 134, 105)</Rect>
             <ROI>(1062, 497, 134, 105)</ROI>
@@ -4273,8 +4287,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_163>
-        <Image_164>
+        </Image_164>
+        <Image_165>
             <Name>Ar_SB_3</Name>
             <Rect>(1215, 507, 147, 94)</Rect>
             <ROI>(1215, 507, 147, 94)</ROI>
@@ -4299,8 +4313,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_164>
-        <Image_165>
+        </Image_165>
+        <Image_166>
             <Name>Sh_SB_0</Name>
             <Rect>(1376, 505, 128, 97)</Rect>
             <ROI>(1376, 505, 128, 97)</ROI>
@@ -4325,8 +4339,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_165>
-        <Image_166>
+        </Image_166>
+        <Image_167>
             <Name>Sh_SB_1</Name>
             <Rect>(1555, 507, 133, 95)</Rect>
             <ROI>(1555, 507, 133, 95)</ROI>
@@ -4351,8 +4365,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_166>
-        <Image_167>
+        </Image_167>
+        <Image_168>
             <Name>Sh_SB_2</Name>
             <Rect>(1719, 496, 131, 107)</Rect>
             <ROI>(1719, 496, 131, 107)</ROI>
@@ -4377,8 +4391,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_167>
-        <Image_168>
+        </Image_168>
+        <Image_169>
             <Name>Sh_SB_3</Name>
             <Rect>(1049, 658, 151, 96)</Rect>
             <ROI>(1049, 658, 151, 96)</ROI>
@@ -4403,8 +4417,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_168>
-        <Image_169>
+        </Image_169>
+        <Image_170>
             <Name>Va_SB_0</Name>
             <Rect>(1216, 659, 122, 93)</Rect>
             <ROI>(1216, 659, 122, 93)</ROI>
@@ -4429,8 +4443,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_169>
-        <Image_170>
+        </Image_170>
+        <Image_171>
             <Name>Va_SB_1</Name>
             <Rect>(1392, 659, 132, 95)</Rect>
             <ROI>(1392, 659, 132, 95)</ROI>
@@ -4455,8 +4469,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_170>
-        <Image_171>
+        </Image_171>
+        <Image_172>
             <Name>Va_SB_2</Name>
             <Rect>(1557, 648, 131, 106)</Rect>
             <ROI>(1557, 648, 131, 106)</ROI>
@@ -4481,8 +4495,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_171>
-        <Image_172>
+        </Image_172>
+        <Image_173>
             <Name>Va_SB_3</Name>
             <Rect>(1705, 658, 149, 96)</Rect>
             <ROI>(1705, 658, 149, 96)</ROI>
@@ -4507,8 +4521,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_172>
-        <Image_173>
+        </Image_173>
+        <Image_174>
             <Name>Skillbook_Ult</Name>
             <Rect>(1079, 669, 95, 90)</Rect>
             <ROI>(1079, 669, 95, 90)</ROI>
@@ -4533,8 +4547,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_173>
-        <Image_174>
+        </Image_174>
+        <Image_175>
             <Name>Blueprint.grp</Name>
             <Rect>(0, 0, 0, 0)</Rect>
             <ROI>(0, 0, 0, 0)</ROI>
@@ -4547,8 +4561,8 @@
             <Group>1</Group>
             <Trg Interval="1" CheckInherit1="1" Acc="80" CheckInherit2="1" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>0</ActCount>
-        </Image_174>
-        <Image_175>
+        </Image_175>
+        <Image_176>
             <Name>T2_Hat</Name>
             <Rect>(1227, 503, 89, 68)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4573,8 +4587,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_175>
-        <Image_176>
+        </Image_176>
+        <Image_177>
             <Name>T3_Hat</Name>
             <Rect>(1391, 503, 90, 68)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4599,8 +4613,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_176>
-        <Image_177>
+        </Image_177>
+        <Image_178>
             <Name>T4_Hat</Name>
             <Rect>(1553, 503, 92, 68)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4625,8 +4639,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_177>
-        <Image_178>
+        </Image_178>
+        <Image_179>
             <Name>T5_Hat</Name>
             <Rect>(1718, 504, 90, 67)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4651,8 +4665,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_178>
-        <Image_179>
+        </Image_179>
+        <Image_180>
             <Name>T6_Hat</Name>
             <Rect>(1064, 656, 89, 68)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4677,8 +4691,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_179>
-        <Image_180>
+        </Image_180>
+        <Image_181>
             <Name>T7_Hat</Name>
             <Rect>(1226, 655, 92, 67)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4703,8 +4717,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_180>
-        <Image_181>
+        </Image_181>
+        <Image_182>
             <Name>T2_Gloves</Name>
             <Rect>(1409, 589, 48, 62)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4729,8 +4743,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_181>
-        <Image_182>
+        </Image_182>
+        <Image_183>
             <Name>T3_Gloves</Name>
             <Rect>(1564, 589, 65, 63)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4755,8 +4769,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_182>
-        <Image_183>
+        </Image_183>
+        <Image_184>
             <Name>T4_Gloves</Name>
             <Rect>(1736, 580, 51, 64)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4781,8 +4795,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_183>
-        <Image_184>
+        </Image_184>
+        <Image_185>
             <Name>T5_Gloves</Name>
             <Rect>(1079, 735, 59, 58)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4807,8 +4821,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_184>
-        <Image_185>
+        </Image_185>
+        <Image_186>
             <Name>T6_Gloves</Name>
             <Rect>(1237, 737, 66, 66)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4833,8 +4847,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_185>
-        <Image_186>
+        </Image_186>
+        <Image_187>
             <Name>T7_Gloves</Name>
             <Rect>(1401, 733, 66, 63)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4859,8 +4873,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_186>
-        <Image_187>
+        </Image_187>
+        <Image_188>
             <Name>T2_Shoes</Name>
             <Rect>(1565, 469, 65, 61)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4885,8 +4899,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_187>
-        <Image_188>
+        </Image_188>
+        <Image_189>
             <Name>T3_Shoes</Name>
             <Rect>(1722, 467, 75, 70)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4911,8 +4925,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_188>
-        <Image_189>
+        </Image_189>
+        <Image_190>
             <Name>T4_Shoes</Name>
             <Rect>(1074, 620, 71, 59)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4937,8 +4951,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_189>
-        <Image_190>
+        </Image_190>
+        <Image_191>
             <Name>T5_Shoes</Name>
             <Rect>(1240, 621, 59, 68)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4963,8 +4977,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_190>
-        <Image_191>
+        </Image_191>
+        <Image_192>
             <Name>T6_Shoes</Name>
             <Rect>(1400, 619, 67, 69)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -4989,8 +5003,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_191>
-        <Image_192>
+        </Image_192>
+        <Image_193>
             <Name>T7_Shoes</Name>
             <Rect>(1565, 621, 64, 68)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5015,8 +5029,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_192>
-        <Image_193>
+        </Image_193>
+        <Image_194>
             <Name>T2_Bag</Name>
             <Rect>(1728, 496, 72, 69)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5041,8 +5055,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_193>
-        <Image_194>
+        </Image_194>
+        <Image_195>
             <Name>T3_Bag</Name>
             <Rect>(1073, 649, 65, 68)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5067,8 +5081,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_194>
-        <Image_195>
+        </Image_195>
+        <Image_196>
             <Name>T4_Bag</Name>
             <Rect>(1241, 651, 56, 65)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5093,8 +5107,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_195>
-        <Image_196>
+        </Image_196>
+        <Image_197>
             <Name>T5_Bag</Name>
             <Rect>(1390, 370, 91, 67)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5119,8 +5133,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_196>
-        <Image_197>
+        </Image_197>
+        <Image_198>
             <Name>T6_Bag</Name>
             <Rect>(1570, 648, 58, 68)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5145,8 +5159,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_197>
-        <Image_198>
+        </Image_198>
+        <Image_199>
             <Name>T7_Bag</Name>
             <Rect>(1727, 649, 72, 67)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5171,8 +5185,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_198>
-        <Image_199>
+        </Image_199>
+        <Image_200>
             <Name>T2_Badge</Name>
             <Rect>(1076, 442, 65, 62)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5197,8 +5211,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_199>
-        <Image_200>
+        </Image_200>
+        <Image_201>
             <Name>T3_Badge</Name>
             <Rect>(1247, 453, 48, 59)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5223,8 +5237,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_200>
-        <Image_201>
+        </Image_201>
+        <Image_202>
             <Name>T4_Badge</Name>
             <Rect>(1404, 442, 61, 61)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5249,8 +5263,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_201>
-        <Image_202>
+        </Image_202>
+        <Image_203>
             <Name>T5_Badge</Name>
             <Rect>(1569, 443, 52, 68)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5275,8 +5289,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_202>
-        <Image_203>
+        </Image_203>
+        <Image_204>
             <Name>T6_Badge</Name>
             <Rect>(1730, 442, 68, 68)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5301,8 +5315,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_203>
-        <Image_204>
+        </Image_204>
+        <Image_205>
             <Name>T7_Badge</Name>
             <Rect>(1079, 400, 53, 51)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5327,8 +5341,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_204>
-        <Image_205>
+        </Image_205>
+        <Image_206>
             <Name>T2_Hairpin</Name>
             <Rect>(1235, 594, 73, 63)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5353,8 +5367,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_205>
-        <Image_206>
+        </Image_206>
+        <Image_207>
             <Name>T3_Hairpin</Name>
             <Rect>(1401, 594, 71, 70)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5379,8 +5393,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_206>
-        <Image_207>
+        </Image_207>
+        <Image_208>
             <Name>T4_Hairpin</Name>
             <Rect>(1568, 594, 60, 68)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5405,8 +5419,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_207>
-        <Image_208>
+        </Image_208>
+        <Image_209>
             <Name>T5_Hairpin</Name>
             <Rect>(1732, 595, 59, 70)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5431,8 +5445,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_208>
-        <Image_209>
+        </Image_209>
+        <Image_210>
             <Name>T6_Hairpin</Name>
             <Rect>(1074, 746, 63, 70)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5457,8 +5471,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_209>
-        <Image_210>
+        </Image_210>
+        <Image_211>
             <Name>T7_Hairpin</Name>
             <Rect>(1237, 745, 71, 71)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5483,8 +5497,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_210>
-        <Image_211>
+        </Image_211>
+        <Image_212>
             <Name>T2_Charm</Name>
             <Rect>(1399, 441, 66, 69)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5509,8 +5523,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_211>
-        <Image_212>
+        </Image_212>
+        <Image_213>
             <Name>T3_Charm</Name>
             <Rect>(1565, 441, 65, 69)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5535,8 +5549,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_212>
-        <Image_213>
+        </Image_213>
+        <Image_214>
             <Name>T4_Charm</Name>
             <Rect>(1729, 443, 55, 69)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5561,8 +5575,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_213>
-        <Image_214>
+        </Image_214>
+        <Image_215>
             <Name>T5_Charm</Name>
             <Rect>(1075, 593, 60, 72)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5587,8 +5601,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_214>
-        <Image_215>
+        </Image_215>
+        <Image_216>
             <Name>T6_Charm</Name>
             <Rect>(1239, 593, 63, 69)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5613,8 +5627,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_215>
-        <Image_216>
+        </Image_216>
+        <Image_217>
             <Name>T7_Charm</Name>
             <Rect>(1399, 592, 66, 71)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5639,8 +5653,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_216>
-        <Image_217>
+        </Image_217>
+        <Image_218>
             <Name>T2_Watch</Name>
             <Rect>(1566, 593, 54, 70)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5665,8 +5679,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_217>
-        <Image_218>
+        </Image_218>
+        <Image_219>
             <Name>T3_Watch</Name>
             <Rect>(1730, 593, 60, 70)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5691,8 +5705,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_218>
-        <Image_219>
+        </Image_219>
+        <Image_220>
             <Name>T4_Watch</Name>
             <Rect>(1074, 745, 66, 71)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5717,8 +5731,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_219>
-        <Image_220>
+        </Image_220>
+        <Image_221>
             <Name>T5_Watch</Name>
             <Rect>(1240, 745, 58, 72)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5743,8 +5757,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_220>
-        <Image_221>
+        </Image_221>
+        <Image_222>
             <Name>T6_Watch</Name>
             <Rect>(1402, 745, 62, 70)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5769,8 +5783,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_221>
-        <Image_222>
+        </Image_222>
+        <Image_223>
             <Name>T7_Watch</Name>
             <Rect>(1565, 745, 63, 69)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5795,8 +5809,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_222>
-        <Image_223>
+        </Image_223>
+        <Image_224>
             <Name>T2_Necklace</Name>
             <Rect>(1728, 745, 79, 57)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5821,8 +5835,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_223>
-        <Image_224>
+        </Image_224>
+        <Image_225>
             <Name>T3_Necklace</Name>
             <Rect>(1075, 897, 71, 73)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5847,8 +5861,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_224>
-        <Image_225>
+        </Image_225>
+        <Image_226>
             <Name>T4_Necklace</Name>
             <Rect>(1238, 898, 65, 69)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5873,8 +5887,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_225>
-        <Image_226>
+        </Image_226>
+        <Image_227>
             <Name>T5_Necklace</Name>
             <Rect>(1403, 897, 59, 71)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5899,8 +5913,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_226>
-        <Image_227>
+        </Image_227>
+        <Image_228>
             <Name>T6_Necklace</Name>
             <Rect>(1559, 896, 79, 71)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5925,8 +5939,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_227>
-        <Image_228>
+        </Image_228>
+        <Image_229>
             <Name>T7_Necklace</Name>
             <Rect>(1728, 898, 63, 69)</Rect>
             <ROI>(1009, 221, 876, 816)</ROI>
@@ -5951,8 +5965,8 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_228>
-        <Image_229>
+        </Image_229>
+        <Image_230>
             <Name>dragtest</Name>
             <Rect>(0, 0, 0, 0)</Rect>
             <ROI>(0, 0, 0, 0)</ROI>
@@ -5977,8 +5991,8 @@
                 <Param>Delay( 0 2.000000 0 0 0.000000 )</Param>
                 <Attr DelayMin="0" DelaySec="2" CheckDelayRand="0" DelayRandMin="0" DelayRandSec="0"/>
             </Act_2>
-        </Image_229>
-        <Image_230>
+        </Image_230>
+        <Image_231>
             <Name>celltest</Name>
             <Rect>(1036, 238, 174, 153)</Rect>
             <ROI>(1036, 238, 174, 153)</ROI>
@@ -6003,6 +6017,6 @@
                 <Param>Mouse( 0 0 1  0 0 0 0 0  5 5  0.000000 0.000000  0.500000 1 )</Param>
                 <Attr Input="0" Button="0" Speed="1" Base="0" Coord_x1="0" Coord_y1="0" Coord_x2="0" Coord_y2="0" Rand_x="5" Rand_y="5" PressSec1="0" PressSec2="0" Delay="0.5" Iter="1"/>
             </Act_2>
-        </Image_230>
+        </Image_231>
     </GENERAL>
 </ROOT>
