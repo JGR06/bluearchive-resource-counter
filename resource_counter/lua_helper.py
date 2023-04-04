@@ -19,6 +19,16 @@ def test():
     imax.print('ocr_result: ', ocr_result)
 
 
+def get_window_size():
+    imax.lua("window_size = GetImageROI('window_size')")
+    imax.lua("window_width = window_size.w")
+    imax.lua("window_height = window_size.h")
+    width = imax.lua_get_value('window_width')
+    height = imax.lua_get_value('window_height')
+    imax.print(f'[target window size: {width} * {height}]')
+    return (int(width), int(height))
+
+
 # roi = integer array
 def set_roi_variable(variable_name, roi):
     roi_ix = roi[0]

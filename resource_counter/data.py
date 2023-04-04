@@ -88,7 +88,7 @@ class ScaledSizeContainer:
         self.resizing_factor = (1.0, 1.0)
 
     # size: window size tuple
-    def resize_resolution(self, size):
+    def set_resolution(self, size):
         self.screen_resolution = size
         self.resizing_factor = (self.screen_resolution[0] / self.design_resolution[0], self.screen_resolution[1] / self.design_resolution[1])
 

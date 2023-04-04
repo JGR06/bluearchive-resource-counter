@@ -33,6 +33,7 @@ class ResourceCounter:
         self.misrecognitions = {}
         self.roi_table = []
         self.current_clicked_positions = []
+        data.scaled_sizes.set_resolution(lua_helper.get_window_size())
         imax.print("ResourceCounter initialized")
 
     def is_finished(self):
