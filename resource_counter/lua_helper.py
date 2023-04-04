@@ -3,22 +3,6 @@ import base64
 import imax
 
 
-def test():
-    a = (137, 132)
-    imax.lua("ret, acc, ix, iy, sx, sy = ImageSearch('OCR')")
-    imax.lua("print(string.format('ret: %d, acc: %f, ix: %d, iy: %d', ret, acc, ix, iy))")
-    ix = imax.lua_get_value('ix')
-    iy = imax.lua_get_value('iy')
-    imax.lua_set_value('ix', int(ix)-68)
-    imax.lua_set_value('iy', int(iy)-66)
-    imax.lua("roi = {ix, iy, 137, 132}")
-    imax.lua("SetImageROI('OCR', roi)")
-    imax.lua("ImageSearch('OCR')")
-    ocr_result = imax.lua_get_value("ocr_result")
-    imax.print('ix, iy: ', ix, iy)
-    imax.print('ocr_result: ', ocr_result)
-
-
 def get_window_size():
     imax.lua("window_size = GetImageROI('window_size')")
     imax.lua("window_width = window_size.w")
