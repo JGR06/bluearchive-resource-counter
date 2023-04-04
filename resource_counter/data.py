@@ -56,10 +56,7 @@ ocr_assets = {
 
 
 def get_assetname_by_state(state):
-    if state in lookup_resource_types:
-        return lookup_resource_types[state]
-    else:
-        return 'Undefined'
+    return lookup_resource_types.get(state, 'Undefined')
 
 
 def get_item_type_by_state(state):
