@@ -4,6 +4,10 @@
 DEBUG_SAVE_MISRECOGNITIONS = False
 DEBUG_SAVE_NAME_REPLACED_RESULT = False
 
+# output options
+SAVE_RESULT_DIFF = True
+RESULT_DIFF_WARNING_THRESHOLD = 50
+
 # stop searching and scrolling if there is no result during N times of scrolling
 SCROLL_COUNT_LIMIT_UNTIL_FOUND = 5
 

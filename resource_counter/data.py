@@ -152,6 +152,30 @@ class DataSet:
                 nearest_score = item_type_matched
         return nearest_item
 
+    def save_result_diff(self, collectibles, warning_threshold, save_as='result_diff.json'):
+        with open('../resource_counter/planner_exported.json', 'r') as f:
+            planner_data = json.load(f)
+            original = planner_data['owned_materials']
+            f.close()
+
+        diff = {}
+        warnings = {}
+        if original is not None:
+            for k, v in collectibles.items():
+                if k == 'Xp' or k == 'GearXp' or k == 'Credit':
+                    continue
+                diff[k] = int(v) - int(original.get(k, 0))
+                if abs(diff[k]) > warning_threshold:
+                    warnings[k] = f'{original.get(k, 0)} -> {v} ({diff[k]})'
+
+        with open(f'../resource_counter/{save_as}', 'w', encoding='UTF-8') as f:
+            json.dump(self.debug_replace_key_to_name(diff), f, ensure_ascii=False)
+        f.close()
+
+        with open(f'../resource_counter/warning_{save_as}', 'w', encoding='UTF-8') as f:
+            json.dump(self.debug_replace_key_to_name(warnings), f, ensure_ascii=False)
+        f.close()
+
     # replace planner site exported userdata if you prepared.
     def save_planner_userdata(self, collectibles, save_as='planner_exported.json'):
         with open('../resource_counter/planner_exported.json', 'r+') as f:

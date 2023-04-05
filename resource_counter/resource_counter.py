@@ -47,6 +47,8 @@ class ResourceCounter:
         today = date.today()
         data.resource_data.save_planner_userdata(self.result, f"result_data_{today.strftime('%y%m%d')}.json")
 
+        data.resource_data.save_result_diff(self.result, settings.RESULT_DIFF_WARNING_THRESHOLD, f"result_diff_{today.strftime('%y%m%d')}.json")
+
         # debug outputs
         if settings.DEBUG_SAVE_MISRECOGNITIONS:
             with open(f'{util.root_path}/misrecognitions.json', 'w') as f:
