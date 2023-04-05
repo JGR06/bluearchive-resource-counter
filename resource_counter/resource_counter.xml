@@ -28,16 +28,16 @@
         <TWBClass>LDPlayerMainFrame</TWBClass>
         <TWCName>TheRender</TWCName>
         <TWCClass>RenderWindow</TWCClass>
-        <PickPos>46466209</PickPos>
-        <TWHandle>0x530B04</TWHandle>
-        <TargetWnd.left>142</TargetWnd.left>
-        <TargetWnd.top>122</TargetWnd.top>
-        <TargetWnd.right>2062</TargetWnd.right>
-        <TargetWnd.bottom>1202</TargetWnd.bottom>
-        <TarfrmWnd.left>141</TarfrmWnd.left>
-        <TarfrmWnd.top>88</TarfrmWnd.top>
-        <TarfrmWnd.right>2103</TarfrmWnd.right>
-        <TarfrmWnd.bottom>1203</TarfrmWnd.bottom>
+        <PickPos>42796251</PickPos>
+        <TWHandle>0x23114C</TWHandle>
+        <TargetWnd.left>51</TargetWnd.left>
+        <TargetWnd.top>211</TargetWnd.top>
+        <TargetWnd.right>1971</TargetWnd.right>
+        <TargetWnd.bottom>1291</TargetWnd.bottom>
+        <TarfrmWnd.left>50</TarfrmWnd.left>
+        <TarfrmWnd.top>177</TarfrmWnd.top>
+        <TarfrmWnd.right>2012</TarfrmWnd.right>
+        <TarfrmWnd.bottom>1292</TarfrmWnd.bottom>
         <Hotkey0>F7</Hotkey0>
         <Modifiers0>0</Modifiers0>
         <Vk0>118</Vk0>
@@ -2820,16 +2820,16 @@
         </Image_107>
         <Image_108>
             <Name>Rw_BD_3</Name>
-            <Rect>(54, 138, 43, 38)</Rect>
+            <Rect>(1543, 556, 145, 98)</Rect>
             <ROI>(1012, 222, 871, 694)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13238273</Param1>
-            <Param2>474086</Param2>
+            <Param1>13172737</Param1>
+            <Param2>2046967</Param2>
             <Param3>0</Param3>
-            <Param4>1679951919</Param4>
+            <Param4>1680728873</Param4>
             <Enable>1</Enable>
             <Group>2</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Trg Interval="1" CheckInherit1="1" Acc="82" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
@@ -3028,16 +3028,16 @@
         </Image_115>
         <Image_116>
             <Name>Ge_BD_3</Name>
-            <Rect>(57, 140, 39, 38)</Rect>
+            <Rect>(1212, 640, 150, 95)</Rect>
             <ROI>(1011, 223, 872, 695)</ROI>
             <FullROI>0</FullROI>
-            <Param1>13238273</Param1>
-            <Param2>343009</Param2>
+            <Param1>13107201</Param1>
+            <Param2>1850363</Param2>
             <Param3>0</Param3>
-            <Param4>1679952015</Param4>
+            <Param4>1680728909</Param4>
             <Enable>1</Enable>
             <Group>2</Group>
-            <Trg Interval="1" CheckInherit1="1" Acc="95" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
+            <Trg Interval="1" CheckInherit1="1" Acc="85" CheckInherit2="0" CheckShade="1" CheckEdge="0" CheckGauge="0" Gauge="70" ComboGauge="0" CheckAnimated="0" AnimatedSec="2" CheckLuaVar="0" LuaVar="" CheckNotFound="0" CheckActInterval="0" ActIntervalSec="10" CheckPrint="0" ComboPrint="1"/>
             <ActCount>2</ActCount>
             <Act_1>
                 <Name>이미지 표시</Name>
