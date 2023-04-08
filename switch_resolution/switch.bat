@@ -1,1 +1,1 @@
-python .\switch_resolution.py 1920 1080 280
+python .\switch_resolution.py 1600 900 240
