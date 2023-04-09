@@ -169,11 +169,11 @@ class DataSet:
                     warnings[k] = f'{original.get(k, 0)} -> {v} ({diff[k]})'
 
         with open(f'../resource_counter/{save_as}', 'w', encoding='UTF-8') as f:
-            json.dump(self.debug_replace_key_to_name(diff), f, ensure_ascii=False)
+            json.dump(self.debug_replace_key_to_name(diff), f, ensure_ascii=False, indent=2)
         f.close()
 
         with open(f'../resource_counter/warning_{save_as}', 'w', encoding='UTF-8') as f:
-            json.dump(self.debug_replace_key_to_name(warnings), f, ensure_ascii=False)
+            json.dump(self.debug_replace_key_to_name(warnings), f, ensure_ascii=False, indent=2)
         f.close()
 
     # replace planner site exported userdata if you prepared.

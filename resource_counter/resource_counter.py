@@ -52,12 +52,12 @@ class ResourceCounter:
         # debug outputs
         if settings.DEBUG_SAVE_MISRECOGNITIONS:
             with open(f'{util.root_path}/misrecognitions.json', 'w') as f:
-                json.dump(self.misrecognitions, f)
+                json.dump(self.misrecognitions, f, indent=2)
             f.close()
 
         if settings.DEBUG_SAVE_NAME_REPLACED_RESULT:
             with open(f'{util.root_path}/debug_output.json', 'w', encoding='UTF-8') as f:
-                json.dump(data.resource_data.debug_replace_key_to_name(self.result), f, ensure_ascii=False)
+                json.dump(data.resource_data.debug_replace_key_to_name(self.result), f, ensure_ascii=False, indent=2)
             f.close()
 
     def run(self):
